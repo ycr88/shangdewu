@@ -1,0 +1,24 @@
+
+<div class="row_2">
+    <div class="container">
+      <h2> {{ page.header.title}} </h2>
+        <div class="row">
+            <ul class="list1">
+                {% for group in page.header.groups %}
+                    <li class="col-lg-4 col-md-4 col-sm-4 listbox{{ loop.index }}">
+                        <div class=" box{{group.class}}">
+                            <a href="#">
+                              <figure>{{ page.media[group.image] }}</figure>
+                              <div class=" to{{group.title_position}}">
+                              <p>{{ group.title }}</p>
+                              <p class="description" >{{ group.description }}</div>
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+                </ul>
+                {{ content }}
+
+        </div>
+    </div>
+</div>

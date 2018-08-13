@@ -1,0 +1,40 @@
+title: Shag De Wu
+author:
+  name: Yuri Cabrera
+  email: 'siteadmin@shangdewu.com'
+#metadata:
+#    description: 'Bootstrap 3.0 template by Template-help.com, ported to Grav.'
+
+# Site settings
+title: School Shang De Wu
+email: school@shangdewu.com
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  -  url: "#"
+     icon: facebook.png
+  -  url: "#"
+     icon: gplus.png
+  -  url: "#"
+     icon: twitter.png
+  -  url: "#"
+     icon: rss.png
+
+
+# Main Menu
+menu:
+  - text: "submenu"
+    submenu:
+      - text: "info"
+        link: "#"
+      - text: "profile"
+        link: "#"
+      - text: "news"
+        link: "#"
+        submenu:
+          - text: "fresh"
+            link: "#"
+          - text: "archive"
+            link: "#"
+    link: "#"
