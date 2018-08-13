@@ -23,7 +23,16 @@
                             </ul>
                           </div>
                           <div class="gallery">
-
+                            {% a = evaluate('page.media.images') %}
+                            {{ a }}
+                            {% exit %}
+                            <div class="slider">
+                                <div class="camera_wrap">
+                                    {% for item in page.media.images %}
+                                         <div data-src="{{ item.url }}"></div>
+                                    {% endfor %}
+                                </div>
+                            </div>
                           </div>
                        </section>
                {% endfor %}
