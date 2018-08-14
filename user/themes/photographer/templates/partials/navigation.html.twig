@@ -27,6 +27,15 @@
                         <a href="{{ page.url }}">
                             {{ page.menu }}
                         </a>
+                        {% if page.header.submenu == true %}
+                          <ul class"new-menu">
+                            {% for item in page.header.items %}
+                            <li>
+                              <a href="{{page.url}}#{{item.id}}"> {{item.title}} </a>
+                            </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
                     </li>
                 {% endif %}
             {% endfor %}
@@ -60,4 +69,4 @@
                 {% endif %}
             </li>
         {% endfor %}
-    </ul>   
+    </ul>
