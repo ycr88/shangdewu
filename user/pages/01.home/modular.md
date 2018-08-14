@@ -13,6 +13,7 @@ content:
             - _welcome
             - _slider            
             - _groups
-            - _portfolio
+            - _register
+            - _partners
             - _footer
 ---
