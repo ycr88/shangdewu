@@ -9,7 +9,7 @@
              <div class="groups-section">
 
                {% for group in page.header.items %}
-                       <section class="group {{group.class}}">
+                       <section id="{{group.class}}" class="group {{group.class}}">
                          <h1> {{group.title}} </h1>
                          <figure>{{ page.media[group.image] }}</figure>
                          <article class="description">
@@ -23,9 +23,7 @@
                             </ul>
                           </div>
                           <div class="gallery">
-                            {% a = evaluate('page.media.images') %}
-                            {{ a }}
-                            {% exit %}
+                            <p>image/{{ group.gallery}}</p>
                             <div class="slider">
                                 <div class="camera_wrap">
                                     {% for item in page.media.images %}
