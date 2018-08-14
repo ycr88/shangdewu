@@ -13,7 +13,6 @@ items:
                 - dashu
                 - shipengong
                 - otros
-        gallery: gallery-starter
       - image: page1_img2.jpg
         id: advanced
         class: 2
@@ -23,11 +22,10 @@ items:
                 - dashu
                 - shipengong
                 - otros
-        gallery: advanced
       - image: page1_img3.jpg
         id : adults
         class: 3
         title: Adults
         description : 2 lines text
-        gallery : adults
 ---
+[comments]: # (the images location is pages/images/groups/gallery+$item.id)
