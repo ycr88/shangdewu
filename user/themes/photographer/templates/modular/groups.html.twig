@@ -4,14 +4,15 @@
       <h2> {{ page.header.title}} </h2>
         <div class="row">
             <ul class="list1">
-                {% for group in page.header.groups %}
+              {% set groups = page.find('/groups/').header.items %}
+                {% for group in groups %}
                     <li class="col-lg-4 col-md-4 col-sm-4 listbox{{ loop.index }}">
                         <div class=" box{{group.class}}">
                             <a href="#">
-                              <figure>{{ page.media[group.image] }}</figure>
+                              <figure>{{ page.find('/images/groups/').media[group.image] }}</figure>
                               <div class=" to{{group.title_position}}">
                               <p>{{ group.title }}</p>
-                              <p class="description" >{{ group.description }}</div>
+                              <p class="description" >{{ group.description | truncate(120 , true) }}</div>
                             </a>
                         </div>
                     </li>
