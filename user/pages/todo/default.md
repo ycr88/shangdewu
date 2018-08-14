@@ -29,8 +29,14 @@ class : dev
   - basic information in the home
   - [not urgent] make a blog page for each partner
 * full fill section footer
-* create section register
+* ~~create section register~~
   + form from google forms
+  + create section comments
+    - slider :
+      * | picture |
+             > text      
+            autor
+
 
 ## About
   + ~~create page about us modular~~
