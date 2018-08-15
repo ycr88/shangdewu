@@ -36,9 +36,10 @@ class : dev
       * | picture |
              > text      
             autor
-            
+
 + full fill subsection "why with us"
 + full fill subsection " contact" adress, mail, ..?
++ link to the section /about us#fundator
 
 ## About
   + ~~create page about us modular~~
@@ -47,13 +48,13 @@ class : dev
   + ~~section fundator~~
   + text about fundator
   + ~~section colaborator~~
-  + link to the section /about us#fundator
+
 
 ## Groups
   + ~~create page groups~~
    -~~page group by section to each groups~~
-  + use de image of gallery form the folder /images/name-of-the-gallery
-  + refine the structure of the headers
+  + ~~use de image of gallery form the folder /images/name-of-the-gallery~~
+  + ~~refine the structure of the headers~~
 
 
 
