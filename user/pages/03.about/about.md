@@ -11,4 +11,6 @@ content:
         dir: asc
         custom:
               - _school
+              - _fundator
+              - _collaborators
 ---
