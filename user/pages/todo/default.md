@@ -3,9 +3,9 @@ title : todo
 class : dev
 ---
 ## Global
-* create submenu for groups and about
+* ~~create submenu for groups and about~~
 * link to the social networks
-* read markdown in the twig from the page.headers
+* ~~read markdown in the twig from the page.headers~~
 * change the configuration of the title of the theme page.title | site.name
 * ~~git~~
 * full fill file site.yaml
@@ -30,24 +30,25 @@ class : dev
   - [not urgent] make a blog page for each partner
 * full fill section footer
 * ~~create section register~~
-  + form from google forms
+  + ~~form from google forms~~[fill with original]
   + create section comments
     - slider :
       * | picture |
              > text      
             autor
-
+            
++ full fill subsection "why with us"
++ full fill subsection " contact" adress, mail, ..?
 
 ## About
   + ~~create page about us modular~~
   + ~~section school~~[full fill]
       * ~~not load the page school~~
-  + section fundator
-  + section colaborator
+  + ~~section fundator~~
   + text about fundator
+  + ~~section colaborator~~
   + link to the section /about us#fundator
-  + full fill subsection "why with us"
-  + full fill subsection " contact" adress, mail, ..?
+
 ## Groups
   + ~~create page groups~~
    -~~page group by section to each groups~~
