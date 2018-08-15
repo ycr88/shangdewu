@@ -1,6 +1,6 @@
 ---
 about:
-  title: About me
+  title: O treiner
   title2: Vivamus eget
   image: prof_img.png
   text: Vitaesaert asetyertya asetrde maeciegast nieri vrtye remiad.Molirnatur aut oditaut. onsq ntmagni dolores eo qui ratione. Nasgaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut.
