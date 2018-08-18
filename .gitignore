@@ -1,8 +1,9 @@
-vendor/*
-temp/*
-**/cache/
-todo
+#vendor/*
+#temp/*
+#**/cache/
+**/todo
 .gitgnore
 *
-!user/pages/\*.md
-!user/themes/templates/*
+#!user/pages/\*.md
+#!user/themes/templates/*
+!user/
