@@ -6,10 +6,14 @@
           </a>
         </h1>
         <div class="social">
-          social links
+          <ul class="social_icons clearfix">
+               {% for item  in site.social_header %}
+                   <li><a href="{{ item.url }}"><img src="{{ theme_url }}/img/{{ item.icon }}" alt=""></a></li>
+               {% endfor %}
+          </ul>
         </div>
         <div class="adress">
-          adress , of the school, Minsk
+          {{ site.adress}}
         </div>
       </div>
       <div class="menuheader">

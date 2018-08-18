@@ -1,15 +1,15 @@
-title: Photographer
+title: 'ShangDeWu'
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: 'Yuri Cabrera Reyes'
+  email: 'trainer@shangdewu.com'
 metadata:
     description: 'Bootstrap 3.0 template by Template-help.com, ported to Grav.'
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
+title: ShangDeWu
+email: school@shangdewu.com
+description: "New wushu school in Minsk, for all the ages, we apply the most efetive method and modern technics of wushu, taijiquan and qigong under the tradicional principles and filosofy of this amazing art of China. We are glad to share you our expirence"
+adress: Pugachevkaya 10, Minsk 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   -  url: "#"
@@ -21,8 +21,17 @@ social:
   -  url: "#"
      icon: rss.png
 
+social_header:
+  -  url: "#"
+     icon: facebook.png
+  -  url: "#"
+     icon: instagram.png
+  -  url: "#"
+     icon: twitter.png
+
+
 copyright:
-  line1: Untitled
+  line1: Untitl ed
   line2: Design:
   url: http://html5up.net
   url_label: HTML5 UP
@@ -44,4 +53,4 @@ logo:
 #            link: "#"
 #          - text: "archive"
 #            link: "#"
-#    link: "#" 
+#    link: "#"
