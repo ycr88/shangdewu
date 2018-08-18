@@ -19,6 +19,7 @@ class : dev
 * ~~link to about us~~
 * ~~title in section groups~~
 * ~~caption for each group~~
+  - fill the caption in the groups with group.item.slug
 * style section group
 * ~~link to the page groups~~
 * ~~create section partners~~
