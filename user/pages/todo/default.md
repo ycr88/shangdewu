@@ -3,9 +3,9 @@ title : todo
 class : dev
 ---
 ## Global
-* create submenu for groups and about
+* ~~create submenu for groups and about~~
 * link to the social networks
-* read markdown in the twig from the page.headers
+* ~~read markdown in the twig from the page.headers~~
 * change the configuration of the title of the theme page.title | site.name
 * ~~git~~
 * full fill file site.yaml
@@ -19,6 +19,7 @@ class : dev
 * ~~link to about us~~
 * ~~title in section groups~~
 * ~~caption for each group~~
+  - fill the caption in the groups with group.item.slug
 * style section group
 * ~~link to the page groups~~
 * ~~create section partners~~
