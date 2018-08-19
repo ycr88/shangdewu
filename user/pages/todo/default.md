@@ -10,7 +10,9 @@ class : dev
 * change the configuration of the title of the theme page.title | site.name
 * ~~git~~
 * full fill file site.yaml
-* use sass
+* ~~use sass~~
+* problems using @import 'file.css'
+* custom.css dont load the change in the browser
 
 ## Home
 * ~~icon in the header~~ [fill with original]
