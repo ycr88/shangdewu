@@ -1,10 +1,14 @@
 
+{% set data = page.find('/groups/').header %}
 <div class="row_2">
     <div class="container">
       <h2> {{ page.header.title}} </h2>
+      <article >
+        {{ data.slug }}
+      </article>
         <div class="row">
             <ul class="list1">
-              {% set groups = page.find('/groups/').header.items %}
+              {% set groups = data.items %}
                 {% for group in groups %}
                     <li class="col-lg-4 col-md-4 col-sm-4 listbox{{ loop.index }}">
                         <div class=" box{{group.class}}">
