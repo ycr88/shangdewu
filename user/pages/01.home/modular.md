@@ -1,5 +1,5 @@
 ---
-title: Shang De Wu
+title: Home
 menu: Home
 onpage_menu: true
 body_class: index
