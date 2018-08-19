@@ -4,10 +4,17 @@ description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 sectionId : fundator
 template : modular/about
 ---
-  ### YUri Cabrera Reyes
+### YUri Cabrera Reyes
+<div markdown=1 class="col-sm-4 col-xs-12">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div  class="col-sm-8 col-xs-12">
 <section id="timeline" class=" block-content t-block-teal l-block-spacing">
-
+<div markdown="1" class="timeline-list">
+* 1
+* 2
+* 3
+</div>
 						<ul class="timeline-list">
 							<li>
                   <div class="content">
@@ -57,3 +64,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 					</div>
 
 				</section>
+
+
+</div>
