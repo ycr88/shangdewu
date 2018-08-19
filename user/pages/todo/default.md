@@ -5,6 +5,7 @@ class : dev
 ## Global
 * ~~create submenu for groups and about~~
 * link to the social networks
+  -need to find a set of icon for the social network
 * ~~read markdown in the twig from the page.headers~~
 * change the configuration of the title of the theme page.title | site.name
 * ~~git~~
