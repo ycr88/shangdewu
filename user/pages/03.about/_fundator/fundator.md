@@ -2,58 +2,21 @@
 title : "Fundator of the school"
 description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 sectionId : fundator
-template : modular/about
+timeline : a biografy
+timelineItems :
+              - title: start
+                description: В 6 лет начал заниматься боевыми искусствами. Сперва практиковался в борьбе, карате и дзюдо.    В 12 лет начал заниматься ушу в Кубинской Школе Ушу, которая находится в Гаванском Китайском квартале. Там начал постигать ушу как спорт и как часть китайской культуры.
+              - title: 2002 по 2010гг
+                description: На втором году обучения выиграл несколько соревнований, участвовал в мероприятиях, организованных Школой, в последствии был выбран в Национальную сборную команду по ушу, в которой тренировался с 2002 по 2010гг. В этот период я получил все необходимые знания о процессе прохождения международных соревнований по ушу, практиковался в спортивном и традиционном направлении данного боевого искусства.       Освоил несколько стилей Цюаньшу (искусство боя без оружия), короткое и длинное оружие, двойное оружие, гибкое оружие, 对练. Также в это время активно занимался терапевтическим направлением в ушу -тайцзицюань и цигун. Кубинскую школу ушу часто посещают знаменитые мастера ушу из Китая и Международной федерации ушу.
+              - title: teaching
+                description: Тренируясь в Национальной сборной, вел занятия для детей по ушу и для взрослых по тайцзицюань и цигун.
+                gallery:
+                          - china2.jpg
+              - title: 2013-2014г
+                description: В 2013-2014гг проходил обучение китайскому языку и культуре в г. Циньхуандао, пр. Хэбэй, Китай. Входил в сборную команду по ушу Яньшаньского университета как член команды и тренер. Принимал участие в международных соревнованиях по ушу в г. Гуанчжоу (ноябрь 2013), в соревнованиях среди китайских спортсменов в г. Баодин. В соревнованиях в июне 2014 г. в г. Циньхуандао занял 1 место в категориях Наньцюань, Наньгунь и Тайцзи с веером.
+              - title: С 2016г In belarus
+                description: живет и тренируется в Минске, работает тренером ушу. Его ученики участвуют в различных соревнованиях, мероприятиях, показательных выступлениях, добиваются хороших результатов.
+                gallery:
+                        minsk1.jpg
+template : modular/fundator
 ---
-  ### YUri Cabrera Reyes
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<section id="timeline" class=" block-content t-block-teal l-block-spacing">
-
-						<ul class="timeline-list">
-							<li>
-                  <div class="content">
-								<h3>A timeline?</h3>
-
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
-								</p>
-                </div>
-							</li>
-							<li>
-                  <div class="content">
-								<h3>A railway map?</h3>
-
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
-								</p>
-                </div>
-							</li>
-							<li>
-                  <div class="content">
-								<h3>Random dots?</h3>
-
-
-								<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
-								</p>
-                </div>
-							</li>
-
-
-
-							<li>
-                  <div class="content">
-								<h3>Absolutely nothing.</h3>
-
-
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam felis, rutrum nec enim non, sodales facilisis purus. Vestibulum viverra egestas ipsum eget commodo. Nullam aliquet lorem vitae nulla dictum vestibulum sed quis tellus. Sed diam diam, facilisis tincidunt volutpat nec, auctor quis magna. Proin sed nunc iaculis ipsum scelerisque tincidunt. Cras eleifend leo tellus, fermentum finibus tortor fringilla eu.
-								</p>
-                </div>
-							</li>
-						</ul>
-
-
-
-					</div>
-
-				</section>

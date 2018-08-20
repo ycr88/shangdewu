@@ -1,0 +1,31 @@
+<div class="row_1 ">
+    <section id= "{{page.header.sectionId}} " class="container">
+        <div markdown=1 class="col-sm-4 col-xs-12">
+          <h2>{{ page.header.title }}</h2>
+          <article class="title2">{{ page.header.description }}</article>
+          </div>
+        <div  class="col-sm-8 col-xs-12">
+          {{ dump(page.header.timelineItems)}}
+        <section id="timeline" markdown="1" class=" block-content t-block-teal l-block-spacing">
+          <h2>{{page.header.timeline}}</h2>
+          <div markdown="1" class="timeline-list">
+            <ul>
+              {% for item in page.header.timelineItems %}
+                <li>
+                  <div class="content">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.description}}</p>
+                    {% if item.gallery %}
+                      {% for img in item.gallery %}
+                          <figure>{{ page.find('/images/about/fundator/').media[img] }}</figure>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+        </div>
+    </section>
+</div>

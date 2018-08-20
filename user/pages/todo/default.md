@@ -50,6 +50,8 @@ class : dev
   + ~~section school~~[full fill]
       * ~~not load the page school~~
   + ~~section fundator~~
+    - add ligthbox for the fundator timeline section
+    - scroll to the timeline
   + text about fundator
   + ~~section colaborator~~
 
