@@ -4,9 +4,9 @@ about:
   title2: Vivamus eget
   image: prof_img.png
   text: Vitaesaert asetyertya asetrde maeciegast nieri vrtye remiad.Molirnatur aut oditaut. onsq ntmagni dolores eo qui ratione. Nasgaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut.
-  readme_url: "#"
+  readme_url: "about"
   readme_text: read more
-services_title: Why whith Us!!! 
+services_title: Why whith Us!!!
 services:
   - text: muygasa kausyse
     url: "#"

@@ -4,18 +4,20 @@ class : dev
 ---
 ## Global
 * ~~create submenu for groups and about~~
-* link to the social networks
-  - need to find a set of icon for the social network
+* ~~link to the social networks~~
+  - ~~need to find a set of icon for the social network~~#[done with fontawsome ]
+  - create local copy of fontawsome in case become slow  
 * ~~read markdown in the twig from the page.headers~~
 * change the configuration of the title of the theme page.title | site.name
 * ~~git~~
-* full fill file site.yaml
+* ~~full fill file site.yaml~~
 * ~~use sass~~
 * problems using @import 'file.css'
+  - try make the @imports only to the .scss
 * custom.css dont load the change in the browser
 
 ## Home
-* ~~icon in the header~~ [fill with original]
+* ~~icon in the header~~ ~~[fill with original]~~
 * ~~delete extra onpage_menu~~
 * create the pictures for the section slider
 * welcome message
