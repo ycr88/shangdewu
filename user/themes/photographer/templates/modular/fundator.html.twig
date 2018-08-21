@@ -1,11 +1,12 @@
 <div class="row_1 ">
-    <section id= "{{page.header.sectionId}} " class="container">
+    <section id= "{{page.header.sectionId}}" class="container">
         <div markdown=1 class="col-sm-4 col-xs-12">
           <h2>{{ page.header.title }}</h2>
+          <figure>{{ page.find('/images/about/').media["about.jpg"] }}</figure>
           <article class="title2">{{ page.header.description }}</article>
+          <figure>{{ page.find('/images/about/fundator/').media["bfw.jpg"] }}</figure>
           </div>
         <div  class="col-sm-8 col-xs-12">
-          {{ dump(page.header.timelineItems)}}
         <section id="timeline" markdown="1" class=" block-content t-block-teal l-block-spacing">
           <h2>{{page.header.timeline}}</h2>
           <div markdown="1" class="timeline-list">
