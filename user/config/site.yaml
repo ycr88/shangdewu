@@ -18,28 +18,3 @@ social:
      icon: fab fa-vk
   -  url: "https://www.youtube.com/channel/UCtZfVkDXQhs6H8YxhoDbgbQ"
      icon: fab fa-youtube
-
-copyright:
-  line1: Untitl ed
-  line2: Design:
-  url: http://html5up.net
-  url_label: HTML5 UP
-
-logo:
-  text1: "Photographer"
-  text2: "by HTML5 UP"
-
-# Main Menu
-#menu:
-#  - text: "submenu"
-#    submenu:
-#      - text: "info"
-#      - text: "profile"
-#        link: "#"
-#      - text: "news"
-#        link: "#"
-#        submenu:
-#            link: "#"
-#          - text: "archive"
-#            link: "#"
-#    link: "#"
