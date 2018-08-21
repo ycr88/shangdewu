@@ -8,14 +8,14 @@ metadata:
 # Site settings
 title: ShangDeWu
 email: school@shangdewu.com
-description: "New wushu school in Minsk, for all the ages, we apply the most efetive method and modern technics of wushu, taijiquan and qigong under the tradicional principles and filosofy of this amazing art of China. We are glad to share you our expirence"
-adress: Pugachevkaya 10, Minsk 
+description: "New wushu school in Minsk, for all the ages, we apply the most effetive methods and modern technics of wushu, taijiquan and qigong under the tradicional principles and filosofy of this amazing art of China. We are glad to share you our expirence"
+adress: Pugachevkaya 10, Minsk
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  -  url: "#"
+  -  url: "https://www.facebook.com/shangdewuschool/"
      icon: facebook.png
-  -  url: "#"
-     icon: gplus.png
+  -  url: "https://vk.com/shangdewu"
+     icon: vk.png
   -  url: "#"
      icon: twitter.png
   -  url: "#"
@@ -23,11 +23,11 @@ social:
 
 social_header:
   -  url: "#"
-     icon: facebook.png
+     icon: fab fa-facebook-f
   -  url: "#"
-     icon: instagram.png
+     icon: facebook-f
   -  url: "#"
-     icon: twitter.png
+     icon: fas fa-facebook-f
 
 
 copyright:
