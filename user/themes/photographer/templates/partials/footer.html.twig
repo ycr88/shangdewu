@@ -4,7 +4,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4 footercol">
                 <ul class="social_icons clearfix">
                      {% for item  in site.social %}
-                         <li><a href="{{ item.url }}"><img src="{{ theme_url }}/img/{{ item.icon }}" alt=""></a></li>
+                         <li><a href="{{ item.url }}"><i class="{{item.icon}}"></i></a></li>
                      {% endfor %}
                 </ul>
             </div>
@@ -12,7 +12,7 @@
                 <a class="smalllogo2 logo" href="{{ base_url_absolute }}"><img src="{{ theme_url }}/img/logofooter.png" alt=""></a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 footercol">
-                <p class="footerpriv">&copy; {{ "now" | date("Y") }} &bull; <a class="privacylink" href="{{ base_url_absolute }}/privacy">Privacy policy</a></p>
+                <p class="footerpriv">&copy; {{ "now" | date("Y") }}</p>
             </div>
         </div>
     </div>

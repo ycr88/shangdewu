@@ -13,22 +13,11 @@ adress: Pugachevkaya 10, Minsk
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   -  url: "https://www.facebook.com/shangdewuschool/"
-     icon: facebook.png
-  -  url: "https://vk.com/shangdewu"
-     icon: vk.png
-  -  url: "#"
-     icon: twitter.png
-  -  url: "#"
-     icon: rss.png
-
-social_header:
-  -  url: "#"
      icon: fab fa-facebook-f
-  -  url: "#"
-     icon: facebook-f
-  -  url: "#"
-     icon: fas fa-facebook-f
-
+  -  url: "https://vk.com/shangdewu"
+     icon: fab fa-vk
+  -  url: "https://www.youtube.com/channel/UCtZfVkDXQhs6H8YxhoDbgbQ"
+     icon: fab fa-youtube
 
 copyright:
   line1: Untitl ed
