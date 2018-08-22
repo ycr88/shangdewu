@@ -12,6 +12,8 @@
                 {% do assets.addCss('theme://css/bootstrap.css') %}
                 {% do assets.addCss('theme://css/style.css') %}
                 {% do assets.addCss('theme://css/camera.css') %}
+                {% do assets.addCss('http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css') %}
+                {% do assets.addCss('http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css') %}
                 {% do assets.addCss('theme://css/custom.css') %}
                 {% do assets.addCss('theme://css/extra.css') %}
                 {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
@@ -32,7 +34,8 @@
             {% do assets.addJs('theme://js/jquery.touchSwipe.min.js') %}
             {% do assets.addJs('theme://js/jquery.equalheights.js') %}
             {% do assets.addJs('theme://js/camera.js') %}
-
+            {% do assets.addJs('http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js') %}
+            {% do assets.addJs('theme://js/custom.js') %}
             {% if browser.getBrowser == 'msie' and browser.getVersion > 9 or browser.getBrowser != 'msie' %}
                  {% do assets.addJs('theme://js/jquery.mobile.customized.min.js') %}
             {% endif %}
