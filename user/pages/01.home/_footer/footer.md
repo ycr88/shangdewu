@@ -4,7 +4,7 @@ about:
   title2: Vivamus eget
   image: prof_img.png
   text: Vitaesaert asetyertya asetrde maeciegast nieri vrtye remiad.Molirnatur aut oditaut. onsq ntmagni dolores eo qui ratione. Nasgaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut.
-  readme_url: "about"
+  readme_url: "about#fundator"
   readme_text: read more
 services_title: Why whith Us!!!
 services:

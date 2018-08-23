@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 chef row4_col">
                 <h2>{{ page.header.about.title }}</h2>
-                <figure>{{ page.media.image[trainer.image] }}</figure>
+                <figure>{{ page.find('/images/about/').media[trainer.image] }}</figure>
                 <p class="title3">{{ page.header.about.title2 }}</p>
                 <p>{{ trainer.description }}</p>
                 <a href="{{ page.header.about.readme_url }}" class="btn-link btn-link2">{{ page.header.about.readme_text }}<span></span></a>
