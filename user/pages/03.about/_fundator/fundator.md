@@ -1,11 +1,11 @@
 ---
-title : "Fundator of the school"
-description : Yuri Cabrera Reyes born in Cuba. Has trainig wushu from 12years old. Formed in the "Cuban School of Wushu and Health Qigong" school more than 20 years and Member of the International Wushu Federation(IWUF). With long expirience as a athlet and trainer in Cuba and China. From early 14 years has expirience as trainer of wushu for children, adults. For starter goups and profesionals team of Wushu, and in Belarus become a official instructor of Belarusian Wushu Federation.
+title : "О тренере"
+description : Юрий Кабрера Рейес, родился в г.Гавана, Куба. Начал постигать ушу в возрасте 12 лет. Профессионально занимался в "Кубинской Школе Ушу и оздоровительной практики Цигун", которая существует уже более 20 лет и является членом Международной федерации  ушу (IWUF). Юрий обладает большим опытом и глубокими знаниями, полученными в результате тренировок и работы тренером на Кубе и в Китае. Преподает ушу детям и взрослым, работает как с начинающими, так и с профессиональными командами. Имеет удостоверение инструктора-методиста по ушу от БФУ (Белорусской федерации ушу).
 sectionId : fundator
-timeline : a biografy
+timeline : Биография
 timelineItems :
               - title: Детство
-                description: В 6 лет начал заниматься боевыми искусствами. Сперва практиковался в борьбе, карате и дзюдо. В 12 лет начал заниматься ушу в Кубинской Школе Ушу, которая находится Китайском квартале (г.Гавана). Там начал  постигать ушу как спорт и как часть китайской культуры.
+                description: В 6 лет начал заниматься боевыми искусствами. Сперва практиковался в борьбе, карате и дзюдо. В 12 лет начал заниматься ушу в Кубинской Школе Ушу, которая находится Китайском квартале (г.Гавана). Там начал постигать ушу как спорт и как часть китайской культуры.
                 gallery:
                         - cuba2.jpg
               - title: Развитие в профессиональном ушу
