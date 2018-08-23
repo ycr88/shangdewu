@@ -26,7 +26,8 @@ class : dev
 * ~~link to about us~~
 * ~~title in section groups~~
 * ~~caption for each group~~
-  - ~~fill the caption in the groups with group.item.slug~~[not slug group description]
+  - ~~fill the caption in the groups with group.item.slug~~[not slug included group description]
+  - fill the trainer description and the trainer img from the about_fundator headers
 * style section group
 * ~~link to the page groups~~
 * ~~create section partners~~
