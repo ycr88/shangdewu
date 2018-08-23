@@ -8,13 +8,15 @@ class : dev
   - ~~need to find a set of icon for the social network~~#[done with fontawsome ]
   - create local copy of fontawsome in case become slow  
 * ~~read markdown in the twig from the page.headers~~
-* change the configuration of the title of the theme page.title | site.name
+* ~~change the configuration of the title of the theme page.title | site.name~~
 * ~~git~~
 * ~~full fill file site.yaml~~
 * ~~use sass~~
 * problems using @import 'file.css'
-  - try make the @imports only to the .scss
-* custom.css dont load the change in the browser
+  - ~~try make the @imports only to the .scss~~
+* ~~custom.css dont load the change in the browser~~[need to clear cache]
+* add ligthbox to the small pictures
+* favicon
 
 ## Home
 * ~~icon in the header~~ ~~[fill with original]~~
@@ -24,7 +26,7 @@ class : dev
 * ~~link to about us~~
 * ~~title in section groups~~
 * ~~caption for each group~~
-  - fill the caption in the groups with group.item.slug
+  - ~~fill the caption in the groups with group.item.slug~~[not slug group description]
 * style section group
 * ~~link to the page groups~~
 * ~~create section partners~~
