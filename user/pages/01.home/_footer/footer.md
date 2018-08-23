@@ -1,29 +1,26 @@
 ---
 about:
-  title: O treiner
-  title2: Vivamus eget
+  title: about the school
+  title2: O treiner
   image: prof_img.png
-  text: Vitaesaert asetyertya asetrde maeciegast nieri vrtye remiad.Molirnatur aut oditaut. onsq ntmagni dolores eo qui ratione. Nasgaesaert asetyertya asetrde maeciegast nieriti vrtye remiades.Molirnatur aut oditaut.
   readme_url: "about#fundator"
   readme_text: read more
 services_title: Why whith Us!!!
 services:
-  - text: muygasa kausyse
+  - text: Is a good chance to impruve yourself
     url: "#"
-  - text: nuyatsas lasras batsas
+  - text: Learning chinese culture
     url: "#"  
-  - text: kiaustyas
+  - text: take part in official tournament and championship
+    url: "#"    
+  - text: learning a accient culture and tradition
     url: "#"
-  - text: batresa ksate
+  - text: groupe skills and self develoment
     url: "#"
-  - text: Grerhasa mero
+  - text: practice for wellness
     url: "#"
-  - text: Lanytadas nyats
+  - text: impruve chinese language
     url: "#"
-  - text: nuyatsas lasras batsas
-    url: "#"
-  - text: batresa
-    url: "#"  
 locations:
   title: Locations
   logo: smalllogo.png
