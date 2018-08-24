@@ -11,11 +11,11 @@
               {% set groups = data.items %}
                 {% for group in groups %}
                     <li class="col-lg-4 col-md-4 col-sm-4 listbox{{ loop.index }}">
-                        <div class=" box{{group.class}}">
+                        <div class="tile group{{group.class}}">
                             <a href="#">
                               <figure>{{ page.find('/images/groups/').media[group.image] }}</figure>
-                              <div class=" to{{group.title_position}}">
-                              <p>{{ group.title }}</p>
+                              <div class="caption">
+                              <p class="title">{{ group.title }}</p>
                               <p class="description" >{{ group.description | truncate(120 , true) }}</div>
                             </a>
                         </div>

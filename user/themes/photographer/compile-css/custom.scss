@@ -22,7 +22,7 @@
         }
 
 }
-@mixin blogStyle($background: #68b2b1, $title: #fff, $text:rgba(#4e3935, 0.91)){
+@mixin blogStyle($background: #68b2b1, $title: #fff, $text: #fff){
   background:$background;
   color: $text;
   font-family: "Merriweather", sans-serif;
@@ -70,5 +70,33 @@
   }
 }
 .row_2{
-  @include blogStyle(#ff375b);
+  @include blogStyle(rgba(#288fed, 0.86));
+}
+/*--------Home section groups----------*/
+$group1: #eb5368;
+$group2 : #f1d154;
+$group3 : #5bb4d6;;
+.tile{
+  color: #ffffff;
+    .caption{
+      padding: 5px;
+      width: 95%;
+      margin: auto;
+    }
+    .title{
+      padding: 5px;
+    	}
+    .description{
+      font-size: 1.4em;
+    }
+
+}
+.group1{
+  background: $group1;
+}
+.group2{
+  background: $group2;
+}
+.group3{
+  background: $group3;
 }
