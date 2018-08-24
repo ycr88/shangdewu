@@ -6,6 +6,7 @@ class : dev
 * ~~create submenu for groups and about~~
 * ~~link to the social networks~~
   - ~~need to find a set of icon for the social network~~#[done with fontawsome ]
+  - add in the Footer sharing section
   - create local copy of fontawsome in case become slow  
 * ~~read markdown in the twig from the page.headers~~
 * ~~change the configuration of the title of the theme page.title | site.name~~
@@ -22,7 +23,7 @@ class : dev
 * ~~icon in the header~~ ~~[fill with original]~~
 * ~~delete extra onpage_menu~~
 * create the pictures for the section slider
-* welcome message
+* ~~welcome message~~
 * ~~link to about us~~
 * ~~title in section groups~~
 * ~~caption for each group~~
@@ -31,10 +32,10 @@ class : dev
 * style section group
 * ~~link to the page groups~~
 * ~~create section partners~~
-  - add confucio, innovacia, federation, alexei
+  - ~~add confucio, innovacia, federation, alexei~~
   - title
   - images
-* full fill section partner
+* ~~full fill section partner~~[in proccess]
   - basic information in the home
   - [not urgent] make a blog page for each partner
 * full fill section footer
