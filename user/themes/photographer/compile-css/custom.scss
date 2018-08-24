@@ -1,0 +1,74 @@
+@import 'images';
+@mixin styleGreen($background: #68b2b1){
+    background:$background;
+    color: #fff;
+    text-align: center;
+
+      h1, .title1{
+        font-size: 140%;
+        color: #68b2b1;
+        background: #fff;
+        line-height: 2px;
+        display: table;
+        margin: auto;
+        border-radius: 2.5em;
+        font-weight: bolder;
+        padding: 1em;
+        text-transform: uppercase;
+        margin-bottom: 1.5em;
+        }
+        p {
+          font-size: 1.5em;
+        }
+
+}
+@mixin blogStyle($background: #68b2b1, $title: #fff, $text:rgba(#4e3935, 0.91)){
+  background:$background;
+  color: $text;
+  font-family: "Merriweather", sans-serif;
+      h1, .title1{
+        color: $title;
+        font-weight: 900;
+        padding: 5px;
+        font-size: 2.2em;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+      h2{
+        font-size: 120%;
+        padding: 1.6em;
+        text-decoration: underline;
+      }
+      p, article {
+        font-size: 1.2em;
+        padding: 5px;
+        margin-bottom: 0.8em;
+      }
+
+
+}
+/*------ Shang De Wu Style-------*/
+#header .banner{
+  position: relative;
+	background:radial-gradient(circle, #e21b40d1, #e8e6d9c9, #fbeed5);
+    .adress{
+      position: absolute;
+      left: 3em;
+      bottom: 1em;
+    }
+    .social{
+      position: absolute;
+      right:2em;
+      bottom: 1em
+    }
+}
+/*------End Shang De Wu Style-------*/
+.row_1{
+  @include styleGreen();
+  p {
+    color:#fff;
+  }
+}
+.row_2{
+  @include blogStyle(#ff375b);
+}
