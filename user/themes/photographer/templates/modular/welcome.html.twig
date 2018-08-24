@@ -1,6 +1,7 @@
 <div class="row_1 {{ page.header.class }}">
     <div class="container">
-        <p class="title1">{{ page.header.title }}</p>
+      <h1>{{ page.header.title }}</h1>
+
         <p class="title2">{{ page.find('/about/_school/').header.description }}</p>
           {{ content }}
         {% for button in page.header.buttons %}
