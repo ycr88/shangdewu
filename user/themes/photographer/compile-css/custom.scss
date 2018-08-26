@@ -75,28 +75,39 @@
 /*--------Home section groups----------*/
 $group1: #eb5368;
 $group2 : #f1d154;
-$group3 : #5bb4d6;;
-.tile{
-  color: #ffffff;
-    .caption{
-      padding: 5px;
-      width: 95%;
-      margin: auto;
+$group3 : #5bb4d6;
+/*---Home Gourps List--*/
+.home-group-list{
+  li{
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #c1c1c1;
+    font-family: 'Georgia', serif;
+    padding: 0
+  }
+  & li .pic{
+      max-width: 100%;
+      max-height: none;
+      margin-bottom: 20%;
+      overflow: visible;
+          .pic-caption{
+            height: 30%;
+            top: 85%;
+            opacity: 1;
+            overflow: hidden;
+          }
+      }
+    & li .pic:hover .bottom-to-top {
+        top: 40%;
+        opacity: 0.8;
+        min-height: 60%;
     }
-    .title{
-      padding: 5px;
-    	}
-    .description{
-      font-size: 1.4em;
-    }
-
-}
-.group1{
-  background: $group1;
-}
-.group2{
-  background: $group2;
-}
-.group3{
-  background: $group3;
+      .group1 .pic-caption{
+        background: $group1;
+      }
+      .group2 .pic-caption{
+        background: $group2;
+      }
+      .group3 .pic-caption{
+        background: $group3;
+      }
 }

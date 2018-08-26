@@ -1,27 +1,26 @@
 
 {% set data = page.find('/groups/').header %}
-<div class="row_2">
+<div class="row_2 {{page.header.class}}">
     <div class="container">
       <h1> {{ page.header.title}} </h1>
       <article >
         {{ data.description }}
       </article>
-        <div class="row">
-            <ul class="list1">
-              {% set groups = data.items %}
-                {% for group in groups %}
-                    <li class="col-lg-4 col-md-4 col-sm-4 listbox{{ loop.index }}">
-                        <div class="tile group{{group.class}}">
-                            <a href="#">
-                              <figure>{{ page.find('/images/groups/').media[group.image] }}</figure>
-                              <div class="caption">
-                              <p class="title">{{ group.title }}</p>
-                              <p class="description" >{{ group.description | truncate(120 , true) }}</div>
-                            </a>
-                        </div>
-                    </li>
-                {% endfor %}
-                </ul>
+        <div class="row home-group-list">
+                <ul>
+                  {% set groups = data.items %}
+                    {% for group in groups %}
+                        <li class="col-lg-4 col-md-4 col-sm-4 ">
+                            <div class="group{{group.class}} pic">
+                                  <figure>{{ page.find('/images/groups/').media[group.image] }}</figure>
+                                  <span class="pic-caption bottom-to-top">
+                                  <p class=".pic-title">{{ group.title }}</p>
+                                  <p class="description" >{{ group.description | truncate(120 , true) }}<p>
+                                  </span>
+                            </div>
+                        </li>
+                    {% endfor %}
+                    </ul>
                 {{ content }}
 
         </div>
