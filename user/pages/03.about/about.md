@@ -1,6 +1,6 @@
 ---
-title: О Нас
-menu: about
+title: О нас
+menu: О нас
 onpage_menu: true
 body_class: index
 header_class: alt
