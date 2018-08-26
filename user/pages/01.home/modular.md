@@ -1,6 +1,6 @@
 ---
-title: Home
-menu: Home
+title: Главная
+menu: Главная
 onpage_menu: true
 body_class: index
 header_class: alt
