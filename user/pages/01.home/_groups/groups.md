@@ -1,4 +1,4 @@
 ---
 title : Our groups
-class : home_groups  
+class : home-groups  
 ---
