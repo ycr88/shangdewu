@@ -1,6 +1,6 @@
 ---
-title : "School Shang De Wu"
-description : ShangdeWU is an school to study wushu and traditional chinese exersices. We apply the most effetive methods and modern technics of wushu, taijiquan and qigong under the tradicional principles and filosofy of this amazing art of China Our lessons have program from small age and youth guide by the official programs of the IWuf created in the chineses sport intitute. For Adults the study is based in learning traditional chinese exercies like the style of wushu Taichiquan, exercices of the system Healt's Qigong , System daoyingyangshengong, and other trainig programs already impruved with great success in china and many contries to grow up on the good phisical condition and wellness(влагостояние). 
+title : "Школа ShangDeWu"
+description : ShangDeWu - это школа Ушу и традиционной китайской гимнастики. У нас применяются самые эффективные методы и новейшие техники обучения Ушу, Тайцзицюань и Цигун, в соответствии с китайскими традициями и философией. Наши программы занятий для детей и молодежи созданы на основе официальной программы IWUF. Занятия для взрослых предполагают изучение традиционной китайской гимнастики Тайцзицюань, оздоровительной дыхательной гимнастики Цигун, системы Даоин и других практик, улучшающих физическое и духовное состояние человека. Данные практики успешно применяются и пользуются огромной популярностью не только в Китае, но и во всем мире.
 sectionId : collaborator
 template : modular/about
 ---
