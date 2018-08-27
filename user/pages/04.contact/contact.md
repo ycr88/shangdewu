@@ -1,6 +1,6 @@
 ---
-menu : Contact & information
-slug : contact-and-info
+menu : Контакты
+slug : контакты
 class : contact-page
 template : default
 ---
