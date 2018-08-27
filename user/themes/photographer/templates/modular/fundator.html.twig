@@ -1,11 +1,6 @@
 <div class="row_1 ">
     <section id= "{{page.header.sectionId}}" class="container">
         <div markdown=1 class="col-sm-4 col-xs-12">
-          <div class="row" id="default-demo">
-            <div class="col-xs-4"><a href="http://placekitten.com/1000/600" target="_blank" class="thumbnail"><img src="http://placekitten.com/1000/600" alt=""></a></div>
-            <div class="col-xs-4"><a href="http://placekitten.com/1010/606" target="_blank" class="thumbnail"><img src="http://placekitten.com/1010/606" alt=""></a></div>
-            <div class="col-xs-4"><a href="http://placekitten.com/1060/636" target="_blank" class="thumbnail"><img src="http://placekitten.com/1060/636" alt=""></a></div>
-          </div>
           <h2>{{ page.header.title }}</h2>
           <figure class="fundator-img">{{ page.find('/images/about/').media[page.header.image] }}</figure>
           <article class="title2">{{ page.header.description }}</article>
@@ -24,7 +19,7 @@
                     {% if item.gallery %}
                     <div class="timeline-gallery">
                       {% for img in item.gallery %}
-                          <figure>{{ page.find('/images/about/fundator/').media[img] }}</figure>
+                          <a class="thumbnail" href="{{page.find('/images/about/fundator/').media[img].url}}" target="_blank">{{ page.find('/images/about/fundator/').media[img] }}</a>
                       {% endfor %}
                     </div>
                     {% endif %}

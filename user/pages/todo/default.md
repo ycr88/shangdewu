@@ -14,9 +14,9 @@ class : dev
 * ~~full fill file site.yaml~~
 * ~~use sass~~
 * problems using @import 'file.css'
-  - ~~try make the @imports only to the .scss~~
+  - ~~try make the @imports only to the .scss~~[solved]
 * ~~custom.css dont load the change in the browser~~[need to clear cache]
-* add ligthbox to the small pictures
+* ~~add ligthbox to the small pictures~~
 * favicon
 
 ## Home
@@ -67,9 +67,6 @@ class : dev
    -~~page group by section to each groups~~
   + ~~use de image of gallery form the folder /images/name-of-the-gallery~~
   + ~~refine the structure of the headers~~
-
-
-
 
 
 
