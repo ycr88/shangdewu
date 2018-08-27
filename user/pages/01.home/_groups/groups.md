@@ -1,4 +1,4 @@
 ---
-title : Our groups
+title : Наши группы
 class : home-groups  
 ---
