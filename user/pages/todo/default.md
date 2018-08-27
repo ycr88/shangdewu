@@ -17,6 +17,7 @@ class : dev
   - ~~try make the @imports only to the .scss~~[solved]
 * ~~custom.css dont load the change in the browser~~[need to clear cache]
 * ~~add ligthbox to the small pictures~~
+    - add also to single images
 * favicon
 
 ## Home

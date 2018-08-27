@@ -1,15 +1,16 @@
-<div class="row_1 ">
-    <section id= "{{page.header.sectionId}}" class="container">
-        <div markdown=1 class="col-sm-4 col-xs-12">
-          <h2>{{ page.header.title }}</h2>
-          <figure class="fundator-img">{{ page.find('/images/about/').media[page.header.image] }}</figure>
-          <article class="title2">{{ page.header.description }}</article>
+<div id= "{{page.header.sectionId}}" class="{{page.header.class}}">
+    <section  class="container">
+      <h1>{{ page.header.title }}</h1>
+        <section  class="col-sm-4 col-xs-12 resume">
+          <h2 class="title1">{{ page.header.title }}</h1>
+          <figure class="fundator-img">{{ page.find('/images/about/').media[page.header.image].html('','','img-responsive img-circle') }}</figure>
+          <article class="description">{{ page.header.description }}</article>
           <figure>{{ page.find('/images/about/fundator/').media["bfw.jpg"] }}</figure>
-          </div>
-        <div  class="col-sm-8 col-xs-12">
-        <section id="timeline" markdown="1" class=" block-content t-block-teal l-block-spacing">
-          <h2>{{page.header.timeline}}</h2>
-          <div markdown="1" class="timeline-list">
+        </section>
+        <section  class="col-sm-8 col-xs-12 bio">
+        <div id="timeline" class=" block-content t-block-teal l-block-spacing">
+          <h2 class="title1">{{page.header.timeline}}</h2>
+          <div class="timeline-list">
             <ul>
               {% for item in page.header.timelineItems %}
                 <li>
@@ -28,7 +29,7 @@
               {% endfor %}
             </ul>
           </div>
-        </section>
         </div>
+      </section>
     </section>
 </div>

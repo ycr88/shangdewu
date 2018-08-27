@@ -5,7 +5,7 @@
 
 {% block content %}
     {{ page.content }}
-    <div id="content">
+    <div id="content" class="{{page.header.class}}">
         {% for module in page.collection() %}
                 {{ module.content }}
         {% endfor %}

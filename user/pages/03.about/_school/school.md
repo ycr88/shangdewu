@@ -5,9 +5,9 @@ class: section-school
 sectionId : school
 template : modular/about
 ---
-  ## Our school vision
+  # Our school vision
 The world of wushu and the traditional chinese practice, give to the people confort and wellness and strength.in our vision should be open for everybody. Wushu and qigong are direfentes concepts and in the practice need be together.
 ShanDewu(**caracteres**) means (**carateres chinos**)  to the ethic and the moral guide the wushu practica.
-![ values for wushu](/images/about/moral.jpg){.img-responsive .vision-moral single-ligthbox}
+![ values for wushu](/images/about/moral.jpg){.img-responsive .vision-moral}
 
 Ethical principles serve as the traditional, cultural and social standard by which practitioners are trained in the martial arts.The primary goal of learning martial arts is to become a better person who lives with a greater understanding of society, and also a greater expectation of a sincere life.
