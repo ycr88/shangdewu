@@ -2,6 +2,7 @@
 title: О нас
 menu: О нас
 onpage_menu: true
+class: page-about
 body_class: index
 header_class: alt
 content:
