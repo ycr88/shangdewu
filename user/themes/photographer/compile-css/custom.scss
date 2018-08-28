@@ -1,55 +1,5 @@
 @import 'images';
-@mixin styleGreen($background: #68b2b1, $secondColor: #fff){
-    background:$background;
-    color: $secondColor;
-    text-align: center;
-    padding-bottom: 2em;
-      h1, .title1{
-        font-size: 140%;
-        color: $background;
-        background: $secondColor;
-        line-height: 2px;
-        display: table;
-        margin: auto;
-        border-radius: 2.5em;
-        font-weight: bolder;
-        padding: 1em;
-        text-transform: uppercase;
-        margin-bottom: 1.5em;
-        }
-        article, p {
-          color: $secondColor;
-          font-size: 1.5em;
-          line-height: normal;
-        }
-
-}
-@mixin blogStyle($background: #68b2b1, $title: #fff, $text: #fff){
-  background:$background;
-  color: $text;
-  padding-bottom: 2em;
-  font-family: "Merriweather", sans-serif;
-      h1, .title1{
-        color: $title;
-        font-weight: 900;
-        padding: 5px;
-        font-size: 2.2em;
-        margin: auto;
-        margin-bottom: 10px;
-      }
-      h2{
-        font-size: 120%;
-        padding: 1.6em;
-        text-decoration: underline;
-      }
-      p, article {
-        font-size: 1.2em;
-        padding: 5px;
-        margin-bottom: 0.8em;
-      }
-
-
-}
+@import 'mixins';
 /*------Header Shang De Wu Style-------*/
 #header .banner{
   position: relative;
@@ -83,6 +33,9 @@
     .content{
       padding-top: 2em;
     @include styleGreen(#fff, #ff375b);
+    img{
+      @include center;
+    }
     }
   }
   .fundator{
