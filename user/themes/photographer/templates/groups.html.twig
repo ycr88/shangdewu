@@ -8,7 +8,7 @@
              </section>
              <section class="groups-section">
                {% for group in page.header.items %}
-                       <section id="{{group.id}}" class="group {{group.class}}">
+                       <section id="{{group.id}}" class="group group{{group.class}}">
                          <h1> {{group.title}} </h1>
                          <figure>{{ page.media[group.image] }}</figure>
                          <article class="description">

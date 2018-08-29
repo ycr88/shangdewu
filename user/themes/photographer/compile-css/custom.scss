@@ -118,3 +118,17 @@ $group3 : #5bb4d6;
         background: $group3;
       }
 }
+/*---------Page groups----------------*/
+ .page-group{
+     .groups-section{
+         .group1{
+           @include blogStyle($group1);
+         }
+         .group2{
+           @include blogStyle($group2);
+         }
+         .group3{
+           @include blogStyle($group3);
+         }
+     }
+ }

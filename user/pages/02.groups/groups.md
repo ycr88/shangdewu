@@ -1,6 +1,6 @@
 ---
 title : Группы
-class : page_group
+class : page-group
 submenu: true
 slug : группы-и-расписание
 description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
