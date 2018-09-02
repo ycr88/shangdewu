@@ -17,9 +17,9 @@ $('.timeline-gallery').slickLightbox({
     useHistoryApi: 'true'
   });
 
-$('.slide-ligthbox').slick({
+$('.slider-lightbox').slick({
   infinite: true,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [
     {
@@ -31,10 +31,10 @@ $('.slide-ligthbox').slick({
 
   ]
 });
-$('.single-ligthbox').slickLightbox({
+$('.single-lightbox').slickLightbox({
   useHistoryApi: 'true'
 });
-$('.slide-ligthbox').slickLightbox({
+$('.slider-lightbox').slickLightbox({
   useHistoryApi: 'true'
 });
 

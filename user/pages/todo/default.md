@@ -17,8 +17,8 @@ class : dev
   - ~~try make the @imports only to the .scss~~[solved]
 * ~~custom.css dont load the change in the browser~~[need to clear cache]
 * ~~add ligthbox to the small pictures~~
-    - add also to single images
-* favicon
+    - ~~add also to single images~~
+* ~~favicon~~
 
 ## Home
 * ~~icon in the header~~ ~~[fill with original]~~
@@ -29,8 +29,8 @@ class : dev
 * ~~title in section groups~~
 * ~~caption for each group~~
   - ~~fill the caption in the groups with group.item.slug~~[not slug included group description]
-  - fill the trainer description and the trainer img from the about_fundator headers
-* style section group
+  - ~~fill the trainer description and the trainer img from the about_fundator headers~~
+* ~~style section group~~
 * ~~link to the page groups~~
 * ~~create section partners~~
   - ~~add confucio, innovacia, federation, alexei~~
@@ -39,7 +39,7 @@ class : dev
 * ~~full fill section partner~~[in proccess]
   - basic information in the home
   - [not urgent] make a blog page for each partner
-* full fill section footer
+* ~~full fill section footer~~
 * ~~create section register~~
   + ~~form from google forms~~[fill with original]
   + create section comments
@@ -48,8 +48,8 @@ class : dev
              > text      
             autor
 
-+ full fill subsection "why with us"
-+ full fill subsection " contact" adress, mail, ..?
++ ~~full fill subsection "why with us"~~
++ ~~full fill subsection " contact" adress, mail, ..?~~
 + link to the section /about us#fundator
 
 ## About

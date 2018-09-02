@@ -21,14 +21,10 @@
                            {% endfor %}
                             </ul>
                           </div>
-                          <div class="gallery">
-                            <div class="slider">
-                                <div class="camera_wrap">
-                                    {% for item in page.find('/images/groups/gallery-'~group.id).media.images %}
-                                        <div data-src="{{ item.url }}"></div>
-                                    {% endfor %}
-                                </div>
-                            </div>
+                          <div class="group-gallery slider-lightbox">
+                            {% for img in page.find('/images/groups/gallery-'~group.id).media.images %}
+                              <a class="thumbnail" href="{{img.url}}" target="_blank">{{ img}}</a>
+                            {% endfor %}
                           </div>
                        </section>
                {% endfor %}
