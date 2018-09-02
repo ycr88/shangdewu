@@ -80,10 +80,14 @@
   }
 }
 /*--------Home section groups----------*/
+$groupBaseColor:rgba(#288fed, 0.86);
 $group1: #eb5368;
 $group2 : #f1d154;
 $group3 : #5bb4d6;
 /*---Home Gourps List--*/
+.home-groups{
+  @include blogStyle($groupBaseColor);
+}
 .home-group-list{
   li{
     color: #ffffff;
@@ -120,15 +124,30 @@ $group3 : #5bb4d6;
 }
 /*---------Page groups----------------*/
  .page-group{
-     .groups-section{
-         .group1{
-           @include blogStyle($group1);
-         }
-         .group2{
-           @include blogStyle($group2);
-         }
-         .group3{
-           @include blogStyle($group3);
-         }
+   background: $groupBaseColor;
+     .container{
+       max-width: 100%;
+       section{
+         padding-top: 1em;
+         padding-bottom: 1em;
+       }
      }
+     & .header{
+       @include styleGreen($groupBaseColor);
+       background: none;
+     }
+     & .group{
+       text-align: center;
+
+     }
+     .group1{
+        @include blogStyle($group1);
+        }
+      .group2{
+          @include blogStyle($group2);
+        }
+     .group3{
+          @include blogStyle($group3);
+       }
+
  }

@@ -1,7 +1,7 @@
 {% extends 'partials/base.html.twig' %}
 {% block content %}
-    <div id="content">
-            <div class="container {{ page.class }}">
+    <div id="content" class="{{ page.header.class }}">
+            <div class="container">
             <section class="header">
                  <h1>{{ page.title }}</h1>
                  <article>{{ page.find('/groups/').header.description }} </article>
@@ -24,7 +24,6 @@
                           <div class="gallery">
                             <div class="slider">
                                 <div class="camera_wrap">
-
                                     {% for item in page.find('/images/groups/gallery-'~group.id).media.images %}
                                         <div data-src="{{ item.url }}"></div>
                                     {% endfor %}
