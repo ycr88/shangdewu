@@ -5,7 +5,10 @@
           <h2 class="title1">{{ page.header.title }}</h1>
           <figure class="fundator-img">{{ page.find('/images/about/').media[page.header.image].html('','','img-responsive img-circle') }}</figure>
           <article class="description">{{ page.header.description }}</article>
-          <figure>{{ page.find('/images/about/fundator/').media["bfw.jpg"] }}</figure>
+        <div class="single-ligthbox">
+              <a class="thumbnail" href="{{page.find('/images/about/fundator/').media["bfw.jpg"].url}}" target="_blank">
+              {{ page.find('/images/about/fundator/').media["bfw.jpg"]}}</a>
+          </div>
         </section>
         <section  class="col-sm-8 col-xs-12 bio">
         <div id="timeline" class=" block-content t-block-teal l-block-spacing">
@@ -20,8 +23,8 @@
                     {% if item.gallery %}
                     <div class="timeline-gallery">
                       {% for img in item.gallery %}
-                          <a class="thumbnail" href="{{page.find('/images/about/fundator/').media[img].url}}" target="_blank">{{ page.find('/images/about/fundator/').media[img] }}</a>
-                      {% endfor %}
+                        <a class="thumbnail" href="{{page.find('/images/about/fundator/').media[img].url}}" target="_blank">{{ page.find('/images/about/fundator/').media[img] }}</a>
+                    {% endfor %}
                     </div>
                     {% endif %}
                   </div>

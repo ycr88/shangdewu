@@ -57,9 +57,9 @@ class : dev
   + ~~section school~~[full fill]
       * ~~not load the page school~~
   + ~~section fundator~~
-    - add ligthbox for the fundator timeline section
-    - scroll to the timeline
-  + text about fundator
+    - ~~add ligthbox for the fundator timeline section~~
+    - ~~scroll to the timeline~~
+    - ~~text about fundator~~
   + ~~section colaborator~~
 
 
@@ -68,6 +68,7 @@ class : dev
    -~~page group by section to each groups~~
   + ~~use de image of gallery form the folder /images/name-of-the-gallery~~
   + ~~refine the structure of the headers~~
+  + add the slick to the gallery
 
 
 

@@ -1,5 +1,6 @@
 @import 'images';
 @import 'mixins';
+
 /*------Header Shang De Wu Style-------*/
 #header .banner{
   position: relative;
@@ -19,7 +20,6 @@
 
 .row_1{
   @include styleGreen();
-
 }
 .row_2{
   @include blogStyle(rgba(#288fed, 0.86));
@@ -40,6 +40,7 @@
   }
   .fundator{
     background: #ffffff;
+    padding-bottom: 1.5em;
     h1{
       color:#ff375b;
       text-align: center;
@@ -151,3 +152,6 @@ $group3 : #5bb4d6;
        }
 
  }
+
+ /**********MEDIA QUERY************/
+@import 'media';
