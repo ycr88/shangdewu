@@ -14,13 +14,18 @@
                          <article class="description">
                            {{group.description}}
                           </article>
-                          <div class="program">
+                          <div class="program styled-list">
                             <h3>Программа</h3>
+                            <div class="list-content">
                             <ul>
                            {% for item in group.program %}
-                              <li>{{ item }}</li>
+                              <li>
+                                 <div class="content">
+                              {{ item }}</div>
+                            </li>
                            {% endfor %}
                             </ul>
+                          </div>
                           </div>
                           <div class="group-gallery slider-lightbox">
                             {% for img in page.find('/images/groups/gallery-'~group.id).media.images %}

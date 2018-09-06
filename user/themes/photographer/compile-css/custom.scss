@@ -19,7 +19,7 @@
 /*------End Header-------*/
 
 .row_1{
-  @include styleGreen();
+  @include styleGreen;
 }
 .row_2{
   @include blogStyle(rgba(#288fed, 0.86));
@@ -147,14 +147,23 @@ $group3 : #5bb4d6;
           padding: 1em;
         }
      }
+     .program{
+       width: 90%;
+    margin: auto;
+    border: solid 3.5px grey;
+    border-radius: 0.8em;
+     }
      .group1{
         @include blogStyle($group1);
+        @include styledList($group1);
         }
       .group2{
           @include blogStyle($group2);
+          @include styledList($group2);
         }
      .group3{
           @include blogStyle($group3);
+          @include styledList($group3);
        }
 
  }
