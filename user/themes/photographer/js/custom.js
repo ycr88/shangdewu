@@ -21,15 +21,6 @@ $('.slider-lightbox').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 481,
-      settings: {
-        slidesToShow: 1,
-        }
-    }
-
-  ]
 });
 $('.single-lightbox').slickLightbox({
   useHistoryApi: 'true'
