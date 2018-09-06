@@ -9,24 +9,30 @@ items:
         id: starter
         class: 1
         title: Начинаюшие
-        description : 2 lines text
+        description : Занятия рассчитаны на детей и подростков (мальчиков и девочек, юношей и девушек) без специальной спортивной подготовки. Ученики овладеют базовыми элементами стиля 长拳 Чанцюань (длинный кулак), научатся элементам работы с шестом 棍 Гунь, принадлежащих к стилям северного Китая. В течение всего курса также будут изучать базовые техники Тайцзицюань, Цигун и Медитации.<br>Когда ученик добьется хороших результатов, он будет рекомендован в группу Продолжающих обучение, для овладения другими стилями Ушу.<br>Ученики, начинающие занятия в нашей Школе боевых искусств и китайской традиционной гимнастики, сперва пройдут общую подготовку по развитию базовых навыков, необходимых для занятий Ушу. К ним относятся растяжка, координация движений, скорость реакции, выносливость, сила, работа в группе, самостоятельность и др.
         program :
-                - даошу
-                - shipengong
-                - otros
+                - 长拳 Чанцюань 
+                - 棍术 Искусство владения Гунь              
       - image: page1_img2.jpg
         id: advanced
         class: 2
         title: Продолжающие
-        description : 2 lines text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        description : Эта группа предназначена для детей, у которых уже есть хорошие базовые знания Ушу. На занятиях мы будем изучать новые стили, делать упражнения для улучшения техники и развития навыков и способностей.
         program :
-                - dashu
-                - shipengong
-                - otros
+                - Даошу (Сабля (короткое оружие) 
+                -  Наньцюань (Южный кулак - стиль Ушу,
+                - Тайцзицюань
+                - Стиль Чанцюань (официальная форма)
       - image: page1_img3.jpg
         id : adults
         class: 3
         title: Взрослые
-        description : 2 lines text
+        description :Занятия Тайцзицюань и Цигун помогают развить внутренние и физические силы, обрести спокойствие и ясность мысли, контролировать поток энергии.<br>ЗАНЯТИЯ ДЛЯ МОЛОДЕЖИ И ВЗРОСЛЫХ. ФИЗИЧЕСКОЕ СОСТОЯНИЕ ЗНАЧЕНИЯ НЕ ИМЕЕТ.
+        program :
+                - Тайцзицюань 24 формы 太极拳 
+                - Тайцзикунгфушан 太极功夫扇 - тайцзи с веером
+                - Базовые элементы стиля Чэнь 陳氏太极拳
+                - Базовые элементы Тайцзицзянь 太极剑
+                
 ---
 [comments]: # (the images location is pages/images/groups/gallery+$item.id)
