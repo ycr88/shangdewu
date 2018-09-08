@@ -3,7 +3,7 @@ title : Группы
 class : page-group
 submenu: true
 slug : группы-и-расписание
-description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+description : We follow the philosofy of training wushu as a groups activity, and with the practice  of the Martial Art we cultivate a good comunication, friendship and good social relation. The composition of the groups is acording with age, we have groups for children  and for adults. In the practice of wushu we no make diference betwen girls or boys, woman or men, the trainig process is open for all.<br> all the tecnics are acording with the officials wushu programs of china, and the system and syles are oriented by methology of their creators or by offcial organization in china.
 items:
       - image: page1_img1.jpg
         id: starter
@@ -35,4 +35,14 @@ items:
                 - <strong>Базовые элементы Тайцзицзянь 太极剑</strong>(Комплексы упражнений с мечом Цзянь)
 
 ---
+[section name="requirements"]
+<div markdown=1 class="requirements-list styled-list">
+  ## Требования к присутствию на занятиях:
+<div markdown="1" class="list-content">
+  * [div class="content"] Медицинская справка [/div]
+  * [div class="content"] Кеды со шнурками [/div]
+  * [div class="content"] Cпортивная форма (штаны и футболка) [/div]
+</div>
+</div>
+[/section]
 [comments]: # (the images location is pages/images/groups/gallery+$item.id)

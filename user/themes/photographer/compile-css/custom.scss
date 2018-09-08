@@ -133,10 +133,36 @@ $group3 : #5bb4d6;
          padding-bottom: 1em;
        }
      }
-     & .header{
+     .header{
        @include styleGreen($groupBaseColor);
        background: none;
+       padding: 1.5em;
+       .requirements{
+         padding: 1.5em;
+
+          @include styledList(rgb(232, 108, 38));
+          .requirements-list{
+            padding: 0 ;
+            border: solid 3.5px rgb(232, 108, 38);
+            border-radius: 0.8em;
+             h2{
+               color: $groupBaseColor;
+               font-size:1.2em;
+             }
+          }
+          .requirements-list .list-content:before{
+           height: 80%;
+          }
+          .requirements-list .list-content:after{
+           background: none;
+           border: none;
+
+          }
+         }
      }
+
+
+
      & .group{
        text-align: center;
         .group-gallery{

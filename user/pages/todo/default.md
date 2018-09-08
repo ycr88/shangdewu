@@ -68,9 +68,10 @@ class : dev
    -~~page group by section to each groups~~
   + ~~use de image of gallery form the folder /images/name-of-the-gallery~~
   + ~~refine the structure of the headers~~
-  + add the slick to the gallery
+  + ~~add the slick to the gallery~~
+  + Add images in the git to the deploy
 
 
 
 
-!!!* delete todo page
+!!!* delete todo pages

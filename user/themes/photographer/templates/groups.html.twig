@@ -3,8 +3,16 @@
     <div id="content" class="{{ page.header.class }}">
             <div class="container">
             <section class="header">
-                 <h1>{{ page.title }}</h1>
-                 <article>{{ page.find('/groups/').header.description }} </article>
+                 <h1>{{page.title}}</h1>
+                 <article class="description">{{page.find('/groups/').header.description }}</article>
+                 <article class="requirements">
+                  <div class="row">
+                    <div class="col-sm-4">
+                     {{ shortcode.section.requirements}}
+                   </div>  
+                  </div>
+
+                 </article>
              </section>
              <section class="groups-section">
                {% for group in page.header.items %}
@@ -34,9 +42,6 @@
                           </div>
                        </section>
                {% endfor %}
-             </section>
-             <section class="schedule">
-
              </section>
 
      </div>
