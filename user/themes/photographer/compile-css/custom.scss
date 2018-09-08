@@ -24,6 +24,11 @@
 .row_2{
   @include blogStyle(rgba(#288fed, 0.86));
 }
+/****HOME***/
+.phone-icon img{
+               padding: 2px;
+               border-radius:50%;
+             }
 /*---------page about---------*/
 .page-about{
   .section-school{
@@ -32,7 +37,7 @@
     }
     .content{
       padding-top: 2em;
-    @include styleGreen(#fff, #ff375b);
+    @include styleGreen(#fff,#241f20);
     img{
       @include center;
     }
@@ -90,9 +95,8 @@ $group3 : #5bb4d6;
   @include blogStyle($groupBaseColor);
 }
 .home-group-list{
-  li{
+  li p{
     color: #ffffff;
-    text-shadow: 1px 1px 2px #c1c1c1;
     font-family: 'Georgia', serif;
     padding: 0
   }
@@ -106,12 +110,18 @@ $group3 : #5bb4d6;
             top: 85%;
             opacity: 1;
             overflow: hidden;
+              .pic-title{
+                text-decoration: underline;
+              }
           }
       }
     & li .pic:hover .bottom-to-top {
         top: 40%;
         opacity: 0.8;
-        min-height: 60%;
+        min-height: 80%;
+        p{
+            text-shadow: 1px 1px 2px #080c11;
+        }
     }
       .group1 .pic-caption{
         background: $group1;
@@ -139,7 +149,6 @@ $group3 : #5bb4d6;
        padding: 1.5em;
        .requirements{
          padding: 1.5em;
-
           @include styledList(rgb(232, 108, 38));
           .requirements-list{
             padding: 0 ;
@@ -160,9 +169,6 @@ $group3 : #5bb4d6;
           }
          }
      }
-
-
-
      & .group{
        text-align: center;
         .group-gallery{
