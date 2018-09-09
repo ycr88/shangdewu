@@ -26,9 +26,25 @@
 }
 /****HOME***/
 .phone-icon img{
-               padding: 2px;
                border-radius:50%;
              }
+.home-contact{
+  a{
+    display: inline-flex;
+  }
+   li {
+     margin-bottom: 0.8em;
+     padding: 0.2em
+   }
+   .phone-icon{
+     font-size: 1.4em;
+margin-left: 5px;
+margin-top: -5px;
+   }
+   .icon-viber{
+     color:#9c36b5;
+   }
+}
 /*---------page about---------*/
 .page-about{
   .section-school{
