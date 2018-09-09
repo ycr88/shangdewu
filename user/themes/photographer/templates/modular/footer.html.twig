@@ -1,25 +1,27 @@
 {% set trainer =  page.find('/about/_fundator/').header %}
-<div class="row_4 {{page.header.class}}">
+<div class="{{page.header.class}}">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 chef row4_col">
-                <p class="title3">{{ page.header.about.title2 }}</p>
-                <figure>{{ page.find('/images/about/').media[trainer.image].html('','','img-circle') }}</figure>
-                <p>{{ trainer.description }}</p>
-                <a href="{{ page.header.about.readme_url }}" class="btn-link btn-link2">{{ page.header.about.readme_text }}<span></span></a>
-            </div>
-            <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-3 col-md-3 col-sm-3 row4_col">
-                <h2>{{ page.header.services_title }}</h2>
-                <ul class="list2">
-                    {% for item in page.header.services %}
-                       <li><a>{{ item.text }}</a></li>
-                   {% endfor %}
-               </ul>
-           </div>
-           <div class="home-contact col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-3 col-md-3 col-sm-3 locations row4_col">
-            <h2>{{ page.header.locations.title }}</h2>
+          <div class="home-trainer home-footer-col col-sm-4 col-xs-12">
+            <h3>{{ page.header.about.title2 }}</h3>
+            <article><figure>{{ page.find('/images/about/').media[trainer.image].html('','','img-circle pull-left') }}</figure>
+            {{ trainer.description }}</article>
+            <a href="{{ page.header.about.readme_url }}" class="btn-link btn-link2">{{ page.header.about.readme_text }}<span></span></a>
+
+          </div>
+          <div class="services home-footer-col col-sm-4 col-xs-12">
+            <h3>{{ page.header.services_title }}</h3>
+            <ul class="fa-ul">
+                {% for item in page.header.services %}
+                   <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span><a>{{ item.text }}</a></li>
+               {% endfor %}
+           </ul>
+          </div>
+          <div class="home-contact home-footer-col col-sm-4 col-xs-12">
+            <h3>{{ page.header.locations.title }}</h3>
             <p class="title4">{{ site.address }}</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d9399.06128651626!2d27.56928888351823!3d53.91814602033891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x46dbcfa38b763669%3A0x44d9a466fb3bbfb8!2sPloshchad%27+Yakuba+Kolasa!3m2!1d53.915416699999994!2d27.5830031!4m5!1s0x46dbcfa2e35c0a85%3A0x378b9f8be64363d8!2svulica+Puha%C4%8Do%C5%ADskaja+10%2C+Minsk+220089!3m2!1d53.9159651!2d27.5762066!5e0!3m2!1ses!2sby!4v1534863683826" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d9399.06128651626!2d27.56928888351823!3d53.91814602033891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x46dbcfa38b763669%3A0x44d9a466fb3bbfb8!2sPloshchad%27+Yakuba+Kolasa!3m2!1d53.915416699999994!2d27.5830031!4m5!1s0x46dbcfa2e35c0a85%3A0x378b9f8be64363d8!2svulica+Puha%C4%8Do%C5%ADskaja+10%2C+Minsk+220089!3m2!1d53.9159651!2d27.5762066!5e0!3m2!1ses!2sby!4v1534863683826" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
             <hr class="line1">
             <ul class="fa-ul fa-lg">
               <li><a href="mailto:{{ site.email }}">
@@ -30,11 +32,9 @@
                   <span  class="fa-li"><i class="fas fa-phone"></i></span>+375333627666
                   <span class="phone-icon icon-mtc">{{page.find('/images').media['mtc.png']}}</span>
                  <span class="phone-icon icon-viber fab fa-viber"></span></a>
-
                 </a>
               </li>
             </ul>
-        </div>
+          </div>
     </div>
-</div>
 </div>

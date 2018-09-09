@@ -25,26 +25,70 @@
   @include blogStyle(rgba(#288fed, 0.86));
 }
 /****HOME***/
-.phone-icon img{
-               border-radius:50%;
-             }
-.home-contact{
-  a{
-    display: inline-flex;
+  .home-footer{
+    background: #fff;
+    .home-footer-col{
+      padding: 1em;
+    }
+    h3{
+      text-align: center;
+      padding: 5px;
+      font-size: 1.2em
+    }
+    .home-trainer{
+      @include blogStyle(#fff,rgb(11, 11, 9), rgb(78, 83, 88));
+
+      & article{
+        font-size: 1em;
+      }
+      img{
+        padding: 5px;
+      }
+    }
+    .services{
+      h3{
+        margin: 2em;
+      }
+      li{
+        padding-bottom: 0.5em;
+        span{
+          color:rgb(241, 77, 66);
+        }
+        a{
+          text-decoration: none;
+          color:rgb(78, 83, 88);
+        }
+      }
+    }
+    .home-contact{
+      a{
+        display: inline-flex;
+      }
+      .map{
+        @include center;
+        border: solid 4px #4e5358;
+        border-radius: 8px;
+      }
+       li {
+         margin-bottom: 0.8em;
+         padding: 0.2em
+       }
+       .phone-icon{
+         font-size: 1.4em;
+    margin-left: 5px;
+    margin-top: -5px;
+    text-decoration: none;
+        img{
+           border-radius:50%;
+                    }
+       }
+       .icon-viber{
+         color:#9c36b5;
+       }
+    }
   }
-   li {
-     margin-bottom: 0.8em;
-     padding: 0.2em
-   }
-   .phone-icon{
-     font-size: 1.4em;
-margin-left: 5px;
-margin-top: -5px;
-   }
-   .icon-viber{
-     color:#9c36b5;
-   }
-}
+
+
 /*---------page about---------*/
 .page-about{
   .section-school{
@@ -206,8 +250,8 @@ $group3 : #5bb4d6;
         @include styledList($group1);
         }
       .group2{
-          @include blogStyle($group2);
-          @include styledList($group2);
+          @include blogStyle($group2,$groupBaseColor,$groupBaseColor);
+          @include styledList($groupBaseColor);
         }
      .group3{
           @include blogStyle($group3);
