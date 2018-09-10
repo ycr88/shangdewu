@@ -1,4 +1,3 @@
-@import 'images';
 @import 'mixins';
 
 /*------Header Shang De Wu Style-------*/
@@ -13,7 +12,7 @@
     .social{
       position: absolute;
       right:2em;
-      bottom: 1em
+      bottom: 1em;
     }
 }
 /*------End Header-------*/
@@ -225,7 +224,9 @@ $group3 : #5bb4d6;
           .requirements-list .list-content:after{
            background: none;
            border: none;
-
+          }
+          .prices{
+            @include blogStyle(rgb(254, 103, 108),'',$groupBaseColor);
           }
          }
      }

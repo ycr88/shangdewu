@@ -2,8 +2,8 @@
     <section  class="container">
       <h1>{{ page.header.title }}</h1>
         <section  class="col-sm-4 col-xs-12 resume">
-          <h2 class="title1">{{ page.header.title }}</h1>
-          <figure class="fundator-img">{{ page.find('/images/about/').media[page.header.image].html('','','img-responsive img-circle') }}</figure>
+          <h2 class="title1">{{ page.header.resumeTitle }}</h1>
+          <figure class="fundator-img">{{ page.find('/images/about/').media[page.header.image].html('','','img-responsive img-circle pull-left') }}</figure>
           <article class="description">{{ page.header.description }}</article>
         <div class=".single-lightbox">
               <a class="thumbnail" href="{{page.find('/images/about/fundator/').media["bfw.jpg"].url}}" target="_blank">
