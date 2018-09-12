@@ -152,6 +152,13 @@ $group3 : #5bb4d6;
 /*---Home Gourps List--*/
 .home-groups{
   @include blogStyle($groupBaseColor);
+  .description{
+
+    a{
+      @include pillShape($groupBaseColor,#fff,0.8em);
+      margin-top: 1.2em;
+    }
+  }
 }
 .home-group-list{
   li p{
@@ -190,7 +197,7 @@ $group3 : #5bb4d6;
         opacity: 0.8;
         min-height: 80%;
         p{
-            text-shadow: 1px 1px 2px #080c11;
+          text-shadow: 1px 1px 2px #fbffec;
         }
     }
       .group1 .pic-caption{
@@ -201,8 +208,11 @@ $group3 : #5bb4d6;
       }
       .group2 .pic-caption{
         background: $group2;
+        .pic-title, .description{
+          color:$groupBaseColor;
+        }
         a{
-          @include pillShape($group2,#fff,0.8em);
+          @include pillShape($groupBaseColor,#fff,0.8em);
         }
       }
       .group3 .pic-caption{
