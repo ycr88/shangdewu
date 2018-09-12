@@ -3,13 +3,17 @@ title : Группы
 class : page-group
 submenu: true
 slug : группы-и-расписание
-description : We follow the philosofy of training wushu as a groups activity, and with the practice  of the Martial Art we cultivate a good comunication, friendship and good social relation. The composition of the groups is acording with age, we have groups for children  and for adults. Each kind of group can have several sessions so keep atention to the schedule of each group to see wish time is more confortable for you.<br> In the practice of wushu we no make diference betwen girls or boys, woman or men, the trainig process is open for all.<br> all the tecnics are acording with the officials wushu programs of china, and the system and syles are oriented by methology of their creators or by offcial organization in china.
+description :
+      resume: We follow the philosofy of training wushu as a groups activity, and with the practice  of the Martial Art we cultivate a good comunication, friendship and good social relation. The composition of the groups is acording with age, we have groups for children  and for adults.In the practice of wushu we no make diference betwen girls or boys, woman or men, the trainig process is open for all.
+      resume1: All the tecnics are acording with the officials wushu programs from china, and the system and syles are oriented by methology of their creators or by their offcial organization in china.
+      extra: The student can request extra lesson outside the official schedule of the groups. This extra lessons can help to endure the training, studing something in advance or recuperate skiped lesson. Can be maked in indidual lessons or small groups of 3 to 5 students.
+      content: Each kind of group can have several sessions so keep atention to the schedule of each group to see wish time is more confortable for you.The student can request extra lesson outside the official schedule for groups. this lesson can be for studing something in advance or recuperate skiped lesson.
 items:
       - image: page1_img1.jpg
         id: starter
         class: 1
         title: Начинаюшие
-        description: Занятия рассчитаны на детей и подростков (мальчиков и девочек, юношей и девушек) без специальной спортивной подготовки. Ученики овладеют базовыми элементами стиля 长拳 Чанцюань (длинный кулак), научатся элементам работы с шестом 棍 Гунь, принадлежащих к стилям северного Китая. В течение всего курса также будут изучать базовые техники Тайцзицюань, Цигун и Медитации.<br>Когда ученик добьется хороших результатов, он будет рекомендован в группу Продолжающих обучение, для овладения другими стилями Ушу.<br>Ученики, начинающие занятия в нашей Школе боевых искусств и китайской традиционной гимнастики, сперва пройдут общую подготовку по развитию базовых навыков, необходимых для занятий Ушу. К ним относятся растяжка, координация движений, скорость реакции, выносливость, сила, работа в группе, самостоятельность и др.
+        description: Занятия рассчитаны на детей и подростков (мальчиков и девочек, юношей и девушек) без специальной спортивной подготовки.  Ученики овладеют базовыми элементами стиля 长拳 Чанцюань (длинный кулак), научатся элементам работы с шестом 棍 Гунь, принадлежащих к стилям северного Китая. В течение всего курса также будут изучать базовые техники Тайцзицюань, Цигун и Медитации.<br>Когда ученик добьется хороших результатов, он будет рекомендован в группу Продолжающих обучение, для овладения другими стилями Ушу.<br>Ученики, начинающие занятия в нашей Школе боевых искусств и китайской традиционной гимнастики, сперва пройдут общую подготовку по развитию базовых навыков, необходимых для занятий Ушу. К ним относятся растяжка, координация движений, скорость реакции, выносливость, сила, работа в группе, самостоятельность и др.
         program :
                 - <span>长拳 Чанцюань</span> (Длинный кулак, один из стилей	 северного Китая. Современный стиль, сочетающий в себе такие традиционные стили севера как 少林拳Шаолиньцюань, 华拳Хуацюань, 抱拳Паoцюань и другие).
                 - <span>棍术Искусство владения Гунь</span> (Гунь - это шест, согласно традиционным представлениям, - первое боевое оружие в Ушу. Использование техник с шестом позволяет ученикам научиться обращаться этим оружием, как частью собственного тела.               
@@ -46,15 +50,21 @@ items:
 </div>
 [/section]
 [section name="prices"]
+<div markdown=1 class="prices">
 # prices
-The actual price of the lesson is 5rub, we recive the payment in cash and is payed in the end of the month not after of 25 of the mounth(In case need a flexibity with the dates just need to let i know trainer and we will happy to help).
-The prices can have modification according with the characteristics of the group, and always with the intention to give facilties to the students and families.
-we offer a [span class="discount"]discount of 10%[/span] of the monthly amount, for many people:
+The actual price of the lesson in groups in general is 5rub each lesson. The prices can have modification according with the characteristics of the group, depending on the training place or type of training, and always with the intention to give facilties to the students and families.
+<div class="extra-lessons">
+The extra lesson have a price of 10rub per hour of trainig for individual lessons, and 25rub for smalls groups from 3 to 5 students.</div>
+We recive the payment in cash and is payed in the end of the month not after of 25 of the mounth(In case need a flexibity with the dates just need to let i know trainer and we will happy to help).
+
+we offer a <span class="discount">discount of 10%</span> of the monthly amount, for many people:
+
  * Multiple incription(two or more relative )
  * big families
  * not complete families
  * invalid and pensioner( for the childres with parents in this kind  of condition if they considere they need the discount will be maked)
  * and more
  ** not complete intentionaly the payment of the lesson can invalidate the attendence of the student **
+ </div>
 [/section]
 [comments]: # (the images location is pages/images/groups/gallery+$item.id)

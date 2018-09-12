@@ -225,9 +225,18 @@ $group3 : #5bb4d6;
      .header{
        @include styleGreen($groupBaseColor);
        background: none;
-       padding: 1.5em;
+       padding: 0em;
+       .description {
+         text-align: center;
+         padding: 0;
+         article{
+           font-size: 1.1em;
+           padding: 0;
+         }
+       }
+
        .requirements{
-         padding: 1.5em;
+         padding: 1em;
           @include styledList(rgb(232, 108, 38));
           .requirements-list{
             padding: 0 ;
@@ -242,9 +251,9 @@ $group3 : #5bb4d6;
            height: 80%;
           }
           .requirements-list .list-content:after{
-           background: none;
-           border: none;
+           display: none;
           }
+
           .prices{
             @include blogStyle(rgb(254, 103, 108),'',$groupBaseColor);
           }
