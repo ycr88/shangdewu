@@ -5,9 +5,10 @@ submenu: true
 slug : группы-и-расписание
 description :
       resume: We follow the philosofy of training wushu as a groups activity, and with the practice  of the Martial Art we cultivate a good comunication, friendship and good social relation. The composition of the groups is acording with age, we have groups for children  and for adults.In the practice of wushu we no make diference betwen girls or boys, woman or men, the trainig process is open for all.
-      resume1: All the tecnics are acording with the officials wushu programs from china, and the system and syles are oriented by methology of their creators or by their offcial organization in china.
-      extra: The student can request extra lesson outside the official schedule of the groups. This extra lessons can help to endure the training, studing something in advance or recuperate skiped lesson. Can be maked in indidual lessons or small groups of 3 to 5 students.
-      content: Each kind of group can have several sessions so keep atention to the schedule of each group to see wish time is more confortable for you.The student can request extra lesson outside the official schedule for groups. this lesson can be for studing something in advance or recuperate skiped lesson.
+      В нашей Школе боевых искусств и традиционной китайской гимнастики мы следуем китайской традиции групповых тренировок Ушу. Таким образом на ряду с боевым искусством мы культивируем умение работать в команде, атмосферу дружбы и гармоничных социальных отношений. Группы формируются в зависимости от возраста обучающихся, есть группы как для детей, так и для взрослых. В практике Ушу не существует разделения на занятия для девочек и мальчиков, мужчин и женщин, тренировочный процесс открыт для всех.
+      resume1: All the tecnics are acording with the officials wushu programs from china, and the system and syles are oriented by methology of their creators or by their offcial organization in china. Все комплексы упражнений, изучаемых в Школе, входят в официальную программу изучения Ушу в Китае, все системы и стили подаются в строгом соблюдении методики их создателей или соответствующих официальных организаций в Китае.
+      extra: The student can request extra lesson outside the official schedule of the groups. This extra lessons can help to endure the training, studing something in advance or recuperate skiped lesson. Can be maked in indidual lessons or small groups of 3 to 5 students. Учащиеся могут также записаться на индивидуальные занятия и посещать их в свободное от основных занятий время. Индивидуальные занятия помогают закрепить ранее изученный материал, наверстать упущенные занятия, либо получить дополнительные знания и умения. Дополнительные занятия проводятся индивидуально или в маленьких группах по 3-5 учеников.
+      content: Each kind of group can have several sessions so keep atention to the schedule of each group to see wish time is more confortable for you.The student can request extra lesson outside the official schedule for groups. this lesson can be for studing something in advance or recuperate skiped lesson. 
 items:
       - image: page1_img1.jpg
         id: starter
@@ -52,17 +53,17 @@ items:
 [section name="prices"]
 <div markdown=1 class="prices">
 # prices
-The actual price of the lesson in groups in general is 5rub each lesson. The prices can have modification according with the characteristics of the group, depending on the training place or type of training, and always with the intention to give facilties to the students and families.
+The actual price of the lesson in groups in general is 5rub each lesson. The prices can have modification according with the characteristics of the group, depending on the training place or type of training, and always with the intention to give facilties to the students and families. Актуальная цена занятий - 5 рублей/1 занятие.
 <div class="extra-lessons">
-The extra lesson have a price of 10rub per hour of trainig for individual lessons, and 25rub for smalls groups from 3 to 5 students.</div>
-We recive the payment in cash and is payed in the end of the month not after of 25 of the mounth(In case need a flexibity with the dates just need to let i know trainer and we will happy to help).
+The extra lesson have a price of 10rub per hour of trainig for individual lessons, and 25rub for smalls groups from 3 to 5 students. Дополнительные занятия: 10 рублей/1 час индивидуальное занятие, 25 рублей/1 час занятия для 3-5 обучающихся.</div>
+We recive the payment in cash and is payed in the end of the month not after of 25 of the mounth(In case need a flexibity with the dates just need to let i know trainer and we will happy to help). Оплата принимается не позднее 25 числа каждого месяца (если есть острая необходимость, скорректировать дату оплаты можно поговорив с тренером)
 
 we offer a <span class="discount">discount of 10%</span> of the monthly amount, for many people:
 
- * Multiple incription(two or more relative )
- * big families
- * not complete families
- * invalid and pensioner( for the childres with parents in this kind  of condition if they considere they need the discount will be maked)
+ * Multiple incription(two or more relative) родственниками (2 и более родственника обучаются в нашей Школе)
+ * big families многодетные семьи
+ * not complete families неполные семьи
+ * invalid and pensioner( for the childres with parents in this kind  of condition if they considere they need the discount will be maked) пенсионеры
  * and more
  ** not complete intentionaly the payment of the lesson can invalidate the attendence of the student **
  </div>
