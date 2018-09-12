@@ -15,7 +15,8 @@
                                   <figure>{{ page.find('/images/groups/').media[group.image] }}</figure>
                                   <span class="pic-caption bottom-to-top">
                                   <p class="pic-title">{{ group.title }}</p>
-                                  <p class="description" >{{ group.description | truncate(120 , true) }}<p>
+                                  <p class="description" >{{ group.description}}<p>
+                                    <a href="{{data.slug}}#{{group.id}}">details>>></a>
                                   </span>
                             </div>
                         </li>

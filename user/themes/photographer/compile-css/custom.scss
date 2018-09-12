@@ -170,8 +170,19 @@ $group3 : #5bb4d6;
             opacity: 1;
             overflow: hidden;
               .pic-title{
+                font-weight: bolder;
                 text-decoration: underline;
               }
+              .description{
+                padding-right: 1em;
+                @include multiLineEllipsis(1.2em, 4, none);
+                margin-right: 0;
+                margin-bottom: 0.5em
+              }
+              .description:before{
+                right: 0.2em;
+              }
+
           }
       }
     & li .pic:hover .bottom-to-top {
@@ -184,12 +195,21 @@ $group3 : #5bb4d6;
     }
       .group1 .pic-caption{
         background: $group1;
+        a{
+          @include pillShape($group1,#fff,0.8em);
+        }
       }
       .group2 .pic-caption{
         background: $group2;
+        a{
+          @include pillShape($group2,#fff,0.8em);
+        }
       }
       .group3 .pic-caption{
         background: $group3;
+        a{
+          @include pillShape($group3,#fff,0.8em);
+        }
       }
 }
 /*---------Page groups----------------*/
