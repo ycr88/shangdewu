@@ -71,7 +71,8 @@ class : dev
   + ~~add the slick to the gallery~~
   + Add images in the git to the deploy
 
-
+## contact
+* adress, telephone, correo IP information
 
 
 !!!* delete todo pages

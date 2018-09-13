@@ -1,7 +1,8 @@
 title: 'ShangDeWu'
 author:
   name: 'Yuri Cabrera Reyes'
-  email: 'trainer@shangdewu.com'
+  email: 'site@shangdewu.com'
+  post_adress:
 metadata:
     description: 'Школа Ушу в Минске'
 
@@ -10,11 +11,19 @@ title: ShangDeWu
 email: school@shangdewu.com
 description: "Новая Школа Ушу в Минске для всех возрастных категорий. Мы применяем самые эффективные методы и современные техники обучения Ушу, Тайцзицюань и Цигун в соответствии с китайскими традициями и фиолсофией. Мы рады поделиться с Вами нашим опытом!"
 adress: г.Минск, ул.Пугачевская,10
+phone: +375333627666
+trainers:
+      - name: 'Yuri Cabrera Reyes'
+        email: 'yuri@shangdewu.com'
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  -  url: "https://www.facebook.com/shangdewuschool/"
-     icon: fab fa-facebook-f
-  -  url: "https://vk.com/shangdewu"
-     icon: fab fa-vk
-  -  url: "https://www.youtube.com/channel/UCtZfVkDXQhs6H8YxhoDbgbQ"
-     icon: fab fa-youtube
+      - name: facebook
+        icon: fab fa-facebook-f
+        url: "https://www.facebook.com/shangdewuschool/"
+      - name: 'Kontakte'
+        url: "https://vk.com/shangdewu"
+        icon: 'fab fa-vk'
+      -  name: 'youtube'
+         url: "https://www.youtube.com/channel/UCtZfVkDXQhs6H8YxhoDbgbQ"
+         icon: 'fab fa-youtube'
