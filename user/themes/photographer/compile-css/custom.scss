@@ -23,6 +23,11 @@
 .row_2{
   @include blogStyle(rgba(#288fed, 0.86));
 }
+.map{
+  @include center;
+  border: solid 4px #4e5358;
+  border-radius: 8px;
+}
 /****HOME***/
   .home-footer{
     background: #fff;
@@ -59,15 +64,13 @@
         }
       }
     }
+    /****page Contact****/
+
     .home-contact{
       a{
         display: inline-flex;
       }
-      .map{
-        @include center;
-        border: solid 4px #4e5358;
-        border-radius: 8px;
-      }
+
        li {
          margin-bottom: 0.8em;
          padding: 0.2em
@@ -314,6 +317,8 @@ $group3 : #5bb4d6;
        }
 
  }
-
+/****pages****/
+@import 'page_contact';
  /**********MEDIA QUERY************/
+
 @import 'media';
