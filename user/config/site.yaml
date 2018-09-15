@@ -2,7 +2,7 @@ title: 'ShangDeWu'
 author:
   name: 'Юрий Кабрера Рейес'
   email: 'site@shangdewu.com'
-  post_adress:
+  post_address:
 metadata:
     description: 'Школа Ушу в Минске'
 
@@ -20,10 +20,10 @@ trainers:
 social:
       - name: Facebook
         icon: fab fa-facebook-f
-        url: "https://www.facebook.com/shangdewuschool/"
-      - name: 'ВКонтакте'
+        url: "https://www.facebook.com/shangdewuschool"
+      - name: ВКонтакте
         url: "https://vk.com/shangdewu"
-        icon: 'fab fa-vk'
-      -  name: 'YouTube'
-         url: "https://www.youtube.com/channel/UCtZfVkDXQhs6H8YxhoDbgbQ"
-         icon: 'fab fa-youtube'
+        icon: fab fa-vk
+      - name: YouTube
+        url: "https://www.youtube.com/channel/UCtZfVkDXQhs6H8YxhoDbgbQ"
+        icon: fab fa-youtube
