@@ -10,14 +10,15 @@ template : default
 # Контакты и информация
 
 ## Информация о Школе
-<div markdown="1" class="info">
+<div markdown="1" class="contact fa-ul">
 
-   - [<span class="fa-li"><i class="fas fa-phone"></i></span>телефон:{{site.phone}}<span class="phone-icon icon-mtc"><img class="mtc"></span><span class="phone-icon icon-viber fab fa-viber"></span>][phone]
+* [<span class="fa-li"><i class="fas fa-phone"></i></span>телефон:{{site.phone}}<span class="phone-icon icon-mtc">
+![mtc](/images/mtc.png)</span><span class="phone-icon icon-viber fab fa-viber"></span>][phone]
+*  [<span class="fa-li"><i class="far fa-envelope"></i></span>наш e-mail: {{site.email}}][mail]
+* <span class="fa-li"><i class="far fa-map"></i></span> адрес:{{site.address}}
 
- * [<span class="fa-li"><i class="far fa-envelope"></i></span>наш e-mail: {{site.email}}][mail]
- * адрес: {{site.adress}}
  [phone]: tel:{{site.phone}}
-[mail]: mailto:{{site.email}}
+ [mail]: mailto:{{site.email}}
   <div class="map">
   <div class="hidden-lg">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4699.562405358196!2d27.576029577464666!3d53.91786382923635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf62804a07dd%3A0x650382f3fa21014c!2zU2hhbmdEZVd1INCo0LrQvtC70YMg0LHQvtC10LLRi9GFINC40YHQutGD0YHRgdGC0LIg0Lgg0YLRgNCw0LTQuNGG0LjQvtC90L3QvtC5INC60LjRgtCw0LnRgdC60L7QuSDQs9C40LzQvdCw0YHRgtC40LrQuA!5e0!3m2!1ses!2sby!4v1536826987024" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>

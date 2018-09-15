@@ -16,7 +16,7 @@
                {% endfor %}
            </ul>
           </div>
-          <div class="home-contact home-footer-col col-sm-4 col-xs-12">
+          <div class="home-contact contact home-footer-col col-sm-4 col-xs-12">
             <h3>{{ page.header.locations.title }}</h3>
             <p class="title4">{{ site.address }}</p>
             <div class="map">
@@ -28,8 +28,8 @@
                 <span class="fa-li"><i class="far fa-envelope"></i></span>{{site.email}}</a>
               </li>
               <li>
-                <a href="tel:+375333627666" >
-                  <span  class="fa-li"><i class="fas fa-phone"></i></span>+375333627666
+                <a href="{{site.phone}}" >
+                  <span  class="fa-li"><i class="fas fa-phone"></i></span>{{site.phone}}
                   <span class="phone-icon icon-mtc">{{page.find('/images').media['mtc.png']}}</span>
                  <span class="phone-icon icon-viber fab fa-viber"></span></a>
                 </a>
