@@ -1,6 +1,6 @@
 ---
 menu : Контакты
-Title: Контакты
+title: Контакты
 slug : контакты
 class : page-contact
 process:
@@ -30,11 +30,11 @@ template : default
   </div>
 </div>  
   </div>
-[div markdown="0" class="social"]
+[div class="social"]
 ## Наши официальные страницы в социальных сетях
 <ul>
     {% for item in site.social%}
-    {% set a='<a href="'~url(item.url)~'" target="_blank"><span class="fa-stack fa-2x">
+    {% set a='<a href="'~url(item.url)~'" target="_blank"><span class="icon fa-stack fa-2x">
   <i class="fas fa-circle fa-stack-2x"></i><i class="'~item.icon~' fa-stack-1x fa-inverse"></i></span><span class="name">'~item.name~'</span><span class="url">'~item.url~'</span></a>'%}
     <li>{{a}}</li>
     {% endfor %}
@@ -45,4 +45,5 @@ ShangDeWu официально зарегистринована в Белару�
 Индивидуальный предприниматель {{site.author.name}}<br>
 Свидетельство о государственной регистрации индивидуального предпринимателя №193124609 от  22 августа 2018года
 
-Почтовый адрес: {{site.post_address}}
+Почтовый адрес:
+{{site.author.post_address}}
