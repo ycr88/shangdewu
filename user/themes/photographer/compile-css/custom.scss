@@ -18,7 +18,7 @@
 /*------End Header-------*/
 
 .row_1, .row_9 {
-  @include styleGreen;
+  @include styleGreen();
 }
 .row_2{
   @include blogStyle(rgba(#288fed, 0.86));
@@ -225,98 +225,9 @@ $group3 : #5bb4d6;
       }
 }
 /*---------Page groups----------------*/
- .page-group{
-   background: $groupBaseColor;
-     .container{
-       max-width: 100%;
-       section{
-         padding-top: 1em;
-         padding-bottom: 1em;
-       }
-     }
-     .header{
-       @include styleGreen($groupBaseColor);
-       background: none;
-       padding: 0em;
-       .description {
-         text-align: center;
-         padding: 0;
-         article{
-           font-size: 1.1em;
-           padding: 0;
-         }
-       }
 
-       .requirements{
-         padding: 1em;
-          @include styledList(rgb(232, 108, 38));
-          .requirements-list{
-            padding: 0 ;
-            border: solid 3.5px rgb(232, 108, 38);
-            border-radius: 0.8em;
-             h2{
-               color: $groupBaseColor;
-               font-size:1.2em;
-             }
-          }
-          .requirements-list .list-content:before{
-           height: 80%;
-          }
-          .requirements-list .list-content:after{
-           display: none;
-          }
-
-          .prices{
-            @include blogStyle(#f30000,$groupBaseColor,$groupBaseColor);
-            padding: 0.5em;
-            border: 0.15em solid white;
-            border-radius: 1em;
-            font-size: 0.8em;
-            h1{
-              font-size: 1.35em
-            }
-              .extra-lessons{
-                margin: auto;
-                width: 95%;
-                padding: 0.5em;
-                background: white;
-                border-radius: 0.4em;
-                box-shadow: 1px 2px 3px 1px #611c1c;
-              }
-          }
-         }
-     }
-     & .group{
-       text-align: center;
-        .group-gallery{
-          width: 60vw;
-          max-height: 40%;
-          margin: auto;
-          display: inline-flex;
-          padding: 1em;
-        }
-     }
-     .program{
-       width: 90%;
-    margin: auto;
-    border: solid 3.5px grey;
-    border-radius: 0.8em;
-     }
-     .group1{
-        @include blogStyle($group1);
-        @include styledList($group1);
-        }
-      .group2{
-          @include blogStyle($group2,$groupBaseColor,$groupBaseColor);
-          @include styledList($groupBaseColor);
-        }
-     .group3{
-          @include blogStyle($group3);
-          @include styledList($group3);
-       }
-
- }
 /****pages****/
+@import 'page_groups';
 @import 'page_contact';
  /**********MEDIA QUERY************/
 
