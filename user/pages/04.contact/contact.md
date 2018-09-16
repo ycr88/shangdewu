@@ -1,5 +1,6 @@
 ---
 menu : Контакты
+Title: Контакты
 slug : контакты
 class : page-contact
 process:
@@ -29,13 +30,15 @@ template : default
   </div>
 </div>  
   </div>
-[div class="social"]
+[div markdown="0" class="social"]
 ## Наши официальные страницы в социальных сетях
-<div markdown="1" class="ul fa-ul">
-{% for item in site.social%}
-[<span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class=" {{item.icon}} fa-stack-1x fa-inverse"></i></span><span class="name">{{item.name}}</span><span class="url"> {{item.url}}</span>]({{url(item.url)}}){.li}
-{% endfor%}
-</div>
+  <ul>
+    {% for item in site.social%}
+    {% set a='<a href="'~url(item.url)~'" target="_blank"><span class="fa-stack fa-2x">
+  <i class="fas fa-circle fa-stack-2x"></i><i class="'~item.icon~' fa-stack-1x fa-inverse"></i></span><span class="name">'~item.name~'</span><span class="url">'~item.url~'</span></a>'%}
+    <li>{{a}}</li>
+    {% endfor %}
+</ul>
 [/div]
 ## Официальная информация
 ShangDeWu официально зарегистринована в Беларуси
