@@ -32,7 +32,7 @@ template : default
   </div>
 [div markdown="0" class="social"]
 ## Наши официальные страницы в социальных сетях
-  <ul>
+<ul>
     {% for item in site.social%}
     {% set a='<a href="'~url(item.url)~'" target="_blank"><span class="fa-stack fa-2x">
   <i class="fas fa-circle fa-stack-2x"></i><i class="'~item.icon~' fa-stack-1x fa-inverse"></i></span><span class="name">'~item.name~'</span><span class="url">'~item.url~'</span></a>'%}
