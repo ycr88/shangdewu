@@ -29,19 +29,32 @@
                          <article class="description">
                            {{group.description}}
                           </article>
-                          <div class="program styled-list">
-                            <h3>Программа</h3>
-                            <div class="list-content">
-                            <ul>
-                           {% for item in group.program %}
-                              <li>
-                                 <div class="content">
-                              {{ item }}</div>
-                            </li>
-                           {% endfor %}
-                            </ul>
-                          </div>
-                          </div>
+                          <ul class="nav nav-tabs">
+      <li  ><a data-toggle="tab" href="#schedule{{group.id}}">schedule</a></li>
+      <li ><a data-toggle="tab" href="#program{{group.id}}"><h3>Программа</h3></a>
+
+      </li></ul>
+      <div class="tab-content">
+        <div id="schedule{{group.id}}" class="schedule tab-pane fade in active">
+          contet schedule
+        </div>
+        <div id="program{{group.id}}" class="program tab-pane fade">
+          <div class="program styled-list">
+            <div class="list-content">
+            <ul>
+           {% for item in group.program %}
+              <li>
+                 <div class="content">
+              {{ item }}</div>
+            </li>
+           {% endfor %}
+            </ul>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
                           <div class="group-gallery slider-lightbox">
                             {% for img in page.find('/images/groups/gallery-'~group.id).media.images %}
                               <a class="thumbnail" href="{{img.url}}" target="_blank">{{ img}}</a>
