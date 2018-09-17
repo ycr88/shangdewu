@@ -25,7 +25,7 @@
                {% for group in page.header.items %}
                        <section id="{{group.id}}" class="group group{{group.class}}">
                          <h1> {{group.title}} </h1>
-                         <figure>{{ page.media[group.image] }}</figure>
+                         <figure>{{ page.find("/images/groups/").media[group.image] }}</figure>
                          <article class="description">
                            {{group.description}}
                          </article>
