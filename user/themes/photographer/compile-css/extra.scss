@@ -2,3 +2,14 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css);
 @import 'timeline';
 @import 'incontent/base';
+  .parallax {
+  /* The image used */
+  /* Set a specific height */
+  height: 20em;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0.5em 0 0.5em 0;
+  }
