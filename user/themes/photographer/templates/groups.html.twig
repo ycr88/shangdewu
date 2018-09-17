@@ -36,7 +36,34 @@
        </li></ul>
        <div class="tab-content">
          <div id="schedule{{group.id}}" class="schedule tab-pane fade in active">
-           contet schedule
+           {% for item in group.schedule %}
+           <table>
+            <tr>
+              <th>Location</th>
+              </td>
+               {{item.place}}</td>
+            </tr>
+              {% for time in item.frequency %}
+                  <tr>
+                    <th>
+                      {{time.dayOftheWeek}}
+                    </th>
+                    <td>
+                      {{time.start}}-{{time.finish}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                    {{item.map}}
+                    </td>
+                    <td>
+                    {{item.extra}}
+                    </td>
+                  </tr>
+              {% endfor %}
+
+           </table>
+           {% endfor %}
          </div>
          <div id="program{{group.id}}" class="program tab-pane fade">
            <div class="program styled-list">
