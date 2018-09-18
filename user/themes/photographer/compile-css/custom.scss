@@ -7,10 +7,14 @@ footer{
     color: #dad2d2;
     background: #757573;
     text-align: center;
+    .footercol{
+      padding-bottom: 0.5em;
+    }
 }
 
 /*------Header Shang De Wu Style-------*/
-#header .banner{
+#header {
+  .banner{
   position: relative;
 	background:radial-gradient(circle, #e21b40d1, #ffed94e0, #d5e2fb);
   .logo{
@@ -31,6 +35,16 @@ footer{
       right:2em;
       bottom: 1em;
     }
+}
+.menuheader{
+     .menu-logo{
+       padding: 0.2em 0 0 0;
+       margin-left:1.2em;
+       img{
+         max-width: 15vw;
+       }
+     }
+}
 }
 /*------End Header-------*/
 
