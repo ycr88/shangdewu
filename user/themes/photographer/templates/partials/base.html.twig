@@ -10,7 +10,6 @@
 
          {% block stylesheets %}
                 {% do assets.addCss('theme://css/bootstrap.css') %}
-                {% do assets.addCss('theme://css/style.css') %}
                 {% do assets.addCss('theme://css/camera.css') %}
                 {% do assets.addCss('http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css') %}
                 {% do assets.addCss('http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css') %}
@@ -21,9 +20,8 @@
                 {% endif %}
 
         {% endblock %}
-        {{ assets.css() }}
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
+      {{ assets.css() }}
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
             {% do assets.addJs('theme://js/jquery-migrate-1.2.1.js') %}

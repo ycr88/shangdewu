@@ -19,6 +19,7 @@ class : dev
 * ~~add ligthbox to the small pictures~~
     - ~~add also to single images~~
 * ~~favicon~~
+* put in the footer the section with the parters icons in circules with linsk to their main site
 
 ## Home
 * ~~icon in the header~~ ~~[fill with original]~~

@@ -2,17 +2,27 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 footercol">
+              <h3>Contact</h3>
+              <p>{{site.phone}}<p>
+              <p>{{site.email}}<p>
+              <p>{{site.address}}<p>
                 <ul class="social_icons clearfix">
                      {% for item  in site.social %}
                          <li><a href="{{ item.url }}"><i class="{{item.icon}}"></i></a></li>
                      {% endfor %}
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 footerlogo footercol">
-                <a class="smalllogo2 logo" href="{{ base_url_absolute }}"><img src="{{ theme_url }}/img/logofooter.png" alt=""></a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 footercol">
-                <p class="footerpriv">&copy; {{ "now" | date("Y") }}</p>
+            <div class="col-lg-4 col-md-4 col-sm-4 footer-parners">
+              <ul class="parners">
+                   {% for item  in site.parters %}
+                       <li><a href="{{ item.url }}"><i class="{{item.icon}}"></i></a></li>
+                   {% endfor %}
+              </ul>  </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 website footercol">
+                <p> Developer: {{site.author.name}}</p>
+                <p> Designer: Yosuan Verdecia</p>
+                <p>site email: {{"admin@shangdewu.com"|safemail}}</p>
+                <p class="footerpriv">ShangDeWu &copy; {{ "now" | date("Y") }}</p>
             </div>
         </div>
     </div>

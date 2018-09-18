@@ -1,11 +1,12 @@
-<div class="row_1 {{ page.header.class }}">
+<div class="{{ page.header.class }} row_1">
     <div class="container">
-      <h1>{{ page.header.title }}</h1>
-
-        <p class="title2">{{ page.find('/about/_school/').header.description }}</p>
-          {{ content }}
-        {% for button in page.header.buttons %}
-            <a href="{{ button.url }}" class="{{ button.class }}">{{ button.text }}</a>
-        {% endfor %}
-    </div>
+      <section>
+        <h1>{{ page.header.title }}</h1>
+          <p class="title2">{{ page.find('/about/_school/').header.description }}</p>
+            {{ content }}
+          {% for button in page.header.buttons %}
+              <a href="{{ button.url }}" class="{{ button.class }}">{{ button.text }}</a>
+          {% endfor %}
+      </section>
+  </div>
 </div>

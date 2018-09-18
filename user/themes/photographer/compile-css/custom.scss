@@ -1,9 +1,26 @@
 @import 'mixins';
+section{
+  padding: 0.5em;
+}
+footer{
+  padding: 3em 1em 1em 2em;
+    color: #dad2d2;
+    background: #757573;
+    text-align: center;
+}
 
 /*------Header Shang De Wu Style-------*/
 #header .banner{
   position: relative;
 	background:radial-gradient(circle, #e21b40d1, #ffed94e0, #d5e2fb);
+  .logo{
+    max-width: 60%;
+    padding: 1em;
+    float: none;
+    margin: auto;
+    text-align: center;
+
+  }
     .adress{
       position: absolute;
       left: 3em;
@@ -29,7 +46,7 @@
   border-radius: 8px;
 }
 /****HOME***/
-  .home-footer{
+ .home-footer{
     background: #fff;
     .home-footer-col{
       padding: 1em;
@@ -177,6 +194,7 @@ $group3 : #5bb4d6;
     padding: 0
   }
   & li .pic{
+      width: fit-content;
       max-width: 100%;
       max-height: none;
       margin-bottom: 20%;
