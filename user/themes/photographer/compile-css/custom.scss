@@ -1,4 +1,9 @@
 @import 'mixins';
+.page-wrapper{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 section{
   padding: 0.5em;
 }
@@ -13,6 +18,9 @@ footer{
 }
 
 /*------Header Shang De Wu Style-------*/
+.social_icons{
+  display: inline-flex;
+}
 #header {
   .banner{
   position: relative;
@@ -34,20 +42,44 @@ footer{
       position: absolute;
       right:2em;
       bottom: 1em;
+      li{
+        padding: 0.3em;
+      }
     }
 }
-.menuheader{
-     .menu-logo{
-       padding: 0.2em 0 0 0;
-       margin-left:1.2em;
-       img{
-         max-width: 15vw;
+
+  }
+  .menuheader{
+      .navbar{
+        margin-bottom: 0;
+      }
+      .navbar-text{
+        margin-left: 1.5em;
+        li{
+          padding:0.3em
+        }
+      }
+       .menu-logo{
+         padding: 0.2em 0 0 0;
+         margin-left:1.2em;
+         img{
+           max-width: 15vw;
+         }
+       }
+       .menu-items{
+         text-align: center;
        }
      }
-     .menu-items{
-       text-align: center;
-     }
-   }
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .page-wrapper {
+  padding-top: 102px;
 }
 /*------End Header-------*/
 

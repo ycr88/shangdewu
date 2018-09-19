@@ -1,5 +1,7 @@
+
 $(document).ready(function(){
-  $('.timeline-gallery').slick({
+  
+$('.timeline-gallery').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,

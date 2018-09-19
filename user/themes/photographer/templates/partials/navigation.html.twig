@@ -23,18 +23,25 @@
         {% for page in pages.children %}
             {% if page.visible %}
                 {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                {% if page.header.submenu == true %}
+                <li class="{{ current_page }} dropdown">
+
+              <a href= {{ page.url }} class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    {{ page.menu }}<span class="caret"></span>
+                    <ul class="dropdown-menu new-menu">
+                      {% for item in page.header.items %}
+                      <li>
+                        <a href="{{page.url}}#{{item.id}}"> {{item.title}} </a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                      </a>
+                    {% else %}
                     <li class="{{ current_page }}">
-                        <a href="{{ page.url }}">
-                            {{ page.menu }}
-                        </a>
-                        {% if page.header.submenu == true %}
-                          <ul class"new-menu">
-                            {% for item in page.header.items %}
-                            <li>
-                              <a href="{{page.url}}#{{item.id}}"> {{item.title}} </a>
-                            </li>
-                            {% endfor %}
-                          </ul>
+                        <a href="{{ page.url }}">  {{ page.menu }}
+                </a>
+
+
                         {% endif %}
                     </li>
                 {% endif %}

@@ -6,7 +6,7 @@
           </a>
         </figure>
         <div class="social">
-          <ul class="social_icons clearfix">
+          <ul class="social_icons ">
                {% for item  in site.social %}
                  <li><a href="{{ item.url }}" target="_blank"><i class="{{item.icon}}"></i></a></li>
                {% endfor %}
@@ -16,7 +16,8 @@
           {{ site.adress}}
         </div>
       </div>
-<div class="menuheader">
+</header>
+<div id="menuheader" class="menuheader">
   <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -30,11 +31,19 @@
           <a class="menu-logo navbar-brand" href="#">
             <img alt="ShangDeWu" src="images/menu_logo.png">
           </a>
+          <span class="navbar-text visible-xs-block">
+            {{site.title}}
+              <ul class="social_icons ">
+                   {% for item  in site.social %}
+                     <li><a href="{{ item.url }}" target="_blank"><i class="{{item.icon}}"></i></a></li>
+                   {% endfor %}
+              </ul>
+            </span>
         </div>
+
         <div id="menu-items" class="menu-items collapse navbar-collapse" >
           {% include 'partials/navigation.html.twig' %}
         </div>
         </div>
   </nav>
 </div>
-</header>
