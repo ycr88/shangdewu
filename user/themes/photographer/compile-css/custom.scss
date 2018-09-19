@@ -70,11 +70,12 @@ footer{
          text-align: center;
           .nav{
             max-width: 80%;
+            width: fit-content;
             margin: auto;
             text-align: center;
             float: none;
             li{
-              padding: 1.5em;
+              padding: 0 1.5em;
             }
           }
        }
