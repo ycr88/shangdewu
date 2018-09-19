@@ -16,7 +16,7 @@
     {% endfor %}
 {% endmacro %}
 
-<ul class="nav navbar-nav navbar-right">
+<ul class="nav navbar-nav nav-default">
     {% if config.themes.photographer.dropdown.enabled %}
         {{ _self.loop(pages) }}
         {% else %}
@@ -40,9 +40,7 @@
                     <li class="{{ current_page }}">
                         <a href="{{ page.url }}">  {{ page.menu }}
                 </a>
-
-
-                        {% endif %}
+                {% endif %}
                     </li>
                 {% endif %}
             {% endfor %}

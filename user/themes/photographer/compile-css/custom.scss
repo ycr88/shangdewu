@@ -68,6 +68,15 @@ footer{
        }
        .menu-items{
          text-align: center;
+          .nav{
+            max-width: 80%;
+            margin: auto;
+            text-align: center;
+            float: none;
+            li{
+              padding: 1.5em;
+            }
+          }
        }
      }
   /* The sticky class is added to the header with JS when it reaches its scroll position */
