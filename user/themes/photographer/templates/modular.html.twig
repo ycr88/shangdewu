@@ -4,9 +4,12 @@
 {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
 {% block content %}
+{% if page.content %}
 <section class="main">
     {{ page.content }}
   </section>
+{% endif %}
+
     <div id="content">
         {% for module in page.collection() %}
                 {{ module.content }}
