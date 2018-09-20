@@ -103,6 +103,10 @@ footer{
   @include center;
   border: solid 4px #4e5358;
   border-radius: 8px;
+  iframe{
+    width: 100%;
+    max-width: 100%;
+  }
 }
 /****HOME***/
  .home-footer{
