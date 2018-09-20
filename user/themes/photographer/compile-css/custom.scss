@@ -144,9 +144,10 @@ footer{
         }
       }
     }
-    /****page Contact****/
+
 
   }
+    /****page Contact****/
   .contact{
     a{
       display: inline-flex;
@@ -170,63 +171,7 @@ footer{
      }
   }
 
-/*---------page about---------*/
-.page-about{
-  .section-school{
-    .header{
-      @include styleGreen();
-    }
-    .content{
-      padding-top: 2em;
-    @include styleGreen(#fff,#241f20);
-    img{
-      @include center;
-    }
-    }
-  }
-  .fundator{
-    background: #ffffff;
-    padding-bottom: 1.5em;
-    h1{
-      color:#ff375b;
-      text-align: center;
-      font-weight: 900;
-      padding: 5px;
-      font-size: 2.2em;
-      margin: auto;
-      margin-bottom: 10px;
-    }
-    p{
-      line-height: normal;
-    }
-    .resume{
-      @include blogStyle(#fff, #4fab9e, #4fab9e);
-      article{
-        h2{
-          text-align: center
-        }
-        text-align: left;
-      }
-    }
-    .bio{
-      text-align: center;
-      max-height: 120vh;
-      overflow-y: scroll;
-      @include blogStyle(#4fab9e,#fff,#fff);
-        li {
-          h3{
-            color: #fff;
-            font-size: 1.8em;
-            font-weight: 600;
-          }
-          p{
-            color: #fff;
-          }
-        }
-    }
-  }
-}
-/*--------Home section groups----------*/
+
 $groupBaseColor:rgba(#288fed, 0.86);
 $group1: #eb5368;
 $group2 : #f1d154;
@@ -317,6 +262,7 @@ $group3 : #5bb4d6;
 
 /****pages****/
 @import 'page_groups';
+@import 'page_about';
 @import 'page_contact';
  /**********MEDIA QUERY************/
 @import 'media';
