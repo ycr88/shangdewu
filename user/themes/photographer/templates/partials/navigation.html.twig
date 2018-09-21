@@ -26,11 +26,13 @@
                 {% if page.header.submenu == true %}
                 <li class="{{ current_page }} dropdown">
 
-              <a href= {{ page.url }} class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     {{ page.menu }}<span class="caret"></span>
                     <ul class="dropdown-menu new-menu">
+                      <li><a href= {{ page.url }}>Information</a></li>
                       {% for item in page.header.items %}
                       <li>
+
                         <a href="{{page.url}}#{{item.id}}"> {{item.title}} </a>
                       </li>
                       {% endfor %}

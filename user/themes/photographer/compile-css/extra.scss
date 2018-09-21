@@ -13,3 +13,11 @@
   background-size: cover;
   margin: 0.5em 0 0.5em 0;
   }
+  /* Enable Bootstrap Hover Drop Downs */
+  .dropdown-menu li:hover .sub-menu {
+      visibility: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
+      display: block;
+  }
