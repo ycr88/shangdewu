@@ -6,5 +6,5 @@ class: home-welcome
 buttons:
     - text: ещё
       url: 'about'
-      class: btn btn-default btn-lg btn1      
+      class: btn btn-default btn-lg    
 ---
