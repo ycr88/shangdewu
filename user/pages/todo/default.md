@@ -19,6 +19,7 @@ class : dev
 * ~~add ligthbox to the small pictures~~
     - ~~add also to single images~~
 * ~~favicon~~
+* style footer tocao
 * put in the footer the section with the parters icons in circules with linsk to their main site
 
 ## Home
@@ -71,10 +72,10 @@ class : dev
   + ~~refine the structure of the headers~~
   + ~~add the slick to the gallery~~
   + Add images in the git to the deploy[in course]
-  + add in each group a tab for schedule & for program
+  + ~~ add in each group a tab for schedule & for program ~~
 
 ## contact
-* adress, telephone, correo IP information
+* ~~ adress, telephone, correo IP information ~~
 
 
 !!!* delete todo pages
