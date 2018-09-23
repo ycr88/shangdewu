@@ -15,6 +15,9 @@ footer{
     .footercol{
       padding-bottom: 0.5em;
     }
+    .social_icons{
+      font-size:0.8em
+    }
 }
 #toTop {
 	display: none;
@@ -37,6 +40,20 @@ footer{
 /*------Header Shang De Wu Style-------*/
 .social_icons{
   display: inline-flex;
+}
+.social-color{
+  a{
+    color: white;
+  }
+  .fab.fa-facebook-f{
+    color:#3b5998;
+  }
+  .fab.fa-vk{
+    color:#4c75a3;
+  }
+  .fab.fa-youtube{
+    color:#FF0000;
+  }
 }
 #header {
   .banner{

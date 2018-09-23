@@ -30,7 +30,7 @@ template : default
   </div>
 </div>  
   </div>
-[div class="social"]
+[div class="social social-color"]
 ## Наши официальные страницы в социальных сетях
 <ul>
     {% for item in site.social%}
