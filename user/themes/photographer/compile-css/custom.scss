@@ -212,9 +212,22 @@ footer{
         }
       }
     }
-    .title4{
-      padding: 0.2em 0 0.5em;
+    .home-contact{
+      .title4{
+        padding: 0.2em 0 0.5em;
+      }
+      ul{
+        font-size: 1.2em;
+        .icon-mtc{
+          width:1.6em;
+        }
+        .icon-viber{
+      font-size: 1.6em;
+        }
+      }
+
     }
+
 
   }
     /****page Contact****/
