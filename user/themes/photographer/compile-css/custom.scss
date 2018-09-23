@@ -190,6 +190,12 @@ footer{
       img{
         padding: 5px;
       }
+      a{
+        @include pillShape(#fff,rgb(11, 11, 9));
+        .arrow{
+          margin-left: 2.5pt;
+        }
+      }
     }
     .services{
       h3{
@@ -206,7 +212,9 @@ footer{
         }
       }
     }
-
+    .title4{
+      padding: 0.2em 0 0.5em;
+    }
 
   }
     /****page Contact****/
