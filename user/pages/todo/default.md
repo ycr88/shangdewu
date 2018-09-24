@@ -3,6 +3,12 @@ title : todo
 class : dev
 ---
 ## Global
+* translate footer
+* add images
+* real data in the schedule of the groups
+* start colaborator using the @pagecolection  
+* ~~style footer tocao~~
+* put in the footer the section with the parters icons in circules with linsk to their main site [in process]
 * ~~create submenu for groups and about~~
 * ~~link to the social networks~~
   - ~~need to find a set of icon for the social network~~#[done with fontawsome ]
@@ -19,8 +25,7 @@ class : dev
 * ~~add ligthbox to the small pictures~~
     - ~~add also to single images~~
 * ~~favicon~~
-* style footer tocao
-* put in the footer the section with the parters icons in circules with linsk to their main site
+
 
 ## Home
 * ~~icon in the header~~ ~~[fill with original]~~
@@ -51,8 +56,8 @@ class : dev
             autor
 
 + ~~full fill subsection "why with us"~~
-+ ~~full fill subsection " contact" adress, mail, ..?~~
-+ link to the section /about us#fundator
++ ~~full fill subsection "contact" adress, mail, ..?~~
++ ~~link to the section /about us#fundator~~
 
 ## About
   + ~~create page about us modular~~
