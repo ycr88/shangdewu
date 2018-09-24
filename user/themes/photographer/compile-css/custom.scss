@@ -1,4 +1,11 @@
 @import 'mixins';
+/****Global Var*****/
+$groupBaseColor: rgba(#288fed, 0.86);
+$siteGray: #dad2d2;
+$group1: #eb5368;
+$group2 : #3aa320;
+$group3 : #5bb4d6;
+/*****Var****/
 .page-wrapper{
   width: 100%;
   padding: 0;
@@ -8,15 +15,54 @@ section{
   padding: 0.5em;
 }
 footer{
-  padding: 3em 1em 1em 2em;
-    color: #dad2d2;
-    background: #757573;
-    text-align: center;
+  padding: 2em 1em 1em 2em;
+  color: $siteGray;
+  background: #757573;
+  text-align: center;
+
+    ul{
+      text-align: left;
+      li{
+        padding-bottom: 0.5em;
+      }
+    }
+    a{
+      color: $siteGray;
+    }
     .footercol{
       padding-bottom: 0.5em;
     }
-    .social_icons{
-      font-size:0.8em
+    .footer-contact{
+      h3{
+        font-weight: bold;
+      }
+       .list-info{
+         width: fit-content;
+         margin: auto;
+         padding: 0.5em;
+    font-size: 1.2em;
+    margin-left: 0;
+      li{
+        a{
+          .fa-li {
+             color: white;
+             .fas.fa-phone{
+               padding-top: 0.8em;
+             }
+           }
+        }
+      }
+       }
+       .social_icons{
+         font-size:0.8em
+       }
+    }
+    .website{
+      padding: 0;
+      .copyrigth{
+        text-align: center;
+      }
+
     }
 }
 #toTop {
@@ -37,7 +83,6 @@ footer{
 #toTop:active, #toTop:focus {
 	outline: none;
 }
-/*------Header Shang De Wu Style-------*/
 .social_icons{
   display: inline-flex;
 }
@@ -55,6 +100,23 @@ footer{
     color:#FF0000;
   }
 }
+.row_1, .row_9 {
+  @include styleGreen();
+}
+.row_2{
+  @include blogStyle(rgba(#288fed, 0.86));
+}
+.map{
+  @include center;
+  border: solid 4px #4e5358;
+  border-radius: 8px;
+  iframe{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/*------Header Shang De Wu Style-------*/
+
 #header {
   .banner{
   position: relative;
@@ -126,21 +188,6 @@ footer{
 }
 /*------End Header-------*/
 
-.row_1, .row_9 {
-  @include styleGreen();
-}
-.row_2{
-  @include blogStyle(rgba(#288fed, 0.86));
-}
-.map{
-  @include center;
-  border: solid 4px #4e5358;
-  border-radius: 8px;
-  iframe{
-    width: 100%;
-    max-width: 100%;
-  }
-}
 /****HOME***/
 .home-welcome{
   padding-bottom: 1em;
@@ -156,9 +203,8 @@ footer{
     margin-left: 40%;
   }
   a:hover{
-    color: #524f4f;
+    color: $siteGray;
   }
-
   .title2{
     padding: 0.5em;
     @include multiLineEllipsis(1.1em, 10, none);
@@ -183,7 +229,6 @@ footer{
     }
     .home-trainer{
       @include blogStyle(#fff,rgb(11, 11, 9), rgb(78, 83, 88));
-
       & article{
         font-size: 1em;
       }
@@ -225,123 +270,114 @@ footer{
       font-size: 1.6em;
         }
       }
-
-    }
-
-
-  }
-    /****page Contact****/
-  .contact{
-    a{
-      display: inline-flex;
-    }
-
-     li {
-       margin-bottom: 0.5em;
-       padding: 0.2em
-     }
-     .phone-icon{
-       font-size: 1.2em;
-        margin-left: 5px;
-        margin-top: -5px;
-        text-decoration: none;
-      img{
-         border-radius:50%;
-                  }
-     }
-     .icon-viber{
-       color:#9c36b5;
-     }
-  }
-
-
-$groupBaseColor:rgba(#288fed, 0.86);
-$group1: #eb5368;
-$group2 : #3aa320;
-$group3 : #5bb4d6;
-/*---Home Gourps List--*/
-.home-groups{
-  @include blogStyle($groupBaseColor);
-
-  .description{
-    p{
-      @include multiLineEllipsis(1.1em, 10, none);
-      text-align: center;
-    padding: 0 0 0 0;
-
-    color: white;
-    }
-
-    a{
-      @include pillShape($groupBaseColor,#fff,0.8em);
-      margin-top: 1.2em;
     }
   }
-}
-.home-group-list{
-  li p{
-    color: #ffffff;
-    font-family: 'Georgia', serif;
-    padding: 0
+  /*---Home Gourps List--*/
+  .home-groups{
+    @include blogStyle($groupBaseColor);
+    .description{
+      p{
+        @include multiLineEllipsis(1.1em, 10, none);
+        text-align: center;
+      padding: 0 0 0 0;
+      color: white;
+      }
+      a{
+        @include pillShape($groupBaseColor,#fff,0.8em);
+        margin-top: 1.2em;
+      }
+    }
   }
-  & li .pic{
-      width: fit-content;
-      max-width: 100%;
-      max-height: none;
-      margin-bottom: 20%;
-      overflow: visible;
-          .pic-caption{
-            height: 30%;
-            top: 85%;
-            opacity: 1;
-            overflow: hidden;
-              .pic-title{
-                font-weight: bolder;
-                text-decoration: underline;
-              }
-              .description{
-                padding-right: 1em;
-                @include multiLineEllipsis(1.2em, 4, none);
-                margin-right: 0;
-                margin-bottom: 0.5em
-              }
-              .description:before{
-                right: 0.2em;
-              }
+  .home-group-list{
+    li p{
+      color: #ffffff;
+      font-family: 'Georgia', serif;
+      padding: 0
+    }
+    & li .pic{
+        width: fit-content;
+        max-width: 100%;
+        max-height: none;
+        margin-bottom: 20%;
+        overflow: visible;
+            .pic-caption{
+              height: 30%;
+              top: 85%;
+              opacity: 1;
+              overflow: hidden;
+                .pic-title{
+                  font-weight: bolder;
+                  text-decoration: underline;
+                }
+                .description{
+                  padding-right: 1em;
+                  @include multiLineEllipsis(1.2em, 4, none);
+                  margin-right: 0;
+                  margin-bottom: 0.5em
+                }
+                .description:before{
+                  right: 0.2em;
+                }
 
+            }
+        }
+      & li .pic:hover .bottom-to-top {
+          top: 40%;
+          opacity: 0.8;
+          min-height: 80%;
+          p{
+            text-shadow: 1px 1px 3px black;
+          }
+          a{
+            text-shadow: -1px 1px 3px black;
           }
       }
-    & li .pic:hover .bottom-to-top {
-        top: 40%;
-        opacity: 0.8;
-        min-height: 80%;
-        p{
-          text-shadow: 1px 1px 2px #fbffec;
+        .group1 .pic-caption{
+          background: $group1;
+          a{
+            @include pillShape($group1,#fff,0.8em);
+          }
         }
+        .group2 .pic-caption{
+          background: $group2;
+
+          a{
+            @include pillShape($group2,#fff,0.8em);
+          }
+        }
+        .group3 .pic-caption{
+          background: $group3;
+          a{
+            @include pillShape($group3,#fff,0.8em);
+          }
+        }
+  }
+  /*---------Page groups----------------*/
+    /****page Contact****/
+    .contact{
+      a{
+        display: inline-flex;
+      }
+
+       li {
+         margin-bottom: 0.5em;
+         padding: 0.2em
+       }
+       .phone-icon{
+         font-size: 1.2em;
+          margin-left: 5px;
+          margin-top: -5px;
+          text-decoration: none;
+        img{
+           border-radius:50%;
+                    }
+       }
+       .icon-viber{
+         color:#9c36b5;
+       }
     }
-      .group1 .pic-caption{
-        background: $group1;
-        a{
-          @include pillShape($group1,#fff,0.8em);
-        }
-      }
-      .group2 .pic-caption{
-        background: $group2;
-        .pic-title, .description{
-          color:$groupBaseColor;
-        }
-        a{
-          @include pillShape($groupBaseColor,#fff,0.8em);
-        }
-      }
-      .group3 .pic-caption{
-        background: $group3;
-        a{
-          @include pillShape($group3,#fff,0.8em);
-        }
-      }
-}
-/*---------Page groups----------------*/
+
+
 
 /****pages****/
 @import 'page_groups';

@@ -1,14 +1,23 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 footercol">
+            <div class="footer-contact footercol col-lg-4 col-md-4 col-sm-4 ">
               <h3>Contact</h3>
-              <p>{{site.phone}}<p>
-              <p>{{site.email}}<p>
-              <p>{{site.address}}<p>
-                <ul class="social_icons social-color clearfix">
+              <ul class="list-info fa-ul fa-lg">
+                <li><a href="mailto:{{ site.email }}">
+                  <span class="fa-li"><i class="far fa-envelope"></i></span>{{site.email}}</a>
+                </li>
+                <li>
+                  <a href="tel:{{site.phone}}" >
+                    <span  class="fa-li"><i class="fas fa-phone"></i></span>{{site.phone}}
+                    <span class="phone-icon icon-mtc">{{page.find('/images').media['mtc.png']}}</span>
+                   <span class="phone-icon icon-viber fab fa-viber"></span></a>
+                  </a>
+                </li>
+              </ul>
+              <ul class="social_icons social-color clearfix">
                      {% for item  in site.social %}
-                         <li><a href="{{ item.url }}" target="_blank">
+                         <li><a href="{{item.url}}" target="_blank">
                            <span class="icon fa-stack fa-2x">
                          <i class="fas fa-circle fa-stack-2x"></i>
                          <i class="{{item.icon}} fa-stack-1x fa-inverse"></i>
@@ -23,11 +32,13 @@
                        <i class="{{item.icon}}"></i></a></li>
                    {% endfor %}
               </ul>  </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 website footercol">
-                <p> Developer: {{site.author.name}}</p>
-                <p> Designer: Yosuan Verdecia</p>
-                <p>site email: {{"admin@shangdewu.com"|safemail}}</p>
-                <p class="footerpriv">ShangDeWu &copy; {{ "now" | date("Y") }}</p>
+            <div class="website footercol col-lg-4 col-md-4 col-sm-4 ">
+              <ul>
+                <li> Developer: {{site.author.name}}</li>
+                <li> Designer: {{site.designer.name}}</li>
+                <li>site email: <a href="mailto:{{site.author.email}}">{{site.author.email}}</a></li>
+                <li class="copyrigth">ShangDeWu &copy; {{ "now" | date("Y") }}</li>
+              </ul>
             </div>
         </div>
     </div>
