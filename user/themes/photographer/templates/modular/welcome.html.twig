@@ -4,9 +4,11 @@
         <h1>{{ page.header.title }}</h1>
           <p class="title2">{{ page.find('/about/_school/').header.description }}</p>
             {{ content }}
-          {% for button in page.header.buttons %}
-              <a href="{{ button.url }}" class="{{ button.class }}">{{ button.text }}</a>
-          {% endfor %}
+            <div class="buttons">
+              {% for button in page.header.buttons %}
+                  <a href="{{ button.url }}" class="{{ button.class }}">{{ button.text }}</a>
+              {% endfor %}
+            </div>
       </section>
   </div>
 </div>

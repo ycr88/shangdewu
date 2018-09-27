@@ -209,13 +209,15 @@ footer{
   .container{
     padding: 0;
   }
+  .buttons{
+    text-align: center;
+  }
   a{
     color: $basecolor;
     border-radius: 50%;
     padding-top: 1.2em;
     width: 4em;
     height: 4em;
-    margin-left: 40%;
   }
   a:hover{
     color: $siteGray;
