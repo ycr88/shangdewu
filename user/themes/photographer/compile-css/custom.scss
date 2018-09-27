@@ -365,7 +365,6 @@ footer{
         }
         .group2 .pic-caption{
           background: $group2;
-
           a{
             @include pillShape($group2,#fff,0.8em);
           }
