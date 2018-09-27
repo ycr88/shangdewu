@@ -15,7 +15,7 @@ section{
   padding: 0.5em;
 }
 footer{
-  padding: 2em 1em 1em 2em;
+  padding: 2em 1em 2em 1em;
   color: $siteGray;
   background: #757573;
   text-align: center;
@@ -40,8 +40,7 @@ footer{
          width: fit-content;
          margin: auto;
          padding: 0.5em;
-    font-size: 1.2em;
-    margin-left: 0;
+         font-size: 1.2em;
       li{
         a{
           .fa-li {
@@ -54,11 +53,27 @@ footer{
       }
        }
        .social_icons{
-         font-size:0.8em
+         font-size:0.65em;
+         li{
+           margin-right: 0.3em;
+         }
        }
     }
     .website{
       padding: 0;
+      ul{
+        text-align: center;
+        li{
+          display: inline-flex;
+          .category{
+            text-transform: capitalize;
+          }
+          .name{
+            margin-left: 0.3em;
+            text-align: left;
+          }
+        }
+      }
       .copyrigth{
         text-align: center;
       }
@@ -220,20 +235,25 @@ footer{
  .home-footer{
     background: #fff;
     .home-footer-col{
-      padding: 1em;
-    }
+      padding-top:1.5em
+        }
     h3{
       text-align: center;
       padding: 5px;
-      font-size: 1.2em
+      font-size: 1.2em;
+      margin-bottom:1em;
     }
     .home-trainer{
       @include blogStyle(#fff,rgb(11, 11, 9), rgb(78, 83, 88));
       & article{
-        font-size: 1em;
-      }
-      img{
-        padding: 5px;
+        @include multiLineEllipsis(1.2em,20,none, left);
+        font-size: 1.1em;
+          padding-bottom: 1em;
+          img{
+              max-width: 55%;
+              padding: 5px;
+            }
+
       }
       a{
         @include pillShape(#fff,rgb(11, 11, 9));
@@ -241,12 +261,10 @@ footer{
           margin-left: 2.5pt;
         }
       }
+
     }
     .services{
-      h3{
-        margin: 2em;
-      }
-      li{
+        li{
         padding-bottom: 0.5em;
         span{
           color:rgb(241, 77, 66);

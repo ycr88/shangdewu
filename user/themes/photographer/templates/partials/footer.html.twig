@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="footer-contact footercol col-lg-4 col-md-4 col-sm-4 ">
-              <h3>Contact</h3>
+              <h3>Контакты</h3>
               <ul class="list-info fa-ul fa-lg">
                 <li><a href="mailto:{{ site.email }}">
                   <span class="fa-li"><i class="far fa-envelope"></i></span>{{site.email}}</a>
@@ -34,12 +34,14 @@
               </ul>  </div>
             <div class="website footercol col-lg-4 col-md-4 col-sm-4 ">
               <ul>
-                <li> Developer: {{site.author.name}}</li>
-                <li> Designer: {{site.designer.name}}</li>
-                <li>site email: <a href="mailto:{{site.author.email}}">{{site.author.email}}</a></li>
-                <li class="copyrigth">ShangDeWu &copy; {{ "now" | date("Y") }}</li>
+                <li> <span class="category">разработчик:</span><span class="name">{{site.author.name}}</span></li>
+                <li> <span class="category"> дизайнер:</span><span class="name">{{site.designer.name}}</span></li>
+                <li><span class="category">сайт e-mail:</span><span class="name"><a href="mailto:{{site.author.email}}">{{site.author.email}}</a></span></li>
               </ul>
             </div>
+        </div>
+        <div class="row">
+          <p class="copyrigth">ShangDeWu &copy; {{ "now" | date("Y") }}</p>
         </div>
     </div>
 </footer>
