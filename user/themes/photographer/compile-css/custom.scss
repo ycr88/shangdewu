@@ -281,6 +281,11 @@ footer{
       .title4{
         padding: 0.2em 0 0.5em;
       }
+      .map{
+        iframe{
+        width: 100%;
+        height: 40vh;}
+      }
       ul{
         font-size: 1.2em;
         .icon-mtc{
