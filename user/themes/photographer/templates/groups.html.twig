@@ -37,16 +37,16 @@
        <div class="tab-content">
          <div id="schedule{{group.id}}" class="schedule tab-pane fade in active">
            {% for item in group.schedule %}
-           <h4>Group {{loop.index}}</h4>
+           <h4>группа {{loop.index}}</h4>
            <table>
             <tr>
-              <th>Location</th>
+              <th>Адрес</th>
               <td>
                {{item.place}}</td>
             </tr>
             <tr class="title-date">
-              <th>date</th>
-              <th>Time</th>
+              <th>Дату</th>
+              <th>Время</th>
             </tr>
               {% for time in item.frequency %}
                   <tr>
@@ -58,12 +58,17 @@
                     </td>
                   </tr>
                   <tr>
+                    {% if (item.map !="") %}
                     <td>
                     {{item.map}}
                     </td>
+                  {% endif %}
+                    {% if (item.extra !="") %}
                     <td>
                     {{item.extra}}
                     </td>
+                  {% endif %}
+
                   </tr>
               {% endfor %}
 
