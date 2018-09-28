@@ -383,9 +383,22 @@ footer{
         display: inline-flex;
       }
 
-       li { margin-bottom: 0.5em; padding: 0.2em } .phone-icon{ font-size:
-       1.2em; margin-left: 5px; margin-top: -5px; text-decoration: none; img{
-       border-radius:50%; } } .icon-viber{ color:#9c36b5; } }
+      li {
+        margin-bottom: 0.5em; padding: 0.2em
+      }
+      .phone-icon{
+        font-size: 1.2em;
+        margin-left: 5px;
+        text-decoration: none;
+        img{
+          border-radius:50%;
+        }
+        }
+        .icon-viber{
+          color:#9c36b5;
+          font-size: 1.65em;
+        }
+      }
 
 .slider{
   background: $groupBaseColor;
