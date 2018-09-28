@@ -81,7 +81,7 @@ items:
 [section name="prices"]
 <div markdown=1 class="prices">
 # Цены
-Цена за 1 занятие - 5 рублей. Цена за месяц рассчитывается непосредственно из количества занятий, проведенных в данном месяце.
+Цена за 1 занятие<span class="price fa-stack fa-2x"><i class="fas fas fa-tag fa-stack-2x"></i><span class="icon-content fas fa-stack-1x fa-inverse">5</span></span>рублей. Цена за месяц рассчитывается непосредственно из количества занятий, проведенных в данном месяце.
 [div class="extra-lessons"]
 ### Дополнительные занятия:###
 |  индивидуальное занятие     | занятия для 3-5 обучающихся |
