@@ -1,0 +1,86 @@
+/*---------page about---------*/
+.page-about{
+  text-align: center;
+  .section-school{
+    .header{
+      @include styleGreen();
+    }
+    .content{
+      padding-top: 2em;
+    @include styleGreen(#fff,#241f20);
+    img{
+      @include center;
+    }
+    ul{
+      text-align: left;
+      width: fit-content;
+      margin: auto;
+      font-size: 1.2em;
+      li{
+        margin-bottom: 2em;
+        strong{
+          text-align: left;
+          margin-right: 0.5em;
+          color: red;
+          background: yellow;
+          border: 2px solid black;
+          border-radius: 50%;
+          padding: 0.25em;
+          font-size: 1.2em;
+          font-weight: bolder;
+        }
+      }
+    }
+    }
+  }
+  .fundator{
+    background: #ffffff;
+    padding-bottom: 1.5em;
+    h1{
+      color:#ff375b;
+      text-align: center;
+      font-weight: 900;
+      padding: 5px;
+      font-size: 2.2em;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    p{
+      line-height: normal;
+    }
+    .resume{
+      @include blogStyle(#fff, #4fab9e, #4fab9e);
+      article{
+        h2{
+          text-align: center
+        }
+        text-align: left;
+      }
+    }
+    .bio{
+      text-align: center;
+      max-height: 85vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      @include blogStyle(#4fab9e,#fff,#fff);
+      #timeline  .timeline-list li {
+          padding-right: 0.5em;
+          padding-left:  0.5em;
+          margin-bottom: 1.8em;
+          h3{
+            color: #fff;
+            font-size: 1.6em;
+            font-weight: 600;
+            margin-bottom: 0.5em
+          }
+          p{
+            font-size: 0.85em;
+            padding: 0.3em;
+            color: #fff;
+            margin-bottom: 0.3em;
+          }
+        }
+    }
+  }
+}
+/*--------Home section groups----------*/
