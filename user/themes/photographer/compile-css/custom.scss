@@ -135,7 +135,7 @@ footer{
 #header {
   .banner{
   position: relative;
-	background:radial-gradient(circle, #e21b40d1, #ffed94e0, #d5e2fb);
+	background: url('../img/banner-winter.jpg');
   .logo{
     max-width: 60%;
     padding: 1em;
@@ -148,12 +148,17 @@ footer{
       text-align: center;
     padding: 1em 0 1em;
     font-weight: bold;
+    @include textSnowShadown;
     }
     .social{
       text-align: center;
       font-size: 1.5em;
       li{
         padding: 0.3em;
+        a{
+          color: #eb3b38;
+          @include textSnowShadown;
+        }
       }
     }
 }
