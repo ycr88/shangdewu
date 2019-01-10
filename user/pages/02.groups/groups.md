@@ -17,7 +17,7 @@ items:
         schedule:
                   - place: г.Минск, ул.Пугачевская 10.
                     frequency:
-                            - dayOftheWeek: Понедельник, Пятница.
+                            - dayOftheWeek: Понедельник, Среда.
                               start: 17:45
                               finish: 18:45
                     inscription: true
@@ -56,8 +56,8 @@ items:
                               start: 19:00
                               finish: 20:30
                             - dayOftheWeek: Суббота
-                              start: 10:00
-                              finish: 11:30
+                              start: 10:30
+                              finish: 12:30
                     inscription: true
                     extra:  
 
