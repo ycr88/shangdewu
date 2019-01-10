@@ -2,6 +2,10 @@ $basecolor : #68b2b1;
 body{
   font-family: "Merriweather", sans-serif;
 }
+@mixin textSnowShadown{
+    text-shadow: #eaeef3 2px 5px 5px;
+
+}
 @mixin basicStyle($title){
   h1, .title1{
     color: $title;
