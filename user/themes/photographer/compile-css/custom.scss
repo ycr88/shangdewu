@@ -134,9 +134,11 @@ footer{
 
 #header {
   .banner{
-  position: relative;
-	background: url('../img/banner-winter.jpg');
-  .logo{
+    position: relative;
+        background: url("../img/banner_spring.jpeg") no-repeat;
+        background-position: center;
+        background-size: cover;
+    .logo{
     max-width: 60%;
     padding: 1em;
     float: none;
