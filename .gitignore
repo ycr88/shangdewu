@@ -1,9 +1,0 @@
-#vendor/*
-#temp/*
-#**/cache/
-*
-!user/pages/\*.md
-!user/themes/templates/*
-!user/config
-user/pages/todo/
-.gitgnore
