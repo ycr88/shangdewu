@@ -134,9 +134,11 @@ footer{
 
 #header {
   .banner{
-  position: relative;
-	background: url('../img/banner-winter.jpg');
-  .logo{
+    position: relative;
+        background: url("../img/banner_spring.jpeg") no-repeat;
+        background-position: center;
+        background-size: cover;
+    .logo{
     max-width: 60%;
     padding: 1em;
     float: none;
@@ -145,10 +147,12 @@ footer{
 
   }
     .adress{
+      color: white;
+      font-size: 120%;
       text-align: center;
-    padding: 1em 0 1em;
-    font-weight: bold;
-    @include textSnowShadown;
+      padding: 1em 0 1em;
+      font-weight: bold;
+      text-shadow: #de3835 2px 3px 7px;
     }
     .social{
       text-align: center;
@@ -156,8 +160,8 @@ footer{
       li{
         padding: 0.3em;
         a{
-          color: #eb3b38;
-          @include textSnowShadown;
+          color: #f2d5ad;
+    text-shadow: #d28232 2px 5px 5px;
         }
       }
     }
