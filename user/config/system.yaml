@@ -8,7 +8,9 @@ pages:
     twig: false
   markdown:
     extra: true
-
+  dateformat:
+    short: 'd.m.Y'
+    long: 'm d, Y'
 cache:
   enabled: false
   check:
