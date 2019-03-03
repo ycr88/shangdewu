@@ -4,8 +4,8 @@
 {% set post_image_url = page.header.header_image ? page.media.images[page.header.header_image].cache.url() : page.find('/blog').media['default.jpg'].cache.url()  %}
 {% set style = 'style="background-image: url(\'' ~ post_image_url  ~ '\')"' %}
 {% block content %}
-<div class="blog">
-  <header class="post intro-header"{{ style }}>
+<div class="post">
+  <header class="intro-header"{{ style }}>
       <div class="container">
           <div class="row">
               <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -23,7 +23,7 @@
   <article>
       <div class="container">
           <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-body col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   {{ page.content }}
                   {% if config.plugins.jscomments.enabled %}
                       {{ jscomments() }}
