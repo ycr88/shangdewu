@@ -8,7 +8,9 @@ pages:
     twig: false
   markdown:
     extra: true
-
+  dateformat:
+    short: 'd.m.Y'
+    long: 'm d, Y'
 cache:
   enabled: false
   check:
@@ -18,7 +20,7 @@ cache:
 
 twig:
   cache: false
-  debug: false
+  debug: true
   auto_reload: true
   autoescape: false
 
@@ -30,7 +32,7 @@ assets:
   js_minify: true
 
 debugger:
-  enabled: false
+  enabled: true
   twig: true
   shutdown:
     close_connection: true

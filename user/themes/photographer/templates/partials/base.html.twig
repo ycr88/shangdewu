@@ -6,6 +6,8 @@
         <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
         {% include 'partials/metadata.html.twig' %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        {% block metadata %}
+      {% endblock %}
         <link rel="icon" type="image/png" href="{{ theme_url }}/img/favicon.ico" />
 
          {% block stylesheets %}

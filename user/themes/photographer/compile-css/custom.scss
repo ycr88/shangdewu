@@ -1,3 +1,4 @@
+@import 'helper';
 @import 'mixins';
 /****Global Var*****/
 $groupBaseColor: rgba(#288fed, 0.86);
@@ -416,5 +417,6 @@ footer{
 @import 'page_groups';
 @import 'page_about';
 @import 'page_contact';
+@import 'blog';
  /**********MEDIA QUERY************/
 @import 'media';
