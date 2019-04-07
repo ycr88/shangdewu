@@ -30,3 +30,11 @@ social:
       - name: YouTube
         url: "https://www.youtube.com/channel/UCtZfVkDXQhs6H8YxhoDbgbQ"
         icon: fab fa-youtube
+#sharing:
+share:
+      - name: facebook
+        class: fab fa-facebook-f
+        id: fb-share-button
+      - name: vk
+        class: fab fa-vk
+        id: vk-share-button
