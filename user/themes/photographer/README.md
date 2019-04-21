@@ -1,5 +1,3 @@
-# Change in all the feature of the original theme for the requirement of ShangDeWu.com
-
 # Photographer Theme for Grav
 
 ![Photographer](assets/readme_1.png)
