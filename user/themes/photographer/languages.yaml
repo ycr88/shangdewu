@@ -1,5 +1,4 @@
 #  todo make the language section for the posts [done]
-
 en:
   PLUGIN_SIMPLE_FORM:
     TEMPLATES:
@@ -20,9 +19,9 @@ fr:
 # todo add the russian language in the site
 ru:
     BLOG:
-        POST_BY: Posted by
-        POST_ON: on
-        OLDER_POSTS: Older Posts
-        NEWER_POSTS: Newer Posts
+        POST_BY: Сообщение от
+        POST_ON: в
+        OLDER_POSTS: Старые пост
+        NEWER_POSTS: Новее пост
         MENU: Menu
         TOGGLE_NAVIGATION: Toggle navigation

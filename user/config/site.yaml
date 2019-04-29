@@ -1,4 +1,5 @@
 title: 'ShangDeWu'
+
 author:
   name: 'Юрий Кабрера Рейес'
   email: 'site@shangdewu.com'
@@ -11,6 +12,7 @@ metadata:
 
 # Site settings
 title: ShangDeWu
+default_lang: ru
 email: school@shangdewu.com
 description: "Новая Школа Ушу в Минске для всех возрастных категорий. Мы применяем самые эффективные методы и современные техники обучения Ушу, Тайцзицюань и Цигун в соответствии с китайскими традициями и фиолсофией. Мы рады поделиться с Вами нашим опытом!"
 address: г.Минск, ул.Пугачевская, 10.
