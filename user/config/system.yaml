@@ -1,6 +1,11 @@
 home:
   alias: '/home'
-
+languages:
+  translations: true
+  include_default_lang: false
+  supported:
+    - ru
+    - en
 pages:
   theme: photographer
   process:

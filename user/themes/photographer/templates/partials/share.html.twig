@@ -1,11 +1,13 @@
 {% block share %}
+<div class="share-section">
 <ul class="social_icons clearfix">
        {% for item  in site.share %}
-           <li><div id="{{item.id}}" name="{{item.name}}" data-url="{{page.url(true)}}">
+           <li><div id="{{item.id}}" name="{{item.name}}" >
              <span class="icon fa-stack fa-2x">
            <i class="fas fa-circle fa-stack-2x"></i>
            <i class="{{item.class}} fa-stack-1x fa-inverse"></i>
          </span></div></li>
        {% endfor %}
   </ul>
+</div>
 {% endblock %}
