@@ -16,8 +16,9 @@
 {# description#}
 {# NOTE description expect a header description #}
 {% set description = post.description ?: page.summary ?: post.subheading %}
+{{ dump(description, description | striptags)}}
 {% if description %}
-{% set metadata = metadata | merge([{"property":"og:description","content": description }]) %}
+{% set metadata = metadata | merge([{"property":"og:description","content": description | striptags }]) %}
 {% endif %}
 {# image #}
   {# NOTE in the header facebookimage can accept values :
@@ -31,7 +32,6 @@
     {% if arg in post.facebookimage %}
       {% set image = post.facebookimage %}
     {% endif %}
-    {{dump(loop.index,image)}}
   {% endfor %}
   {% set image = image ?: page.url(true) ~"/"~ post.facebookimage %}
 {% endif %}
