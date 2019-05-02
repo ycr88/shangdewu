@@ -1,5 +1,5 @@
 {% block share %}
-<div class="share-section">
+<div class="share-section" data-url="{{page.url(true)}}">
 <ul class="social_icons clearfix">
        {% for item  in site.share %}
            <li><div id="{{item.id}}" name="{{item.name}}" >
