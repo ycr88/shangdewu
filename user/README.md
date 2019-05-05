@@ -36,6 +36,22 @@ To install  **just** the theme:
 ```
 $ bin/gpm install photographer
 ```
+# Site ShangDeWu.com
 
-
-
+## Page BLOG
+  Is the list of the post order by dateformat
+  * listing page
+  * template blog
+  * contain default.jpg
+  ### Post structure
+    * template name item
+    * for custom metadata use **"partial/postmetadata"**
+    * custom headers
+      ```
+      slug: the-slug // use ONLY latins character
+      description: 'Text of description ' // recomemded 200 characters
+      author: Name OF the Autor
+      header_image: example.ext // image located in the folder of the post fallback to --blog/default.jpg
+      subheading: 'фыыфв тлфыл олфыолтдл щ шфыщрощ щшфы лдлщфоы'
+      facebookimage: image-to-facebook // name of the picture and extension(example.ext) located in the post folder or a url(canonical) of external file [1200 pixels x 627 pixels ] recomemded size
+      ```
