@@ -4,13 +4,6 @@
 {% set style = 'style="background-image: url(\'' ~ post_image_url  ~ '\')"' %}
 {#TODO meta data for social media#}
 {% block metadata %}
-{#set metadata = [{"property":"og:image",
-                    "content": page.url(true) ~ "/" ~ page.header.header_image},
-                    {"property":"og:type",
-                     "content": "article"},
-                    {"property":"og:url",
-                      "content": page.url(true)}]
-                #}
 {% include 'partials/post-metadata.html.twig' %}
 {% endblock %}
 {% block content %}
