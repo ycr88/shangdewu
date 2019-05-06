@@ -1,11 +1,12 @@
 {% set post = page.header %}
 {% set metadata = []%}
 {% set description = post.description ?: page.summary ?: post.subheading %}
+{% set DEFAULT_IMAGE_PATH = "/blog/default.jpg" %}
 {#open graph#}
 {#title#}
 {% if post.title %}
 {% set length = post.title | length %}
-{% set long_title = post.title | upper ~"| "~ post.subheading ?: description| truncate(300 - length) %}
+{% set long_title = post.title | upper ~" | "~ post.subheading ?: description| truncate(300 - length) %}
 {% set metadata = metadata | merge([{"property":"og:title","content":long_title | striptags}]) %}
 {% endif %}
 {#type#}
@@ -26,16 +27,21 @@
   {# NOTE in the header facebookimage can accept values :
     name.ext of local image
     or a url to exernalimage #}
-{% set DEFAULT_IMAGE_PATH = "/blog/default.jpg" %}
-{% if post.facebookimage %}
+    {# TODO
+      - [x] add metadata for facebook if not exit aldeady og:image from headear metadata
+      - [ ] use the image with the correct dimension.
+      - [x] verify is working the fallback to default image
+      #}
+{% set facebookimage = page.media['facebook-image.jpg'] ? 'facebook-image.jpg' : post.facebookimage %}{#// get the image to facebook #}
+{% if facebookimage %}
   {% set is_url = ["www.","http://","://"] %}
-  {% set image = null %}
+  {% set image = page.media['facebook-image.jpg'] ? page.url(true) ~"/"~ 'facebook-image.jpg' : null %}
   {% for arg in is_url if not image %}
-    {% if arg in post.facebookimage %}
-      {% set image = post.facebookimage %}
+    {% if arg in facebookimage %}
+      {% set image = facebookimage %}
     {% endif %}
   {% endfor %}
-  {% set image = image ?: page.url(true) ~"/"~ post.facebookimage %}
+  {% set image = image ?: page.url(true) ~"/"~ facebookimage %}
 {% endif %}
 {% if not image %}
   {% set image = post.header_image ? page.url(true) ~"/"~ post.header_image : base_url_absolute ~ DEFAULT_IMAGE_PATH %}
