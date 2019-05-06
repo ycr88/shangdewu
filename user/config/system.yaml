@@ -28,7 +28,7 @@ pages:
   list:
     count: 20
   dateformat:
-    default: 'd.m.y H:i'
+    default: 'd.m.Y H:i'
     short: 'jS M Y'
     long: 'D, d M Y G:i:s'
   publish_dates: true
