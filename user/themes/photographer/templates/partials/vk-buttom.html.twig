@@ -1,0 +1,37 @@
+
+{% set post = page.header %}
+{% set metadata = []%}
+{% set description = post.description ?: page.summary ?: post.subheading %}
+{% set DEFAULT_IMAGE_PATH = "/blog/default.jpg" %}
+{#title#}
+{% if post.title %}
+{% set length = post.title | length %}
+{% set long_title = post.title | upper ~" | "~ post.subheading ?: description| truncate(300 - length) %}
+{% endif %}
+{% set vk_image = page.media['vk_image.jpg'] ? 'vk_image.jpg' : post.vk_image %}{#// get the image to facebook #}
+{% if vk_image %}
+  {% set data = vk_image %}
+  {% else %}
+  {% set data = page.media['facebook_image.jpg'] ? 'facebook_image.jpg' : post.facebook_image %}{#// get the image to facebook #}
+{% endif %}
+{% if data %}
+  {% set is_url = ["www.","http://","://"] %}
+  {% set image = page.media[data] ? page.url(true) ~"/"~ data : null %}
+  {% for arg in is_url if not image %}
+    {% if arg in data %}
+      {% set image = data %}
+    {% endif %}
+  {% endfor %}
+  {% set image = image ?: page.url(true) ~"/"~ data %}
+{% endif %}
+{% if not image %}
+  {% set image = post.header_image ? page.url(true) ~"/"~ post.header_image : base_url_absolute ~ DEFAULT_IMAGE_PATH %}
+{% endif %}
+<script type="text/javascript"><!--
+document.write(VK.Share.button({
+  title: '{{ long_title | striptags}}',
+  image:' {{ image }}',
+  url:'{{ page.url(true) }}'
+},
+  {type: "custom", text:'<span class="icon fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i> <i class="{{item.class}} fa-stack-1x fa-inverse"></i>'}));
+--></script>

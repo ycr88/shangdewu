@@ -31,6 +31,7 @@
       - [x] add metadata for facebook if not exit aldeady og:image from headear metadata
       - [ ] use the image with the correct dimension.
       - [x] verify is working the fallback to default image
+      - [ ] add dimension and alt tags
       #}
 {% set facebookimage = page.media['facebook-image.jpg'] ? 'facebook-image.jpg' : post.facebookimage %}{#// get the image to facebook #}
 {% if facebookimage %}

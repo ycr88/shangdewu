@@ -35,6 +35,7 @@
             {% do assets.addJs('theme://js/slick.min.js') %}
             {% do assets.addJs('theme://js/slick-lightbox.min.js') %}
             {% do assets.addJs('theme://js/custom.js') %}
+            {% do assets.addJs('https://vk.com/js/api/share.js?95',{'charset':'windows-1251'}) %}
             {% if browser.getBrowser == 'msie' and browser.getVersion > 9 or browser.getBrowser != 'msie' %}
                  {% do assets.addJs('theme://js/jquery.mobile.customized.min.js') %}
             {% endif %}
