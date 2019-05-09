@@ -28,10 +28,6 @@
   {% set image = post.header_image ? page.url(true) ~"/"~ post.header_image : base_url_absolute ~ DEFAULT_IMAGE_PATH %}
 {% endif %}
 <script type="text/javascript"><!--
-document.write(VK.Share.button({
-  title: '{{ "long_title" | striptags}}',
-  image:' {{ image }}',
-  url:'{{ page.url(true) }}'
-},
+document.write(VK.Share.button(false,
   {type: "custom", text:'<span class="icon fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i> <i class="{{item.class}} fa-stack-1x fa-inverse"></i>'}));
 --></script>
