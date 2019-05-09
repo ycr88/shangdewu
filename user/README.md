@@ -55,4 +55,4 @@ $ bin/gpm install photographer
       subheading: 'фыыфв тлфыл олфыолтдл щ шфыщрощ щшфы лдлщфоы'
       facebookimage: image-to-facebook // name of the picture and extension(example.ext) located in the post folder or a url(canonical) of external file [1200 pixels x 627 pixels ] recomemded size
       ```
-    * optional add a image name **facebook-image.jpg** to be captured for facebook debugger
+    * optional add a image name **facebook_image.jpg** to be captured for facebook debugger

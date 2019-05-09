@@ -23,6 +23,7 @@
 {% if description %}
 {% set metadata = metadata | merge([{"property":"og:description","content": description | striptags }]) %}
 {% endif %}
+
 {# image #}
   {# NOTE in the header facebookimage can accept values :
     name.ext of local image
@@ -33,23 +34,32 @@
       - [x] verify is working the fallback to default image
       - [ ] add dimension and alt tags
       #}
-{% set facebookimage = page.media['facebook-image.jpg'] ? 'facebook-image.jpg' : post.facebookimage %}{#// get the image to facebook #}
-{% if facebookimage %}
-  {% set is_url = ["www.","http://","://"] %}
-  {% set image = page.media['facebook-image.jpg'] ? page.url(true) ~"/"~ 'facebook-image.jpg' : null %}
-  {% for arg in is_url if not image %}
-    {% if arg in facebookimage %}
-      {% set image = facebookimage %}
+{% set data = [] %}
+{% set image = post.header_image ? page.url(true) ~"/"~ post.header_image : DEFAULT_IMAGE_PATH %}
+
+{#vk image`#}
+{% set vk_image = page.media['vk_image.jpg'] ? 'vk_image.jpg' : post.vk_image  %}
+{% set data = data | merge([{'property': 'vk:image','content':vk_image}]) %}
+{# facebook image#}
+{% set facebook_image = page.media['facebook_image.jpg'] ? 'facebook_image.jpg' : post.facebookimage %}{#// get the image to facebook #}
+{% set data = data | merge([{'property': 'og:image','content':facebook_image}]) %}
+{% for item in data %}
+    {% if item.content %}
+    {% set is_url = ["www.","http://","://"] %}
+    {% set img = page.media[item.content] ? page.url(true) ~"/"~ item.content : null %}
+    {% for arg in is_url if not img %}
+      {% if arg in item.content %}
+        {% set img = item.content %}
+      {% endif %}
+    {% endfor %}
     {% endif %}
-  {% endfor %}
-  {% set image = image ?: page.url(true) ~"/"~ facebookimage %}
-{% endif %}
-{% if not image %}
-  {% set image = post.header_image ? page.url(true) ~"/"~ post.header_image : base_url_absolute ~ DEFAULT_IMAGE_PATH %}
-{% endif %}
-{% set metadata = metadata | merge([{"property":"og:image","content": image },{"property":"og:image:alt","content":post.title|striptags}]) %}
+    {% set metadata = metadata | merge([{"property":item.property,"content": img ?: image}]) %}
+{% endfor %}
+{# image Alt #}
+{% set metadata = metadata | merge([{"property":"og:image:alt","content":post.title|striptags}]) %}
 {#end#}
 {# TODO vk,instagram,twiter,viber card#}
+
 {% for meta in metadata %}
 <meta {% if meta.name %}name="{{ meta.name }}" {% endif %}{% if meta.http_equiv %}http-equiv="{{ meta.http_equiv }}" {% endif %}{% if meta.charset %}charset="{{ meta.charset }}" {% endif %}{% if meta.property %}property="{{ meta.property }}" {% endif %}{% if meta.content %}content="{{ meta.content }}" {% endif %}/>
 {% endfor %}
