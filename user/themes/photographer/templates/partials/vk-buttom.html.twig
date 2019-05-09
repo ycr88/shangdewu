@@ -29,7 +29,7 @@
 {% endif %}
 <script type="text/javascript"><!--
 document.write(VK.Share.button({
-  title: '{{ long_title | striptags}}',
+  title: '{{ "long_title" | striptags}}',
   image:' {{ image }}',
   url:'{{ page.url(true) }}'
 },
