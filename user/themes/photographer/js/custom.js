@@ -30,7 +30,7 @@ $('.single-lightbox').slickLightbox({
 $('.slider-lightbox').slickLightbox({
   useHistoryApi: 'true'
 });
-
+var vk_image = document.getElementsByTagName("META")["vk:image"].content;
 var MyJs_shares_conf = {
   "twitter":{
     label: "Tweet",
@@ -51,7 +51,8 @@ var MyJs_shares_conf = {
   vkontakte: {
     label: "Like",
     logo: "fab fa-vk",
-    shareUrl: "https://vk.com/share.php?url={url}&title={title}&description={text}",
+    media: vk_image,
+    shareUrl: "https://vk.com/share.php?url={url}&image={media}",
     countUrl: "https://vk.com/share.php?act=count&index=1&url={url}",
     getCount: function(data) {
       return parseInt(data.slice(15, -2).split(', ')[1]);
@@ -132,7 +133,10 @@ var MyJs_shares_conf = {
 $.each(MyJs_shares_conf,function(a,b){
   jsSocials.setDefaults(a , b
     );
-})
+});
+// change url of vk share
+
+console.log(vk_image);
 $(".js_social").jsSocials({
             text:"",
             shares: ["facebook","vkontakte","pinterest"],
