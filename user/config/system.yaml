@@ -108,7 +108,10 @@ assets:
   enable_asset_timestamp: false
   collections:
     jquery: 'system://assets/jquery/jquery-2.x.min.js'
-errors:
+    js_social:
+        - https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials.min.js
+        - https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials.css
+        - https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials-theme-flat.css
   display: 0
   log: true
 debugger:

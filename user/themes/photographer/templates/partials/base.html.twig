@@ -18,9 +18,9 @@
                 {% if browser.getBrowser == 'msie' and browser.getVersion < 9 %}
                {% do assets.addCss('theme://assets/tm/css/tm_docs.css') %}
                 {% endif %}
-
         {% endblock %}
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        {% do assets.add('js_social') %}
       {{ assets.css() }}
         {% block javascripts %}
             {% do assets.add('jquery',101) %}
@@ -36,6 +36,7 @@
             {% do assets.addJs('theme://js/slick-lightbox.min.js') %}
             {% do assets.addJs('theme://js/custom.js') %}
             {% do assets.addJs('https://vk.com/js/api/share.js?95',{'charset':'windows-1251'}) %}
+
             {% if browser.getBrowser == 'msie' and browser.getVersion > 9 or browser.getBrowser != 'msie' %}
                  {% do assets.addJs('theme://js/jquery.mobile.customized.min.js') %}
             {% endif %}

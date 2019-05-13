@@ -1,21 +1,10 @@
 {% block share %}
+{# TODO
+- [ ] style the links
+- [ ] check the vk sharing
+- [ ] define mobile and pc sharing #}
 <div class="share-section" data-url="{{page.url(true)}}">
-<ul class="social_icons clearfix">
-       {% for item  in site.share %}
-     <li><div id="{{item.id}}" name="{{item.name}}" >
-       {% if item.name =="vk" %}
-       {% block vk %}
-       {% include 'partials/vk-buttom.html.twig'%}
-       {% endblock %}
-       {% else %}
-         <span class="icon fa-stack fa-2x">
-       <i class="fas fa-circle fa-stack-2x"></i>
-       <i class="{{item.class}} fa-stack-1x fa-inverse"></i>
-     </span>
-     {% endif %}
-</div></li>
-       {% endfor %}
-  </ul>
-
+  <div class="js_social"></div>
 </div>
+
 {% endblock %}
