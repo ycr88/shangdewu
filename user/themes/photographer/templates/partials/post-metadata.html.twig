@@ -25,14 +25,14 @@
 {% endif %}
 
 {# image #}
-  {# NOTE in the header facebookimage can accept values :
+  {# NOTE in the header facebook_image can accept values :
     name.ext of local image
     or a url to exernalimage #}
     {# TODO
       - [x] add metadata for facebook if not exit aldeady og:image from headear metadata
-      - [ ] use the image with the correct dimension.
+      - [-] use the image with the correct dimension.
       - [x] verify is working the fallback to default image
-      - [ ] add dimension and alt tags
+      - [x] add dimension and alt tags
       #}
 {% set data = [] %}
 {% set image = post.header_image ? page.url(true) ~"/"~ post.header_image : DEFAULT_IMAGE_PATH %}

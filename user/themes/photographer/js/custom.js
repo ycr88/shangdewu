@@ -40,7 +40,7 @@ var MyJs_shares_conf = {
   },
   facebook: {
     label: "Like",
-    logo: "fab fa-facebook",
+    logo: "fab fa-facebook-f",
     shareUrl: "https://facebook.com/sharer/sharer.php?u={url}",
     countUrl: "https://graph.facebook.com/?id={url}",
     getCount: function(data) {
@@ -116,7 +116,7 @@ var MyJs_shares_conf = {
   },
   messenger: {
     label: "Share",
-    logo: "far fa-comment-alt",
+    logo: "fab fa-facebook-messenger",
     shareUrl: "fb-messenger://share?link={url}",
     countUrl: "",
     shareIn: "self"
@@ -135,11 +135,15 @@ $.each(MyJs_shares_conf,function(a,b){
     );
 });
 // change url of vk share
-
-console.log(vk_image);
-$(".js_social").jsSocials({
+$(".js-social").jsSocials({
             text:"",
-            shares: ["facebook","vkontakte","pinterest"],
+            shares: ["facebook","vkontakte","pinterest","linkedin","twitter","email"],
+            showLabel: false,
+            showCount: false,
+          });
+$(".js-social-mobile").jsSocials({
+            text:"",
+            shares: ["messenger","viber","whatsapp","telegram","line"],
             showLabel: false,
             showCount: false,
           });
