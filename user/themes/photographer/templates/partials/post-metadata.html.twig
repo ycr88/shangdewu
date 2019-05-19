@@ -1,3 +1,16 @@
+
+{#
+TODO
+-[ ] show the band of post in the home pages
+-[ ] group the post by topic and hashtags
+-[ ] add the ads
+-[ ] add user for edition of the post
+-[ ] use css animation to stun the site
+-[ ] add Gallery
+    + slides
+    + mossare
+    + others
+#}
 {% set post = page.header %}
 {% set metadata = []%}
 {% set description = post.description ?: page.summary ?: post.subheading %}
@@ -27,13 +40,9 @@
 {# image #}
   {# NOTE in the header facebook_image can accept values :
     name.ext of local image
-    or a url to exernalimage #}
-    {# TODO
-      - [x] add metadata for facebook if not exit aldeady og:image from headear metadata
-      - [-] use the image with the correct dimension.
-      - [x] verify is working the fallback to default image
-      - [x] add dimension and alt tags
-      #}
+    or a url to exernalimage
+    TODO
+    -[ ]filter the pages.media[] to chose the image in the meta #}
 {% set data = [] %}
 {% set image = post.header_image ? page.url(true) ~"/"~ post.header_image : DEFAULT_IMAGE_PATH %}
 
