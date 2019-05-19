@@ -1,0 +1,29 @@
+{% set DEFAULT_IMAGE = page.find("blog").media['default.jpg'] %}
+<div class="row {{ page.header.class}}">
+  <h2>{{page.header.title}}</h2>
+  <div class="subheading">{{page.header.subheading}}</div>
+  <div class="post-slider">
+
+  {% for post in page.collection %}
+    {% set background = post.media[post.header.header_image].cache.url() ?: DEFAULT_IMAGE.cache.url() %}
+    <div class="post-preview">
+        <a href="{{ post.url }}">
+          <div class="post-image">
+            <img src="{{background}}">
+          </div>
+          <div class="post-content">
+            <h2 class="post-title">{{ post.title }}</h2>
+            {% if post.header.subheading %}
+            <h3 class="post-subtitle">{{ post.header.subheading }}</h3>
+            {% endif %}
+          </div>
+        </a>
+        <p class="post-meta">{{ 'BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</p>
+    </div>
+    <hr>
+    {% endfor %}
+    </div>
+</div>
+  </div>
+
+</div>

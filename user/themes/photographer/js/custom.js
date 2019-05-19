@@ -24,6 +24,7 @@ $('.slider-lightbox').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+$('.post-slider').slick();
 $('.single-lightbox').slickLightbox({
   useHistoryApi: 'true'
 });
