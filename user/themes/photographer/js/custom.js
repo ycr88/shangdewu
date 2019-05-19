@@ -36,7 +36,8 @@ var MyJs_shares_conf = {
     label: "Tweet",
     logo: "fab fa-twitter",
     shareUrl: "https://twitter.com/share?url={url}&text={text}&via={via}&hashtags={hashtags}",
-    countUrl: ""
+    countUrl: "",
+    css: "mobile"
   },
   facebook: {
     label: "Like",
@@ -90,7 +91,8 @@ var MyJs_shares_conf = {
     logo: "fab fa-telegram",
     shareUrl: "tg://msg?text={url} {text}",
     countUrl: "",
-    shareIn: "self"
+    shareIn: "self",
+    css: "mobile"
   },
 
   whatsapp: {
@@ -98,28 +100,32 @@ var MyJs_shares_conf = {
     logo: "fab fa-whatsapp",
     shareUrl: "whatsapp://send?text={url} {text}",
     countUrl: "",
-    shareIn: "self"
+    shareIn: "self",
+    css: "mobile"
   },
 
   line: {
     label: "LINE",
     logo: "fab fa-line",
     shareUrl: "http://line.me/R/msg/text/?{text} {url}",
-    countUrl: ""
+    countUrl: "",
+    css: "mobile"
   },
   viber: {
     label: "Viber",
     logo: "fab fa-viber",
     shareUrl: "viber://forward?text={url} {text}",
     countUrl: "",
-    shareIn: "self"
+    shareIn: "self",
+    css: "mobile"
   },
   messenger: {
     label: "Share",
     logo: "fab fa-facebook-messenger",
     shareUrl: "fb-messenger://share?link={url}",
     countUrl: "",
-    shareIn: "self"
+    shareIn: "self",
+    css: "mobile"
   },
   rss: {
     label: "RSS",
@@ -134,17 +140,12 @@ $.each(MyJs_shares_conf,function(a,b){
   jsSocials.setDefaults(a , b
     );
 });
+
 // change url of vk share
 $(".js-social").jsSocials({
             text:"",
-            shares: ["facebook","vkontakte","pinterest","linkedin","twitter","email"],
+            shares: ["facebook","vkontakte","pinterest","linkedin","twitter","email","messenger","viber","whatsapp","telegram","line"],
             showLabel: false,
             showCount: false,
           });
-$(".js-social-mobile").jsSocials({
-            text:"",
-            shares: ["messenger","viber","whatsapp","telegram","line"],
-            showLabel: false,
-            showCount: false,
-          });
-        });
+});
