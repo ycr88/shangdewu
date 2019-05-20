@@ -11,6 +11,7 @@ en:
       NEWER_POSTS: Newer Posts
       MENU: Menu
       TOGGLE_NAVIGATION: Toggle navigation
+      READ_MORE: Read More
 fr:
   PLUGIN_SIMPLE_FORM:
     TEMPLATES:
@@ -25,3 +26,4 @@ ru:
         NEWER_POSTS: Новее пост
         MENU: Menu
         TOGGLE_NAVIGATION: Toggle navigation
+        READ_MORE: Подробнее

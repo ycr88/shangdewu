@@ -31,7 +31,7 @@ $('.single-lightbox').slickLightbox({
 $('.slider-lightbox').slickLightbox({
   useHistoryApi: 'true'
 });
-var vk_image = document.getElementsByTagName("META")["vk:image"].content;
+var vk_image = document.getElementsByTagName("META")["vk:image"] ? document.getElementsByTagName("META")["vk:image"].content : null;
 var MyJs_shares_conf = {
   "twitter":{
     label: "Tweet",
