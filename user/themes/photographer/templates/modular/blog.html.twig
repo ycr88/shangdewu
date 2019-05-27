@@ -1,6 +1,6 @@
 {% set DEFAULT_IMAGE = page.find("blog").media['default.jpg'] %}
 <div class="row {{ page.header.class}}">
-  <h2>{{page.header.title}}</h2>
+  <h1>{{page.header.title}}</h1>
   <div class="subheading">{{page.header.subheading}}</div>
   <div class="post-slider">
 {# TODO
@@ -22,7 +22,6 @@
       <a href="{{ post.url }}">{{'BLOG.READ_MORE'|t}} >>  </a>
         <p class="post-meta">{{ 'BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</p>
     </div>
-    <hr>
     {% endfor %}
     </div>
 </div>

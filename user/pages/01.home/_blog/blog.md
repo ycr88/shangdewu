@@ -1,7 +1,7 @@
 ---
 title: "List of post"
 subheading: "check our cute post and how cute look them"
-class: "blog"
+class: "blog blog-home"
 content:
     items:
       '@page': '/blog'

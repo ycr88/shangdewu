@@ -24,7 +24,35 @@ $('.slider-lightbox').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
-$('.post-slider').slick();
+$('.post-slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  centerMode: true,
+  centerPadding: '60px',
+  responsive: [
+    {
+      breakpoint: 979,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 561,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 $('.single-lightbox').slickLightbox({
   useHistoryApi: 'true'
 });
