@@ -4,7 +4,7 @@ menu: Блог
 subheading: main page with post list
 header_image: home-bg.jpg
 content:
-    items: @self.children
+    items: "@self.children"
     order:
         by: date
         dir: desc

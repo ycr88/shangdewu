@@ -5,6 +5,7 @@ en:
       HIRE: Hire me form
       CONTACT: Location contact form
   BLOG:
+      POST_LIST: List of post
       POST_BY: Posted by
       POST_ON: on
       OLDER_POSTS: Older Posts
@@ -20,6 +21,7 @@ fr:
 # todo add the russian language in the site
 ru:
     BLOG:
+        POST_LIST: Список новостей
         POST_BY: Сообщение от
         POST_ON: в
         OLDER_POSTS: Старые пост
