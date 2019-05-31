@@ -1,4 +1,4 @@
-#  todo make the language section for the posts [done]
+#  TODO make the language section for the posts [done]
 en:
   PLUGIN_SIMPLE_FORM:
     TEMPLATES:
@@ -18,7 +18,7 @@ fr:
     TEMPLATES:
       HIRE: "Formulaire d'embauche"
       CONTACT: "Formulaire de localisation de contact"
-# todo add the russian language in the site
+# TODO add the russian language in the site
 ru:
     BLOG:
         POST_LIST: Список новостей
@@ -29,3 +29,7 @@ ru:
         MENU: Menu
         TOGGLE_NAVIGATION: Toggle navigation
         READ_MORE: Подробнее
+    SUMMER:
+        HEADING: ШанДэУ
+        SUBHEADING: Лето 2019
+        SLIDE_HEADING: Meet our courses

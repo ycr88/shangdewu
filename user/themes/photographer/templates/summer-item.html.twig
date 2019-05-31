@@ -1,0 +1,20 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+    <div id="content">
+        <div class="row_9">
+            <div class="container">
+                <section class="row {{ page.header.class }}">
+                  <header>
+                    <div class="summer-banner">
+                      <h1>{{'SUMMER.HEADING'|t}}</h1>
+                      <p>{{'SUMMER.SUBHEADING'|t}}</p>
+                    </div>
+                    <h2>{{page.header.title}}</h1>
+                    <img src="{{page.media[page.header.header_image].url}}" alt="{{page.header.title}}">  
+                  </header>
+                 {{ page.content }}
+             </section>
+         </div>
+     </div>
+ </div>
+{% endblock %}
