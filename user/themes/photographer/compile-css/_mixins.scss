@@ -305,3 +305,10 @@ body{
 @mixin hidden{
   display: none
 }
+@mixin parallelogramBanner($deg:-20deg){
+    transform: skew($deg);
+    *{
+      $a:-1 * $deg;
+      transform: skew($a);
+    }
+}

@@ -130,10 +130,10 @@ footer{
     color:#FF0000;
   }
 }
-.row_1, .row_9 {
+.row_1, .row_9, .style-green{
   @include styleGreen();
 }
-.row_2{
+.row_2, .syle-blog{
   @include blogStyle(rgba(#288fed, 0.86));
 }
 .map{
@@ -432,5 +432,6 @@ footer{
 @import 'page_about';
 @import 'page_contact';
 @import 'blog';
+@import 'summer';
  /**********MEDIA QUERY************/
 @import 'media';

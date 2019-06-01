@@ -1,5 +1,7 @@
 #  TODO make the language section for the posts [done]
 en:
+  SCHOOL:
+    NAME: ShangDeWu
   PLUGIN_SIMPLE_FORM:
     TEMPLATES:
       HIRE: Hire me form
@@ -14,12 +16,16 @@ en:
       TOGGLE_NAVIGATION: Toggle navigation
       READ_MORE: Read More
 fr:
+  SCHOOL:
+    NAME: ShangDeWu
   PLUGIN_SIMPLE_FORM:
     TEMPLATES:
       HIRE: "Formulaire d'embauche"
       CONTACT: "Formulaire de localisation de contact"
 # TODO add the russian language in the site
 ru:
+    SCHOOL:
+      NAME: ШанДэУ
     BLOG:
         POST_LIST: Список новостей
         POST_BY: Сообщение от

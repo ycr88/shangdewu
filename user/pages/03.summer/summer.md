@@ -9,12 +9,11 @@ content:
     items: "@self.children"
     order:
       by: default
-template: summer
 ---
 # enjoy the summer with wushu and taijichuan
-[div id="banner"]
-# ShangDeWu
-## paspizania leto 2019
+[div class="banner"]
+# {{'SCHOOL.NAME'|t}}
+ paspizania leto 2019
 [/div]
 schedule
 [div class="summer-schedule"]
