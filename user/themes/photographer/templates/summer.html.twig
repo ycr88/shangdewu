@@ -1,26 +1,24 @@
 {% extends 'partials/base.html.twig' %}
 {% block content %}
-    <div class="{{ page.header.class }} content">
-      <div class="style-green">
-        <div class="container">
-        <section class="row">
-             {{ page.content }}
-         </section>
-         <section class="items">
-           <h2>{{'SUMMER.SLIDE_HEADING'|t}}</h2>
-           {% set items = page.collection() %}
-           <div class="summer-slide">
-             {% for item in items %}
-              <div class="item {{item.header.class}}">
-                <div class="content">
-                  <a href="{{item.url}}"><h3>{{item.header.title}}</h3></a>
-                  <img src="{{item.media[item.header.header_image].url}}" alt="">
-                  </div>
-              </div>
-             {% endfor %}
-           </div>
-         </section>
-     </div>
-      </div>
+    <div id="content" class="{{ page.header.class }} style-green">
+      <div class="container">
+      <section class="row">
+           {{ page.content }}
+       </section>
+       <section class="items">
+         <h2>{{'SUMMER.SLIDE_HEADING'|t}}</h2>
+         {% set items = page.collection() %}
+         <div class="summer-slide">
+           {% for item in items %}
+            <div class="item {{item.header.class}}">
+              <div class="content">
+                <a href="{{item.url}}"><h3>{{item.header.title}}</h3></a>
+                <img src="{{item.media[item.header.header_image].url}}" alt="">
+                </div>
+            </div>
+           {% endfor %}
+         </div>
+       </section>
+   </div>
  </div>
 {% endblock %}
