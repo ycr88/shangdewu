@@ -39,3 +39,12 @@ ru:
         HEADING: ШанДэУ
         SUBHEADING: Лето 2019
         SLIDE_HEADING: Meet our courses
+        GROUP1:
+          NAME: "Ушу и Спочан"
+          TIME: "16:30-18:00"
+        GROUP2:
+          NAME: "Тайцзи, цингун I"
+          TIME: "19:15-20:45"
+        GROUP3:
+          NAME: "Тайцзи, цингун II"
+          TIME: "19:15-20:45"
