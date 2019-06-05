@@ -15,13 +15,11 @@ content:
 # {{'SCHOOL.NAME'|t}}
  paspizania leto 2019
 [/div]
-
-schedule
-<div class="summer-schedule">
+<div class="summer-schedule table-responsive">
   <div class="desktop">
-      <table>
+      <table class="table table-hover">
         <thead>
-          <th><div class="empty"> </div></th> <th>Пн</th> <th>Вт</th> <th>Ср</th> <th>Чт</th> <th>Пт</th>
+          <th class="empty"><div class="empty"> </div></th> <th>Пн</th> <th>Вт</th> <th>Ср</th> <th>Чт</th> <th>Пт</th>
         </thead>
         <tbody>
           <tr class="summer-group-1">
@@ -88,65 +86,55 @@ schedule
       </table>
   </div>
   <div class="mobile">
-    <table>
+      <table class="table table-hover">
+        <tr>
+          <th>Пн</th>
+          <td class="summer-group-1">
+              <div class="name">{{'SUMMER.GROUP1.NAME'|t}}</div>
+              <div class="time">{{'SUMMER.GROUP1.TIME'|t}}</div>
+          </td>
+          <td class="summer-group-2">
+              <div class="name">{{'SUMMER.GROUP2.NAME'|t}} </div>
+              <div class="time">{{'SUMMER.GROUP2.TIME'|t}} </div>
+          </td>
+        </tr>
+        <tr>
+          <th>Вт</th>
+          <td class="empty"> </td>
+          <td class="summer-group-2">
+              <div class="name">{{'SUMMER.GROUP2.NAME'|t}}</div>
+              <div class="time">{{'SUMMER.GROUP2.TIME'|t}}</div>
+          </td>
+      </tr>
       <tr>
-        <th>Пн</th>
-        <td>
-          <div class="summer-group-1">
+        <th>Ср</th>
+        <td class="summer-group-1">
             <div class="name">{{'SUMMER.GROUP1.NAME'|t}}</div>
             <div class="time">{{'SUMMER.GROUP1.TIME'|t}}</div>
-          </div>
-        </td>
-        <td>
-          <div class="summer-group-2">
+       </td>
+        <td class="summer-group-2">
             <div class="name">{{'SUMMER.GROUP2.NAME'|t}} </div>
             <div class="time">{{'SUMMER.GROUP2.TIME'|t}} </div>
-          </div>
         </td>
       </tr>
       <tr>
-        <th>Вт</th>
-        <td><div class="empty"></div> </td>
-        <td>
-          <div class="summer-group-2">
-            <div class="name">{{'SUMMER.GROUP2.NAME'|t}}</div>
-            <div class="time">{{'SUMMER.GROUP2.TIME'|t}}</div>
+        <th>Чт</th>
+        <td class="empty"></td>
+        <td class="summer-group-2">
+          <div class="name">
+            {{'SUMMER.GROUP2.NAME'|t}}
           </div>
-        </td>
-    </tr>
-    <tr>
-      <th>Ср</th>
-      <td>
-        <div class="summer-group-1">
-          <div class="name">{{'SUMMER.GROUP1.NAME'|t}}</div>
-          <div class="time">{{'SUMMER.GROUP1.TIME'|t}}</div>
-        </div>
-      </td>
-      <td>
-        <div class="summer-group-2">
-          <div class="name">{{'SUMMER.GROUP2.NAME'|t}} </div>
-          <div class="time">{{'SUMMER.GROUP2.TIME'|t}} </div>
-        </div>
+          <div class="time">
+            {{'SUMMER.GROUP2.TIME'|t}}
+          </div>
       </td>
     </tr>
     <tr>
-      <th>Чт</th><td> <div class="empty"></div> </td>
-      <td>  <div class="summer-group-2">
-        <div class="name">
-          {{'SUMMER.GROUP2.NAME'|t}}
-        </div>
-        <div class="time">
-          {{'SUMMER.GROUP2.TIME'|t}}
-        </div>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <th>Пт</th>
-    <td><div class="empty"></div></td>
-    <td><div class="empty"></div></td>
-  </tr>
-</table>
+      <th>Пт</th>
+      <td class="empty"></td>
+      <td class="empty"></td>
+    </tr>
+  </table>
   </div>
 </div>
 Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.
