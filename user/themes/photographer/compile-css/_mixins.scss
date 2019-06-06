@@ -303,14 +303,25 @@ body{
   }
 }
 $bp:("phone-only": 599px,
-      "desktop-up": 1200px);
-@mixin customMedia($size){
+      "desktop-up": 1200px,
+      "tablets":768px);
+@mixin MaxWidthMedia($size){
   $val: map-get($bp,quote($size));
   @if  $val {
     @media (max-width: $val) { @content; }
   }
   @else{
     @media (max-width: $size) {
+      @content; }
+  }
+}
+@mixin MinWidthMedia($size){
+  $val: map-get($bp,quote($size));
+  @if  $val {
+    @media (min-width: $val + 1) { @content; }
+  }
+  @else{
+    @media (min-width: $size + 1 ) {
       @content; }
   }
 }

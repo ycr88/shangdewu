@@ -15,7 +15,7 @@ content:
 # {{'SCHOOL.NAME'|t}}
  paspizania leto 2019
 [/div]
-<div class="summer-schedule table-responsive">
+[div class="summer-schedule table-responsive"]
   <div class="desktop">
       <table class="table table-hover">
         <thead>
@@ -101,7 +101,7 @@ content:
         <tr>
           <th>Вт</th>
           <td class="empty"> </td>
-          <td class="summer-group-2">
+          <td class="summer-group-3">
               <div class="name">{{'SUMMER.GROUP2.NAME'|t}}</div>
               <div class="time">{{'SUMMER.GROUP2.TIME'|t}}</div>
           </td>
@@ -120,7 +120,7 @@ content:
       <tr>
         <th>Чт</th>
         <td class="empty"></td>
-        <td class="summer-group-2">
+        <td class="summer-group-3">
           <div class="name">
             {{'SUMMER.GROUP2.NAME'|t}}
           </div>
@@ -136,7 +136,7 @@ content:
     </tr>
   </table>
   </div>
-</div>
+[/div]
 Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.
 Cursos de taijiquan y estilos internos orientado a jovenes y adultos y practica de wushu deportivo para los ni;os y adolecentes. Le invitamos a conocer en familia el milenario arte de Wushu.
 * address: {{site.address}}
