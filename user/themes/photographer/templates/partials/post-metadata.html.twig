@@ -1,15 +1,15 @@
 
 {#
 TODO
--[ ] show the band of post in the home pages
--[ ] group the post by topic and hashtags
--[ ] add the ads
--[ ] add user for edition of the post
--[ ] use css animation to stun the site
--[ ] add Gallery
-    + slides
-    + mossare
-    + others
+  -[x] show the band of post in the home pages
+  -[] group the post by topic and hashtags
+  -[] add the ads
+  -[] add user for edition of the post
+  -[] use css animation to stun the site
+  -[] add Gallery
+      + slides
+      + mossare
+      + others
 #}
 {% set post = page.header %}
 {% set metadata = []%}
@@ -32,7 +32,7 @@ TODO
 {% set metadata = metadata["og:url"] ?: metadata | merge([{"property":"og:url","content": page.url(true) }]) %}
 {# description#}
 {# NOTE description expect a header description #}
-{% set description = post.description ?: page.summary ?: post.subheading %}
+{% set description = post.description ?: post.subheading ?: page.summary  %}
 {% if description %}
 {% set metadata = metadata | merge([{"property":"og:description","content": description | striptags }]) %}
 {% endif %}
@@ -42,7 +42,7 @@ TODO
     name.ext of local image
     or a url to exernalimage
     TODO
-    -[ ]filter the pages.media[] to chose the image in the meta #}
+    -[ ] loop the pages.media[] to chose the image in the meta #}
 {% set data = [] %}
 {% set image = post.header_image ? page.url(true) ~"/"~ post.header_image : DEFAULT_IMAGE_PATH %}
 

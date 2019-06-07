@@ -4,9 +4,12 @@
       <div class="container">
           <section >
             <header>
+              {#TODO add link to the page summer 2019 in he banner#}
               <div class="banner">
+                <a href="{{page.find("summer").url()}}">
                 <h1>{{'SUMMER.HEADING'|t}}</h1>
                 <p>{{'SUMMER.SUBHEADING'|t}}</p>
+                </a>
               </div>
               <h2>{{page.header.title}}</h1>
               <img src="{{page.media[page.header.header_image].url}}" alt="{{page.header.title}}">
