@@ -1,4 +1,3 @@
-#  TODO make the language section for the posts [done]
 en:
   SCHOOL:
     NAME: ShangDeWu
@@ -22,7 +21,6 @@ fr:
     TEMPLATES:
       HIRE: "Formulaire d'embauche"
       CONTACT: "Formulaire de localisation de contact"
-# TODO add the russian language in the site
 ru:
     SCHOOL:
       NAME: ШанДэУ

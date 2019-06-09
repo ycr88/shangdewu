@@ -1,8 +1,18 @@
+{#
+TODO
+  -[] add the ads
+  -[] add user for edition of the post
+  -[] use css animation to stun the site
+  -[] add Gallery
+      + slides
+      + mossare
+      + others
+#}
 {% extends 'partials/base.html.twig' %}
 {% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "m.d.Y" %}
 {% set post_image_url = page.header.header_image ? page.media.images[page.header.header_image].cache.url() : page.find('/blog').media['default.jpg'].cache.url()  %}
 {% set style = 'style="background-image: url(\'' ~ post_image_url  ~ '\')"' %}
-{#TODO meta data for social media#}
+{#TODOne meta data for social media#}
 {% block metadata %}
 {% include 'partials/post-metadata.html.twig' %}
 {% endblock %}

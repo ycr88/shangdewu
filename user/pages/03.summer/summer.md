@@ -9,14 +9,28 @@ content:
     items: "@self.children"
     order:
       by: default
+description: "Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.Cursos de taijiquan y estilos internos orientado a jovenes y adultos y practica de wushu deportivo para los ni;os y adolecentes. Le invitamos a conocer en familia el milenario arte de Wushu."
 ---
 # enjoy the summer with wushu and taijichuan
 [div class="banner"]
 # {{'SCHOOL.NAME'|t}}
  paspizania leto 2019
 [/div]
-[div class="summer-schedule table-responsive"]
-[//]: # ( TODO add links to the page of the groups in the table )
+[//]: # ( TODO use unpublish-date formatter)
+<div class="summer-schedule table-responsive">
+  {% set group1 = page.find("/summer/children").url %}
+  {% set group2 = page.find("/summer/adults-advanced").url %}
+  {% set group3 = page.find("/summer/adults-beginner").url %}
+  {% macro groupLink(dir, name, time)%}
+    {{"<a href="~dir~">"}}
+      {% if name %}
+        <div class="name">{{name}}</div>
+    {% endif %}
+    {% if time %}
+        <div class="time">{{time}}</div>
+  {% endif %}
+    </a>
+  {% endmacro %}
   <div class="desktop">
       <table class="table table-hover">
         <thead>
@@ -25,7 +39,7 @@ content:
         <tbody>
           <tr class="summer-group-1">
             <th>
-              <div class="name">{{'SUMMER.GROUP1.NAME'|t}}</div>
+              {{_self.groupLink( group1,'SUMMER.GROUP1.NAME'|t)}}
             </th>
             <td>
               <div class="time">{{'SUMMER.GROUP1.TIME'|t}}</div>
@@ -45,7 +59,7 @@ content:
           </tr>
           <tr class="summer-group-2">
               <th>
-                <div class="name">{{'SUMMER.GROUP2.NAME'|t}}</div>
+              {{_self.groupLink( group2,'SUMMER.GROUP2.NAME'|t)}}
               </th>
               <td>
                 <div class="time">{{'SUMMER.GROUP2.TIME'|t}}</div>
@@ -65,7 +79,7 @@ content:
             </tr>
             <tr class="summer-group-3">
                 <th>
-                  <div class="name">{{'SUMMER.GROUP3.NAME'|t}}</div>
+                {{_self.groupLink( group1,'SUMMER.GROUP3.NAME'|t)}}
                 </th>
                 <td>
                   <div class="empty"> </div>
@@ -91,44 +105,34 @@ content:
         <tr>
           <th>Пн</th>
           <td class="summer-group-1">
-              <div class="name">{{'SUMMER.GROUP1.NAME'|t}}</div>
-              <div class="time">{{'SUMMER.GROUP1.TIME'|t}}</div>
+            {{_self.groupLink( group1,'SUMMER.GROUP1.NAME'|t,'SUMMER.GROUP1.TIME'|t)}}
           </td>
           <td class="summer-group-2">
-              <div class="name">{{'SUMMER.GROUP2.NAME'|t}} </div>
-              <div class="time">{{'SUMMER.GROUP2.TIME'|t}} </div>
+            {{_self.groupLink( group2,'SUMMER.GROUP2.NAME'|t,'SUMMER.GROUP2.TIME'|t)}}
           </td>
         </tr>
         <tr>
           <th>Вт</th>
           <td class="empty"> </td>
           <td class="summer-group-3">
-              <div class="name">{{'SUMMER.GROUP2.NAME'|t}}</div>
-              <div class="time">{{'SUMMER.GROUP2.TIME'|t}}</div>
+            {{_self.groupLink( group3,'SUMMER.GROUP3.NAME'|t,'SUMMER.GROUP3.TIME'|t)}}
           </td>
       </tr>
       <tr>
         <th>Ср</th>
         <td class="summer-group-1">
-            <div class="name">{{'SUMMER.GROUP1.NAME'|t}}</div>
-            <div class="time">{{'SUMMER.GROUP1.TIME'|t}}</div>
+          {{_self.groupLink( group1,'SUMMER.GROUP1.NAME'|t,'SUMMER.GROUP1.TIME'|t)}}
        </td>
         <td class="summer-group-2">
-            <div class="name">{{'SUMMER.GROUP2.NAME'|t}} </div>
-            <div class="time">{{'SUMMER.GROUP2.TIME'|t}} </div>
+          {{_self.groupLink( group2,'SUMMER.GROUP2.NAME'|t,'SUMMER.GROUP2.TIME'|t)}}
         </td>
       </tr>
       <tr>
         <th>Чт</th>
         <td class="empty"></td>
         <td class="summer-group-3">
-          <div class="name">
-            {{'SUMMER.GROUP2.NAME'|t}}
-          </div>
-          <div class="time">
-            {{'SUMMER.GROUP2.TIME'|t}}
-          </div>
-      </td>
+          {{_self.groupLink( group3,'SUMMER.GROUP3.NAME'|t,'SUMMER.GROUP3.TIME'|t)}}
+        </td>
     </tr>
     <tr>
       <th>Пт</th>
@@ -137,23 +141,35 @@ content:
     </tr>
   </table>
   </div>
+</div>
+[div class="description"]
+{{page.header.description}}
 [/div]
-Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.
-Cursos de taijiquan y estilos internos orientado a jovenes y adultos y practica de wushu deportivo para los ni;os y adolecentes. Le invitamos a conocer en familia el milenario arte de Wushu.
-[//]: # ( TODO style list )
 * address: {{site.address}}
 * contact: {{site.phone}}
-[section name="extra"]
-  ## extra information
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+[//]: # ( FIXME twig expression are not rended in the shortcode section)
+[section  name="extra"]
+## extra information
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+[div class="inscription"]
+### fill in
+  * para inscribirse puede hacerlos llamando o enviar sms al telefono
+    + <a href="tel:+375333627666"><span  class="fa-li"><i class="fas fa-phone"></i></span>+375333627666 **(MTC)**<span class="phone-icon icon-viber fab fa-viber"></span></a>.
+  * si usa Viber puede enviar su mensaje al grupo ["leto 2019 inscription"](#)
+[/div]
+[div class="training-place"]
+### our trainig area
+Los entrenamientos son realizados en el Sala deportiva de la escuela Innovacia.
 
-  ### fill in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  ## our trainig area
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-   * images
-   * textSnowShadown
+**address :** <span><i class="fas fa-map"></i> г.Минск, ул.Пугачевская, 10.</span>
 
+![fotos hall](#)
 
-  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  [/section]
+Tambien tenemos planificados entrenamientos al aire libre en el caso del los grupos de adultos
+![fotos outdoor](#)
+
+y para los ninnos y jovenes visitas a arenas de Batuta para entrenamientos y entrenamiento
+
+![fotos batuta](#)
+[/div]
+[/section]
