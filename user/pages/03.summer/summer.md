@@ -149,8 +149,9 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 * contact: {{site.phone}}
 [//]: # ( FIXME twig expression are not rended in the shortcode section)
 [section  name="extra"]
-## extra information
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+## Informacion general acerca de los Cursos.
+ Estos cursos se hacen con el proposito de que los practicantes de la escuela se mantengan cercanos a la practica de wushu a la par que disfrutan de sus planes de verano y a para atraer nuevos integrantes que se unan a nuestra escuela en la practica de wushu, taiji y qigong. Los ejercicios y sistemas que se impartiran este verano seran profundizados y erfeccionados a los largo del curso regular.
+
 [div class="inscription"]
 ### fill in
   * para inscribirse puede hacerlos llamando o enviar sms al telefono
@@ -162,13 +163,13 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 Los entrenamientos son realizados en el Sala deportiva de la escuela Innovacia.
 
 **address :** <span><i class="fas fa-map"></i> г.Минск, ул.Пугачевская, 10.</span>
-
+[//]: # (" TODO FOtos")
 ![fotos hall](#)
 
 Tambien tenemos planificados entrenamientos al aire libre en el caso del los grupos de adultos
 ![fotos outdoor](#)
 
-y para los ninnos y jovenes visitas a arenas de Batuta para entrenamientos y entrenamiento
+y para los ninnos y jovenes ademas visitas a arenas de Batuta para entrenamientos y entrenamiento
 
 ![fotos batuta](#)
 [/div]
