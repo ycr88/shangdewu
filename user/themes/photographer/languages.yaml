@@ -25,24 +25,24 @@ ru:
     SCHOOL:
       NAME: ШанДэУ
     BLOG:
-        POST_LIST: Список новостей
+        POST_LIST: Лента новостей
         POST_BY: Сообщение от
-        POST_ON: в
-        OLDER_POSTS: Старые пост
-        NEWER_POSTS: Новее пост
-        MENU: Menu
+        POST_ON: Опубликовано
+        OLDER_POSTS: Архив новостей
+        NEWER_POSTS: Последние новости
+        MENU: Меню
         TOGGLE_NAVIGATION: Toggle navigation
         READ_MORE: Подробнее
     SUMMER:
         HEADING: ШанДэУ
         SUBHEADING: Лето 2019
-        SLIDE_HEADING: Meet our courses
+        SLIDE_HEADING: Наши летние курсы
         GROUP1:
           NAME: "Ушу и Спочан"
           TIME: "16:30-18:00"
         GROUP2:
-          NAME: "Тайцзи, цингун I"
+          NAME: "Тайцзи, цингун: Продолжающие"
           TIME: "19:15-20:45"
         GROUP3:
-          NAME: "Тайцзи, цингун II"
+          NAME: "Тайцзи, цингун: Начинающие"
           TIME: "19:15-20:45"
