@@ -33,6 +33,58 @@ Is the list of the post order by dateformat
         ```
       * optional add a image name **facebook_image.jpg** to be captured for facebook debugger
 
+## page leto 2019
+
+  * page: summer.md
+    - config
+      + process twig: true  
+      + collection
+        * order: default
+      + using translation from template/language.yaml
+         * block "SUMMER"
+      + using shortcode plugin
+    - headers
+      + class: summer
+      + description:"[#text]"
+    - content:
+      +  macros
+        - groupLink : to fill the link to the groups in the schedule
+      + section
+        - extra
+          + section(div)
+            - inscription
+            - training-place
+             + __ // TODO __
+               - [ ] add pictures for each secction
+
+  * template: summer.twig.html
+### Summer group
+   - Groups:
+      * children
+      * adults-advanced
+      * adults-beginners
+    - page: summer-item.md
+      * config
+        - process twig: true  
+      * headers
+          + header_image: [name,ext]
+          + program array
+             ```+
+             [#name]:
+               name: ""
+               system: ""
+               creator: ""
+               description: ""
+               video: "#ID_YOUTUBE"
+             ```
+        * content
+          - __ // TODO __
+            - [ ] create commnons structure in each group
+          + macros
+            - program : to pass array program form the headers
+              + > NOTE is created a frame with the  YOUTUBE sharing config and concatenated the ID_YOUTUBE
+          + section
+            -
 
 
 **TIP:** Check out the [general Grav installation instructions](http://learn.getgrav.org/basics/installation) for more details on this process.
