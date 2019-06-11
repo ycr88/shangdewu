@@ -53,14 +53,18 @@ Is the list of the post order by dateformat
         - extra
           + section(div)
             - inscription
+              + // TODO
+                - [ ] create the Viber group for inscription
             - training-place
-             + __ // TODO __
+              + // TODO
                - [ ] add pictures for each secction
 
   * template: summer.twig.html
 ### Summer group
    - Groups:
       * children
+       - *// TODO*
+         - [ ]add content
       * adults-advanced
       * adults-beginners
     - page: summer-item.md
@@ -78,7 +82,7 @@ Is the list of the post order by dateformat
                video: "#ID_YOUTUBE"
              ```
         * content
-          - __ // TODO __
+          - *// TODO*
             - [ ] create commnons structure in each group
           + macros
             - program : to pass array program form the headers

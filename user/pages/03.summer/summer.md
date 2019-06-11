@@ -166,10 +166,9 @@ Los entrenamientos son realizados en el Sala deportiva de la escuela Innovacia.
 [//]: # (" TODO FOtos")
 ![fotos hall](#)
 
-Tambien tenemos planificados entrenamientos al aire libre en el caso del los grupos de adultos
+Tambien tenemos planificados entrenamientos al aire especialmente para los grupos de adultos
 ![fotos outdoor](#)
-
-y para los ninnos y jovenes ademas visitas a arenas de Batuta para entrenamientos y entrenamiento
+y para los ninnos y jovenes ademas visitas a arenas de Batuta y otros centros deperivos para entrenamientos y enteretenimiento
 
 ![fotos batuta](#)
 [/div]

@@ -1,6 +1,9 @@
 ---
 title: taijichuan basic curse
 header_image: basic.jpg
+process:
+    markdown: true
+    twig: true
 program:
   qigong:
     name: "YIjingjin"
