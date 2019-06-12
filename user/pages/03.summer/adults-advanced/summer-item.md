@@ -1,6 +1,7 @@
 ---
 title: taijichuan advanced curse
 header_image: advanced.jpg
+class: "summer-group summer-adults-advanced"
 process:
     markdown: true
     twig: true
@@ -30,23 +31,22 @@ program:
     description: "Forma de taijiquan estilo Yang con Lanza. Es una forma de nivel elemtal con elegantes y bellos movimientos."
     video: fF738LI_KRY
 ---
- Los ejercicios y series requieren un conocimietos basico de wushu taijiquan y qigong, esta planificado el estudio de formas complejas en codinacion y cantidad de ejercicios y elementos tecnicos. Todos destinados a una mantener una correcta y saludable forma fisica y mental estos ejercicios pueden ser realizados tanto en casa como al aire libre. Estos cursos incluiran ejercios con manos libres, y con armas de Wushu rutinas de abanico y rutinas con Lanza.
- [//]:#(TODO Slide con fotos)
-## Equipo para el entrenamiento
-  La practica de wushu y Taijiquan como cualquien practica deportiva requiere de una vestimenta y calzado comodos y ligeros. en nuestra escuela. tanto hombres como mujeres, el vesturio consiste en un pantalon deportivo y zapatillas con cordones ligeras.
-  [//]:# (TODO Fotos con ropa de practica)
-### Armas de Wushu
-   son instrumentos con figura y peso  similar a las usadas originalmente, con materiales duraderos como madera y acero. Pero sin elementos cortantes o punzantes.
-  * abanico
-  * Lanza
+[div class="header"]
+## Bienvenido a nuertro curso
+En este curso los ejercicios y series requieren un conocimietos basico de wushu taijiquan o qigong, esta planificado el estudio de formas con cierta complejidad en coodinacion, cantidad de ejercicios y elementos tecnicos. Todos destinados a una mantener una correcta y saludable forma fisica y mental en los practicantes. Estos ejercicios pueden ser realizados tanto en casa como al aire libre. Estos cursos incluiran ejercicios con manos libres, y con armas de Wushu como son rutinas de abanico y rutinas con Lanza.
+
+![Slide](fotos)
+[/div]
 
 ## Series y Rutinas que estudiaremos
 {% macro program(array) %}
   {% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.video ~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
   <div class="program-item">
     <div class="description">
-      <h2>{{array.name}}</h2>
-      <p>{{array.system}}</p>
+      <h1>{{array.name}}</h1>
+    {% if array.system %}
+            <p>{{array.system}}</p>
+  {% endif %}
       <hr>
       <p>{{array.description}}</p>
     </div>

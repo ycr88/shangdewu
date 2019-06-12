@@ -145,13 +145,12 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 [div class="description"]
 {{page.header.description}}
 [/div]
-* address: {{site.address}}
-* contact: {{site.phone}}
 [//]: # ( FIXME twig expression are not rended in the shortcode section)
 [section  name="extra"]
+[div class="header"]
 ## Informacion general acerca de los Cursos.
  Estos cursos se hacen con el proposito de que los practicantes de la escuela se mantengan cercanos a la practica de wushu a la par que disfrutan de sus planes de verano y a para atraer nuevos integrantes que se unan a nuestra escuela en la practica de wushu, taiji y qigong. Los ejercicios y sistemas que se impartiran este verano seran profundizados y erfeccionados a los largo del curso regular.
-
+[/div]
 [div class="inscription"]
 ### fill in
   * para inscribirse puede hacerlos llamando o enviar sms al telefono
@@ -163,13 +162,25 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 Los entrenamientos son realizados en el Sala deportiva de la escuela Innovacia.
 
 **address :** <span><i class="fas fa-map"></i> г.Минск, ул.Пугачевская, 10.</span>
-[//]: # (" TODO FOtos")
+[//]:#(" TODO FOtos")
 ![fotos hall](#)
-
 Tambien tenemos planificados entrenamientos al aire especialmente para los grupos de adultos
 ![fotos outdoor](#)
 y para los ninnos y jovenes ademas visitas a arenas de Batuta y otros centros deperivos para entrenamientos y enteretenimiento
 
 ![fotos batuta](#)
+[/div]
+[div class="equipment"]
+[div class="wearing"]
+### Equipo para el entrenamiento
+La practica de wushu y Taijiquan como practica deportiva requiere de una vestimenta y calzado comodos y ligeros. En nuestra escuela tanto para hombres como para mujeres, el vesturio consiste en un pantalon deportivo y zapatillas con cordones ligeras.
+[//]:#(TODO Fotos con ropa de practica)
+[/div]
+[div class="weapon"]
+### Armas de Wushu
+son instrumentos con forma y peso  similar a las usadas originalmente, con materiales duraderos como madera y acero. Pero sin elementos cortantes o punzantes.
+* abanico
+* Sable
+* palo
 [/div]
 [/section]
