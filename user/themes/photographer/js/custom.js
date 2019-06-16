@@ -1,4 +1,35 @@
 
+// POST commands to YouTube or Vimeo API
+function postMessageToPlayer(player, command){
+  if (player == null || command == null) return;
+console.log(player,command,player.contentWindow.postMessage(JSON.stringify(command), "*"));
+  player.contentWindow.postMessage(JSON.stringify(command), "*");
+}
+function playPauseVideo(slick, control){
+  var currentSlide, slideType, startTime, player, video;
+  currentSlide = slick.find(".slick-current");
+  player = currentSlide.find("iframe").get(0);
+  startTime = currentSlide.data("video-start");
+
+  switch (control) {
+    case "play":
+      postMessageToPlayer(player, {
+        "event": "command",
+        "func": "mute"
+      });
+      postMessageToPlayer(player, {
+        "event": "command",
+        "func": "playVideo"
+      });
+      break;
+    case "pause":
+      postMessageToPlayer(player, {
+        "event": "command",
+        "func": "pauseVideo"
+      });
+      break;
+  }
+}
 $(document).ready(function(){
 
 $('.timeline-gallery').slick({
@@ -23,6 +54,27 @@ $('.slider-lightbox').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+});
+$('.vertical-slide').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows:false,
+  vertical:true,
+  verticalSwiping:true,
+  adaptiveHeight: true,
+  dots: true,
+  appendDots:$(".menu")
+});
+$('.vertical-slide').on("beforeChange", function(event, slick) {
+    slick = $(slick.$slider);
+    console.log(slick);
+    playPauseVideo(slick,"pause");
+  });
+$('.single-lightbox').slickLightbox({
+  useHistoryApi: 'true'
+});
+$('.slider-lightbox').slickLightbox({
+  useHistoryApi: 'true'
 });
 $('.post-slider').slick({
   infinite: true,
@@ -53,12 +105,7 @@ $('.post-slider').slick({
     }
   ]
 });
-$('.single-lightbox').slickLightbox({
-  useHistoryApi: 'true'
-});
-$('.slider-lightbox').slickLightbox({
-  useHistoryApi: 'true'
-});
+
 var vk_image = document.getElementsByTagName("META")["vk:image"] ? document.getElementsByTagName("META")["vk:image"].content : null;
 var MyJs_shares_conf = {
   "twitter":{
@@ -164,7 +211,6 @@ var MyJs_shares_conf = {
     shareIn: "blank"
   }
 };
-
 $.each(MyJs_shares_conf,function(a,b){
   jsSocials.setDefaults(a , b
     );

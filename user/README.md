@@ -60,11 +60,11 @@ Is the list of the post order by dateformat
                - [ ] add pictures for each secction
 
   * template: summer.twig.html
-### Summer group
+### Summer groups
    - Groups:
       * children
        - *// TODO*
-         - [ ]add content
+         - [x]add content
       * adults-advanced
       * adults-beginners
     - page: summer-item.md
@@ -83,7 +83,9 @@ Is the list of the post order by dateformat
              ```
         * content
           - *// TODO*
-            - [ ] create commnons structure in each group
+            - [x] create commnons structure in each group
+            - [x] pause all the videos when is not the current slide
+            - [ ] use the youtube iframe api to more clean code(https://developers.google.com/youtube/iframe_api_reference?hl=es-419)
           + macros
             - program : to pass array program form the headers
               + > NOTE is created a frame with the  YOUTUBE sharing config and concatenated the ID_YOUTUBE
