@@ -1,8 +1,6 @@
-
 // POST commands to YouTube or Vimeo API
 function postMessageToPlayer(player, command){
   if (player == null || command == null) return;
-console.log(player,command,player.contentWindow.postMessage(JSON.stringify(command), "*"));
   player.contentWindow.postMessage(JSON.stringify(command), "*");
 }
 function playPauseVideo(slick, control){
@@ -56,18 +54,17 @@ $('.slider-lightbox').slick({
   slidesToScroll: 1,
 });
 $('.vertical-slide').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  infinite: false,
+  //slidesToShow: 1,
+  //slidesToScroll: 1,
   arrows:false,
-  vertical:true,
-  verticalSwiping:true,
+//  vertical:true,
+//  verticalSwiping:true,
   adaptiveHeight: true,
   dots: true,
-  appendDots:$(".menu")
 });
 $('.vertical-slide').on("beforeChange", function(event, slick) {
     slick = $(slick.$slider);
-    console.log(slick);
     playPauseVideo(slick,"pause");
   });
 $('.single-lightbox').slickLightbox({
