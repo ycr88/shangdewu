@@ -32,29 +32,32 @@ Taichi qigong no es un estilo o tipo de practica. Este nombre introduce o mencio
 
 ## Series y Rutinas que estudiaremos
 {% macro program(array) %}
-  {% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.video ~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
+  {% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
   <div class="program-item">
     <div class="description">
       <h1>{{array.name}}</h1>
     {% if array.system %}
-            <p>{{array.system}}</p>
+    <div class="system">
+      <h2>{{'SUMMER.STYLE'|t}}:</h2>
+      <p>{{array.system}}</p>
+    </div>
   {% endif %}
-      <hr>
       <p>{{array.description}}</p>
     </div>
     <div class="video">
     {{video}}
     </div>
-  <div>
-{% endmacro%}
+  </div>
+{% endmacro %}
 {% set program = page.header.program %}
 {% if program %}
 <div class="program">
-  <ul class="styledList">
+  <div class="menu">
+  </div>
+  <div class="vertical-slide">
     {% for item in program %}
-      <li>{{_self.program(item)}}
-    </li>
+      {{_self.program(item)}}
     {% endfor %}
-  </ul>
+  </div>
 </div>
 {% endif %}

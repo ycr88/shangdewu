@@ -62,6 +62,7 @@ Is the list of the post order by dateformat
   * template: summer.twig.html
 ### Summer groups
    - Groups:
+     - *//BUG:* " '[/div]' in children and breginner group"
       * children
        - *// TODO*
          - [x]add content
@@ -85,8 +86,8 @@ Is the list of the post order by dateformat
           - *// TODO*
             - [x] create commnons structure in each group
             - [x] pause all the videos when is not the current slide
-            - [ ] add the macro program  from page test in all the groups
-              - [ ] delete page test. 
+            - [x] add the macro program  from page test in all the groups
+              - [ ] delete page test.
             - [ ] use the youtube iframe api to more clean code(https://developers.google.com/youtube/iframe_api_reference?hl=es-419)
           + macros
             - program : to pass array program form the headers
