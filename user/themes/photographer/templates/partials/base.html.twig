@@ -9,7 +9,8 @@
         {% block metadata %}
       {% endblock %}
         <link rel="icon" type="image/png" href="{{ theme_url }}/img/favicon.ico" />
-
+{# NOTE
+- [] check the order of the assests#}
          {% block stylesheets %}
                 {% do assets.addCss('theme://css/bootstrap.css') %}
                 {% do assets.addCss('theme://css/camera.css') %}
@@ -21,6 +22,7 @@
         {% endblock %}
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         {% do assets.add('js_social') %}
+        {% do assets.add('third-party')%}
       {{ assets.css() }}
         {% block javascripts %}
             {% do assets.add('jquery',101) %}

@@ -25,18 +25,6 @@ program:
       description: "Es llamado el deporte del samuray. modalidad de combate con tecnica espadas creado en Japon por un maestro samurai. Con instrumentos y materiales que no causan traumas en los practicantes, Porque junto con wushu?, porque resulta manera de ensennar a los ninnos los principios basicos defenderse sin causar traumas fisicos, lo cual brida a las familias tranquilidad, los ninnos se diverten durante la practica, cuenta con un serio programa deportivo en belarus y a nivel internacional "
       video: fF738LI_KRY
 ---
-[div class="header"]
-La practica de wushu puede comenzar entre los 4 y 5 annos de edad, con la practica de wushu disiplinan no solo sus cuerpo tambien su caracter y sus pensamientos en este curso entrenamientos estan dirigidos a unir los ninnos de todos las edades y  niveles y elevar las condiciones fisicas, aprender habilidades de diferentes estilos.
-[div class="media"]
-![Fotos ninnos](url)
-[/div]
-  ## Wushu para ninnos y adolecentes
-  Actividedes recreativas, juegos, concursos y otras atracciones acomapnnaran nuerstra paractica.
-  [div class="media"]
-  ![Fotos actividades](http)
-  [/div]
-[/div]
-## En los entrenamientos
 {% macro program(array) %}
   {% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
   <div class="program-item">
@@ -55,6 +43,25 @@ La practica de wushu puede comenzar entre los 4 y 5 annos de edad, con la practi
     </div>
   </div>
 {% endmacro %}
+{% set activities = page.find("/summer/children/activities").media.images() %}
+{% set training = page.find("/summer/children/training").media.images() %}
+{% macro gallery(data, type ="") %}
+{{ '<div class="gallery '~ type ~' ">'}}
+{% for item in data %}
+{{'<img src="'~item.cache.url()~'" alt="">'}}
+{% endfor %}
+{{'</div>'}}
+{% endmacro %}
+[div class="header"]
+La practica de wushu puede comenzar entre los 4 y 5 annos de edad, con la practica de wushu disiplinan no solo sus cuerpo tambien su caracter y sus pensamientos en este curso entrenamientos estan dirigidos a unir los ninnos de todos las edades y  niveles y elevar las condiciones fisicas, aprender habilidades de diferentes estilos.
+  ![Fotos ninnos](url)
+  {{_self.gallery(training, "slide-fade")}}
+## Wushu para ninnos y adolecentes
+  Actividedes recreativas, juegos, concursos y otras atracciones acomapnnaran nuerstra paractica.
+{{_self.gallery(activities, "slide-carrusell")}}
+[/div]
+## En los entrenamientos
+
 {% set program = page.header.program %}
 {% if program %}
 <div class="program">

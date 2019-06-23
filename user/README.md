@@ -1,11 +1,18 @@
 # ShangDeWu website
-
+// TODO
+- [ ] add facebook id
+- [ ] dont show in production website
+  - [ ] scss file
+  - [ ] readme with TODO
+- [ ] Update Grav.
 ![Photographer](assets/readme_1.png)
 
 
 # Features
 
 __thridParty Libraries__
+// TODO
+  - [ ] make local version of the external Libraries
   * Bootstrap 3.0
   * Photo Slider
   * Photo Gallery
@@ -53,16 +60,16 @@ Is the list of the post order by dateformat
         - extra
           + section(div)
             - inscription
-              + // TODO
+              + *// TODO*
                 - [ ] create the Viber group for inscription
             - training-place
-              + // TODO
+              + *// TODO*
                - [ ] add pictures for each secction
 
   * template: summer.twig.html
 ### Summer groups
    - Groups:
-     - *//BUG:* " '[/div]' in children and breginner group"
+     -  *// BUG:* " '[/div]' in children and beginner group[SOLVED]"
       * children
        - *// TODO*
          - [x]add content
@@ -83,17 +90,17 @@ Is the list of the post order by dateformat
                video: "#ID_YOUTUBE"
              ```
         * content
-          - *// TODO*
+          - //TODO
             - [x] create commnons structure in each group
             - [x] pause all the videos when is not the current slide
             - [x] add the macro program  from page test in all the groups
-              - [ ] delete page test.
+              - [x] delete page test.
             - [ ] use the youtube iframe api to more clean code(https://developers.google.com/youtube/iframe_api_reference?hl=es-419)
           + macros
             - program : to pass array program form the headers
               + > NOTE is created a frame with the  YOUTUBE sharing config and concatenated the ID_YOUTUBE
           + section
-            -
+
 
 
 **TIP:** Check out the [general Grav installation instructions](http://learn.getgrav.org/basics/installation) for more details on this process.
