@@ -58,7 +58,7 @@ La practica de wushu puede comenzar entre los 4 y 5 annos de edad, con la practi
   {{_self.gallery(training, "slide-fade")}}
 ## Wushu para ninnos y adolecentes
   Actividedes recreativas, juegos, concursos y otras atracciones acomapnnaran nuerstra paractica.
-{{_self.gallery(activities, "slide-carrusell")}}
+{{_self.gallery(activities, "slide-fade")}}
 [/div]
 ## En los entrenamientos
 

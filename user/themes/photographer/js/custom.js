@@ -55,11 +55,7 @@ $('.slider-lightbox').slick({
 });
 $('.vertical-slide').slick({
   infinite: false,
-  //slidesToShow: 1,
-  //slidesToScroll: 1,
   arrows:false,
-//  vertical:true,
-//  verticalSwiping:true,
   adaptiveHeight: true,
   dots: true,
 });
@@ -102,7 +98,18 @@ $('.post-slider').slick({
     }
   ]
 });
-
+$('.slide-fade').slick({
+  infinite: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 2000,
+  fade: true,
+  cssEase: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)'
+});
+$('.slide-fade').slickLightbox({
+  useHistoryApi: 'true'
+});
 var vk_image = document.getElementsByTagName("META")["vk:image"] ? document.getElementsByTagName("META")["vk:image"].content : null;
 var MyJs_shares_conf = {
   "twitter":{
