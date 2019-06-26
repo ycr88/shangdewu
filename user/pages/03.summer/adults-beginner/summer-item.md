@@ -25,12 +25,15 @@ program:
     description: "Forma de taijiquan estilo Yang con Lanza. Es una forma de nivel elemtal con elegantes y bellos movimientos."
     video: fF738LI_KRY
 ---
-[div class="header"]
-## Why to practice taijiquan y qigong
-Taichi qigong no es un estilo o tipo de practica. Este nombre introduce o menciona area de las tradiciones chinas. Taiqiquan es un estilo tradidional de Wushu sus tecnicas son orientadas a la defenza y el ataque. Taiqiquan es mundialmente popular por los beneficios a la salud que proporciona su practica. Qigong agrupa muchas tipos de gimnacia que han acompannado la paractica de wushu para fortalecer y elevar la energia interna del cuerpo. Este curso esta destinado a mostrar elementos basicos, donde no sera necesario ningun conocimiento previo. En nuestras practica trabajaremos nuestra coordinacion, nuestra estabilidad, haremos ejercicios de relajacion entre otros.
-[/div]
-
-## Series y Rutinas que estudiaremos
+{% set program = page.header.program %}
+{% set  training = page.find("/summer/adults-beginner/training").media.images() %}
+{% macro gallery(data, type ="") %}
+{{ '<div class="gallery '~ type ~' ">'}}
+{% for item in data %}
+{{'<img src="'~item.cache.url()~'" alt="">'}}
+{% endfor %}
+{{'</div>'}}
+{% endmacro %}
 {% macro program(array) %}
   {% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
   <div class="program-item">
@@ -49,7 +52,13 @@ Taichi qigong no es un estilo o tipo de practica. Este nombre introduce o mencio
     </div>
   </div>
 {% endmacro %}
-{% set program = page.header.program %}
+
+[div class="header"]
+## Why to practice taijiquan y qigong
+Taichi qigong no es un estilo o tipo de practica. Este nombre introduce o menciona area de las tradiciones chinas. Taiqiquan es un estilo tradidional de Wushu sus tecnicas son orientadas a la defenza y el ataque. Taiqiquan es mundialmente popular por los beneficios a la salud que proporciona su practica. Qigong agrupa muchas tipos de gimnacia que han acompannado la paractica de wushu para fortalecer y elevar la energia interna del cuerpo. Este curso esta destinado a mostrar elementos basicos, donde no sera necesario ningun conocimiento previo. En nuestras practica trabajaremos nuestra coordinacion, nuestra estabilidad, haremos ejercicios de relajacion entre otros.
+[/div]
+{{ _self.gallery(training, "slide-fade")}}
+## Series y Rutinas que estudiaremos
 {% if program %}
 <div class="program">
   <div class="menu">

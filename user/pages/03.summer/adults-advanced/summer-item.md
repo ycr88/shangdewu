@@ -31,14 +31,15 @@ program:
     description: "Forma de taijiquan estilo Yang con Lanza. Es una forma de nivel elemtal con elegantes y bellos movimientos."
     video: fF738LI_KRY
 ---
-[div class="header"]
-## Bienvenido a nuertro curso
-En este curso los ejercicios y series requieren un conocimietos basico de wushu taijiquan o qigong, esta planificado el estudio de formas con cierta complejidad en coodinacion, cantidad de ejercicios y elementos tecnicos. Todos destinados a una mantener una correcta y saludable forma fisica y mental en los practicantes. Estos ejercicios pueden ser realizados tanto en casa como al aire libre. Estos cursos incluiran ejercicios con manos libres, y con armas de Wushu como son rutinas de abanico y rutinas con Lanza.
-
-![Slide](fotos)
-[/div]
-
-## Series y Rutinas que estudiaremos
+{% set program = page.header.program %}
+{% set training = page.find("/summer/adults-advanced/training").media.images() %}
+{% macro gallery(data, type ="") %}
+{{ '<div class="gallery '~ type ~' ">'}}
+{% for item in data %}
+{{'<img src="'~item.cache.url()~'" alt="">'}}
+{% endfor %}
+{{'</div>'}}
+{% endmacro %}
 {% macro program(array) %}
   {% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
   <div class="program-item">
@@ -57,7 +58,12 @@ En este curso los ejercicios y series requieren un conocimietos basico de wushu 
     </div>
   </div>
 {% endmacro %}
-{% set program = page.header.program %}
+[div class="header"]
+## Bienvenido a nuertro curso
+En este curso los ejercicios y series requieren un conocimietos basico de wushu taijiquan o qigong, esta planificado el estudio de formas con cierta complejidad en coodinacion, cantidad de ejercicios y elementos tecnicos. Todos destinados a una mantener una correcta y saludable forma fisica y mental en los practicantes. Estos ejercicios pueden ser realizados tanto en casa como al aire libre. Estos cursos incluiran ejercicios con manos libres, y con armas de Wushu como son rutinas de abanico y rutinas con Lanza.
+[/div]
+{{ _self.gallery(training,"slide-fade")}}
+## Series y Rutinas que estudiaremos
 {% if program %}
 <div class="program">
   <div class="menu">

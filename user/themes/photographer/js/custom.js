@@ -228,3 +228,6 @@ $(".js-social").jsSocials({
             showCount: false,
           });
 });
+/*AnimateCss*/
+const element = document.querySelector('.post-slider .post-content');
+element.classList.add('animated', 'bounceOutLeft');
