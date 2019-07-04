@@ -229,5 +229,5 @@ $(".js-social").jsSocials({
           });
 });
 /*AnimateCss*/
-const element = document.querySelector('.post-slider .post-content');
-element.classList.add('animated', 'bounceOutLeft');
+//const element = document.querySelector('.post-slider .post-content');
+//element.classList.add('animated', 'bounceOutLeft');

@@ -162,25 +162,64 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 Los entrenamientos son realizados en el Sala deportiva de la escuela Innovacia.
 
 **address :** <span><i class="fas fa-map"></i> г.Минск, ул.Пугачевская, 10.</span>
-[//]:#(" TODO FOtos")
-![fotos hall](#)
+<div class="gallery slider-lightbox">
+  <a class="thumbnail" href="summer/hall-taijiquan.jpg" target="_blank">
+    <img src="summer/hall-taijiquan.jpg" alt="">
+  </a>
+  <a class="thumbnail" href="summer/hall-wushu.jpg" target="_blank">
+    <img src="summer/hall-wushu.jpg" alt="">
+  </a>
+</div>
 Tambien tenemos planificados entrenamientos al aire especialmente para los grupos de adultos
-![fotos outdoor](#)
-y para los ninnos y jovenes ademas visitas a arenas de Batuta y otros centros deperivos para entrenamientos y enteretenimiento
 
-![fotos batuta](#)
+<div class="gallery slider-lightbox">
+  <a class="thumbnail" href="summer/outdoor.jpg" target="_blank">
+    <img src="summer/outdoor.jpg" alt="">
+  </a>
+  <a class="thumbnail" href="summer/outdoor1.jpg" target="_blank">
+    <img src="summer/outdoor1.jpg" alt="">
+  </a>
+</div>
+y para los ninnos y jovenes ademas visitas a arenas de Batuta y otros centros deperivos para entrenamientos y enteretenimiento
+<div class="gallery single-lightbox">
+  <a class="thumbnail" href="summer/shangdewu-na-batuta.jpg" target="_blank">
+    <img src="summer/shangdewu-na-batuta.jpg" alt="">
+  </a>
+</div>
 [/div]
 [div class="equipment"]
 [div class="wearing"]
 ### Equipo para el entrenamiento
 La practica de wushu y Taijiquan como practica deportiva requiere de una vestimenta y calzado comodos y ligeros. En nuestra escuela tanto para hombres como para mujeres, el vesturio consiste en un pantalon deportivo y zapatillas con cordones ligeras.
-[//]:#(TODO Fotos con ropa de practica)
+<div class="gallery slider-lightbox">
+  <a class="thumbnail" href="summer/wushu-training-wearing.jpg" target="_blank">
+    <img src="summer/wushu-training-wearing.jpg" alt="">
+  </a>
+  <a class="thumbnail" href="summer/shangdewu-training-wearing.jpg" target="_blank">
+    <img src="summer/shangdewu-training-wearing.jpg" alt="">
+  </a>
+  <a class="thumbnail" href="summer/shangdewu-training.jpg" target="_blank">
+    <img src="summer/shangdewu-training.jpg" alt="">
+  </a>
+</div>
 [/div]
 [div class="weapon"]
 ### Armas de Wushu
 son instrumentos con forma y peso  similar a las usadas originalmente, con materiales duraderos como madera y acero. Pero sin elementos cortantes o punzantes.
-* abanico
-* Sable
-* palo
+<div class="gallery col-sm-4 col-xs-12 single-lightbox">
+  <a class="thumbnail" href="summer/wushu-fan.jpg" target="_blank">
+    <img src="summer/wushu-fan.jpg" alt="">
+  </a>
+</div>
+<div class="gallery col-sm-4 col-xs-12 single-lightbox">
+  <a class="thumbnail" href="summer/wushu-sable.jpg" target="_blank">
+    <img src="summer/wushu-sable.jpg" alt="">
+  </a>
+</div>
+<div class="gallery col-sm-4 col-xs-12 single-lightbox">
+  <a class="thumbnail" href="summer/wushu-gun.jpg" target="_blank">
+    <img src="summer/wushu-gun.jpg" alt="">
+  </a>
+</div>
 [/div]
 [/section]
