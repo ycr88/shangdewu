@@ -16,7 +16,6 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 # {{'SCHOOL.NAME'|t}}
  paspizania leto 2019
 [/div]
-[//]: # ( TODO use unpublish-date formatter)
 <div class="summer-schedule table-responsive">
   {% set group1 = page.find("/summer/children").url %}
   {% set group2 = page.find("/summer/adults-advanced").url %}
@@ -145,19 +144,21 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 [div class="description"]
 {{page.header.description}}
 [/div]
-[//]: # ( FIXME twig expression are not rended in the shortcode section)
 [section  name="extra"]
-[div class="header"]
+[div class="intro"]
 ## Informacion general acerca de los Cursos.
  Estos cursos se hacen con el proposito de que los practicantes de la escuela se mantengan cercanos a la practica de wushu a la par que disfrutan de sus planes de verano y a para atraer nuevos integrantes que se unan a nuestra escuela en la practica de wushu, taiji y qigong. Los ejercicios y sistemas que se impartiran este verano seran profundizados y erfeccionados a los largo del curso regular.
 [/div]
-[div class="inscription"]
+[div class="subsection inscription"]
 ### fill in
-  * para inscribirse puede hacerlos llamando o enviar sms al telefono
-    + <a href="tel:+375333627666"><span  class="fa-li"><i class="fas fa-phone"></i></span>+375333627666 **(MTC)**<span class="phone-icon icon-viber fab fa-viber"></span></a>.
-  * si usa Viber puede enviar su mensaje al grupo ["leto 2019 inscription"](#)
+
+para inscribirse puede hacerlos llamando o enviar sms al telefono
+  * <a href="tel:+375333627666"><span class="fa-li"><i class="fas fa-phone"></i></span>+375333627666 **(MTC)**<span class="phone-icon icon-viber fab fa-viber"></span></a>
+
+si usa Viber puede enviar su mensaje al grupo
+  * ["leto 2019 inscription"](#)
 [/div]
-[div class="training-place"]
+[div class="subsection training-place"]
 ### our trainig area
 Los entrenamientos son realizados en el Sala deportiva de la escuela Innovacia.
 
@@ -187,8 +188,7 @@ y para los ninnos y jovenes ademas visitas a arenas de Batuta y otros centros de
   </a>
 </div>
 [/div]
-[div class="equipment"]
-[div class="wearing"]
+[div class="subsection wearing"]
 ### Equipo para el entrenamiento
 La practica de wushu y Taijiquan como practica deportiva requiere de una vestimenta y calzado comodos y ligeros. En nuestra escuela tanto para hombres como para mujeres, el vesturio consiste en un pantalon deportivo y zapatillas con cordones ligeras.
 <div class="gallery slider-lightbox">
@@ -203,23 +203,25 @@ La practica de wushu y Taijiquan como practica deportiva requiere de una vestime
   </a>
 </div>
 [/div]
-[div class="weapon"]
+[div class="subsection weapon"]
 ### Armas de Wushu
 son instrumentos con forma y peso  similar a las usadas originalmente, con materiales duraderos como madera y acero. Pero sin elementos cortantes o punzantes.
-<div class="gallery col-sm-4 col-xs-12 single-lightbox">
-  <a class="thumbnail" href="summer/wushu-fan.jpg" target="_blank">
-    <img src="summer/wushu-fan.jpg" alt="">
-  </a>
-</div>
-<div class="gallery col-sm-4 col-xs-12 single-lightbox">
-  <a class="thumbnail" href="summer/wushu-sable.jpg" target="_blank">
-    <img src="summer/wushu-sable.jpg" alt="">
-  </a>
-</div>
-<div class="gallery col-sm-4 col-xs-12 single-lightbox">
-  <a class="thumbnail" href="summer/wushu-gun.jpg" target="_blank">
-    <img src="summer/wushu-gun.jpg" alt="">
-  </a>
+<div class="gallery container">
+  <div class="col-sm-4 col-xs-12 weapon-image single-lightbox">
+    <a class="thumbnail" href="summer/wushu-fan.jpg" target="_blank">
+      <img src="summer/wushu-fan.jpg" alt="">
+    </a>
+  </div>
+  <div class="col-sm-4 col-xs-12 weapon-image single-lightbox">
+    <a class="thumbnail" href="summer/wushu-sable.jpg" target="_blank">
+      <img src="summer/wushu-sable.jpg" alt="">
+    </a>
+  </div>
+  <div class="col-sm-4 col-xs-12 weapon-image single-lightbox">
+    <a class="thumbnail" href="summer/wushu-gun.jpg" target="_blank">
+      <img src="summer/wushu-gun.jpg" alt="">
+    </a>
+  </div>
 </div>
 [/div]
 [/section]

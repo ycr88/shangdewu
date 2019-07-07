@@ -15,10 +15,10 @@ __thridParty Libraries__
   - [ ] make local version of the external Libraries
   * Bootstrap 3.0
   * Photo Slider
-  * Photo Gallery
   * slick - for image carrusel
   * slickLightbox
   * jsSocials for sharing post
+  * Photo Gallery
 
 ## Page BLOG
 Is the list of the post order by dateformat
@@ -41,7 +41,12 @@ Is the list of the post order by dateformat
       * optional add a image name **facebook_image.jpg** to be captured for facebook debugger
 
 ## page leto 2019
-
+  * // FIXME twig expression are not rended in the shortcode section
+  * // TODO
+  - [ ] upload pictures througt admin in each page
+  - [ ] autoplay for the galleries
+  - [ ] animation for the images
+  - [ ] use unpublish-date formatter
   * page: summer.md
     - config
       + process twig: true  
@@ -63,16 +68,11 @@ Is the list of the post order by dateformat
               + *// TODO*
                 - [ ] create the Viber group for inscription
             - training-place
-              + *// TODO*
-               - [ ] add pictures for each secction
 
   * template: summer.twig.html
 ### Summer groups
    - Groups:
-     -  *// BUG:* " '[/div]' in children and beginner group[SOLVED]"
       * children
-       - *// TODO*
-         - [x]add content
       * adults-advanced
       * adults-beginners
     - page: summer-item.md
@@ -91,10 +91,6 @@ Is the list of the post order by dateformat
              ```
         * content
           - //TODO
-            - [x] create commnons structure in each group
-            - [x] pause all the videos when is not the current slide
-            - [x] add the macro program  from page test in all the groups
-              - [x] delete page test.
             - [ ] use the youtube iframe api to more clean code(https://developers.google.com/youtube/iframe_api_reference?hl=es-419)
           + macros
             - program : to pass array program form the headers
