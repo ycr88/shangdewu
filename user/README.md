@@ -39,9 +39,14 @@ Is the list of the post order by dateformat
         facebookimage: image-to-facebook // name of the picture and extension(example.ext) located in the post folder or a url(canonical) of external file [1200 pixels x 627 pixels ] recomemded size
         ```
       * optional add a image name **facebook_image.jpg** to be captured for facebook debugger
-
+      * // IDEA
+        - add tag for each group show in the page of the groups the post realted with this group
+## page Groups
+  * // TODO
+    - add the structure of page leto 2019
+    - add the submenu of the navegation to each group
 ## page leto 2019
-  * // FIXME twig expression are not rended in the shortcode section
+  * // FIXME twig expression are not rendering in the shortcode section
   * // TODO
   - [ ] upload pictures througt admin in each page
   - [ ] autoplay for the galleries

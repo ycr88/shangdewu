@@ -14,6 +14,7 @@ en:
       MENU: Menu
       TOGGLE_NAVIGATION: Toggle navigation
       READ_MORE: Read More
+      LINK_TO_BLOG: See all our posts
 fr:
   SCHOOL:
     NAME: ShangDeWu
@@ -33,6 +34,7 @@ ru:
         MENU: Меню
         TOGGLE_NAVIGATION: Toggle navigation
         READ_MORE: Подробнее
+        LINK_TO_BLOG: See all our posts
     SUMMER:
         HEADING: ШанДэУ
         SUBHEADING: Лето 2019

@@ -1,13 +1,13 @@
 {% set DEFAULT_IMAGE = page.find("blog").media['default.jpg'] %}
 <div class="row {{ page.header.class}}">
   <h1>{{'BLOG.POST_LIST'|t}}</h1>
-  <div class="subheading">{{page.header.subheading}}</div>
+  <div class="subheading">{{'BLOG.SUBHEADING'|t}}</div>
   <div class="post-slider">
 {# TODO
--[ ] edit and style slide
+-[x] edit and style slide
+-[] link to the page blog
 -[ ] upload the "default.jpg" file
 -[ ] upload version produccion
-
 #}
 {% set i = 0 %}
   {% for post in page.collection if i < page.header.post_to_slide %}
@@ -23,10 +23,13 @@
             {% endif %}
           </div>
       <a href="{{ post.url }}">{{'BLOG.READ_MORE'|t}} >>  </a>
-        <p class="post-meta">{{ 'BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</p>
+        <p class="post-meta">{{ 'BLOG.POST_BY'|t }} {{ post.header.author }}{{ 'BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</p>
     </div>
     {% set i = loop.index %}
     {% endfor %}
+    </div>
+    <div class="container">
+      <a href="blog">{{'BLOG.LINK_TO_BLOG'|t}}</a>
     </div>
 </div>
   </div>
