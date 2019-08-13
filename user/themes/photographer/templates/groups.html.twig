@@ -1,108 +1,30 @@
 {% extends 'partials/base.html.twig' %}
 {% block content %}
-    <div id="content" class="{{ page.header.class }}">
-            <div class="container">
-            <section class="header">
-                 <h1>{{page.title}}</h1>
-                 <article class="description">
-                   {% for item,value in page.header.description %}
-                   <article class="{{item}}">{{value}}</article>
-                   {% endfor %}
-               </article>
-                 <article class="requirements">
-                  <div class="row">
-                    <div class="section col-sm-4">
-                     {{ shortcode.section.requirements}}
-                   </div>
-                   <div class="section col-sm-8 col-xs-12">
-                     {{ shortcode.section.prices}}
-                   </div>
-                  </div>
-
-                 </article>
-             </section>
-             <section class="groups-section">
-               {% for group in page.header.items %}
-                       <section id="{{group.id}}" class="group group{{group.class}}">
-                         <h1> {{group.title}} </h1>
-                         <figure>{{ page.find("/images/groups/").media[group.image] }}</figure>
-                         <article class="description">
-                           {{group.description}}
-                         </article>
-                         <div class="schedule-program">
-                           <ul class="nav nav-tabs">
-       <li class="active"><a data-toggle="tab" href="#schedule{{group.id}}">Расписание</a></li>
-       <li><a data-toggle="tab" href="#program{{group.id}}">Программа</a>
-       </li></ul>
-       <div class="tab-content">
-         <div id="schedule{{group.id}}" class="schedule tab-pane fade in active">
-           {% for item in group.schedule %}
-           <h4>группа {{loop.index}}</h4>
-           <table>
-            <tr>
-              <th>Адрес</th>
-              <td>
-               {{item.place}}</td>
-            </tr>
-            <tr class="title-date">
-              <th>Дни недели</th>
-              <th>Время</th>
-            </tr>
-              {% for time in item.frequency %}
-                  <tr>
-                    <td>
-                      {{time.dayOftheWeek}}
-                    </td>
-                    <td>
-                      {{time.start}}-{{time.finish}}
-                    </td>
-                  </tr>
-                  <tr>
-                    {% if (item.map !="") %}
-                    <td>
-                    {{item.map}}
-                    </td>
-                  {% endif %}
-                    {% if (item.extra !="") %}
-                    <td>
-                    {{item.extra}}
-                    </td>
-                  {% endif %}
-
-                  </tr>
-              {% endfor %}
-
-           </table>
+    <div id="content" class="{{ page.header.class }} ">
+      <div class="container">
+      <section class="row">
+           {{ page.content }}
+       </section>
+       <section class="items">
+         <h2>{{'SUMMER.SLIDE_HEADING'|t}}</h2>
+         {% set items = page.collection() %}
+         <div class="summer-slide">
+           {% for item in items %}
+            <div class="item {{item.header.class}} col-sm-12 col-md-4">
+              <div class="content">
+                <img src="{{item.media[item.header.header_image].url}}" alt="">
+                <div class="title">
+                  <a href="{{item.url}}"><h3>{{item.header.title}}</h3></a>
+                </div>
+                <a href="{{item.url}}" class="read-more">{{'BLOG.READ_MORE'|t}}</a>
+                </div>
+            </div>
            {% endfor %}
          </div>
-         <div id="program{{group.id}}" class="program tab-pane fade">
-           <div class="program styled-list">
-             <div class="list-content">
-             <ul>
-            {% for item in group.program %}
-               <li class="list-item">
-                  <div class="content">
-               {{ item }}</div>
-             </li>
-            {% endfor %}
-             </ul>
-           </div>
-       </div>
-
-     </div>
+       </section>
+       <section name="extra">
+         {{shortcode.section.extra}}
+       </section>
    </div>
-                         </div>
-
-
-                          <div class="group-gallery slider-lightbox">
-                            {% for img in page.find('/images/groups/gallery-'~group.id).media.images %}
-                              <a class="thumbnail" href="{{img.url}}" target="_blank">{{ img}}</a>
-                            {% endfor %}
-                          </div>
-                       </section>
-               {% endfor %}
-             </section>
-
-     </div>
  </div>
 {% endblock %}

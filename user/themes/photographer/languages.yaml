@@ -35,6 +35,20 @@ ru:
         TOGGLE_NAVIGATION: Toggle navigation
         READ_MORE: Подробнее
         LINK_TO_BLOG: See all our posts
+    GROUP:
+        HEADING: ШанДэУ
+        SUBHEADING: Наши группы
+        SLIDE_HEADING: Наши курсы
+        STYLE: System or style
+        GROUP1:
+          NAME: "Ушу для детей и молодым"
+          TIME: "16:30-18:00"
+        GROUP2:
+          NAME: "Тайцзи, цингун: Продолжающие"
+          TIME: "19:15-20:45"
+        GROUP3:
+          NAME: "Тайцзи, цингун: Начинающие"
+          TIME: "19:15-20:45"
     SUMMER:
         HEADING: ШанДэУ
         SUBHEADING: Лето 2019

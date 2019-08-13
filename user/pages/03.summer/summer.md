@@ -10,6 +10,7 @@ content:
     order:
       by: default
 description: "Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.Cursos de taijiquan y estilos internos orientado a jovenes y adultos y practica de wushu deportivo para los ni;os y adolecentes. Le invitamos a conocer en familia el milenario arte de Wushu."
+visible: false
 ---
 # enjoy the summer with wushu and taijichuan
 [div class="banner"]
