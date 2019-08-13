@@ -1,7 +1,7 @@
 ---
 menu: groups 2019
-slug: new-groups
-class: summer
+slug: our-groups
+class: group
 process:
     markdown: true
     twig: true
@@ -37,16 +37,16 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
         <tbody>
           <tr class="summer-group-1">
             <th>
-              {{_self.groupLink( group1,'SUMMER.GROUP1.NAME'|t)}}
+              {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t)}}
             </th>
             <td>
-              <div class="time">{{'SUMMER.GROUP1.TIME'|t}}</div>
+              <div class="time">{{'GROUP.GROUP1.TIME'|t}}</div>
             </td>
             <td>
               <div class="empty"> </div>
             </td>
             <td>
-              <div class="time">{{'SUMMER.GROUP1.TIME'|t}}</div>
+              <div class="time">{{'GROUP.GROUP1.TIME'|t}}</div>
             </td>
             <td>
               <div class="empty"></div>
@@ -57,16 +57,16 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
           </tr>
           <tr class="summer-group-2">
               <th>
-              {{_self.groupLink( group2,'SUMMER.GROUP2.NAME'|t)}}
+              {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t)}}
               </th>
               <td>
-                <div class="time">{{'SUMMER.GROUP2.TIME'|t}}</div>
+                <div class="time">{{'GROUP.GROUP2.TIME'|t}}</div>
               </td>
               <td>
                 <div class="empty"></div>
               </td>
               <td>
-                <div class="time">{{'SUMMER.GROUP2.TIME'|t}}</div>
+                <div class="time">{{'GROUP.GROUP2.TIME'|t}}</div>
               </td>
               <td>
                 <div class="empty"> </div>
@@ -77,19 +77,19 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
             </tr>
             <tr class="summer-group-3">
                 <th>
-                {{_self.groupLink( group3,'SUMMER.GROUP3.NAME'|t)}}
+                {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t)}}
                 </th>
                 <td>
                   <div class="empty"> </div>
                 </td>
                 <td>
-                  <div class="time">{{'SUMMER.GROUP3.TIME'|t}}</div>
+                  <div class="time">{{'GROUP.GROUP3.TIME'|t}}</div>
                 </td>
                 <td>
                   <div class="empty"> </div>
                 </td>
                 <td>
-                  <div class="time">{{'SUMMER.GROUP3.TIME'|t}}</div>
+                  <div class="time">{{'GROUP.GROUP3.TIME'|t}}</div>
                 </td>
                 <td>
                   <div class="empty"></div>
@@ -103,33 +103,33 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
         <tr>
           <th>Пн</th>
           <td class="summer-group-1">
-            {{_self.groupLink( group1,'SUMMER.GROUP1.NAME'|t,'SUMMER.GROUP1.TIME'|t)}}
+            {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t,'GROUP.GROUP1.TIME'|t)}}
           </td>
           <td class="summer-group-2">
-            {{_self.groupLink( group2,'SUMMER.GROUP2.NAME'|t,'SUMMER.GROUP2.TIME'|t)}}
+            {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t,'GROUP.GROUP2.TIME'|t)}}
           </td>
         </tr>
         <tr>
           <th>Вт</th>
           <td class="empty"> </td>
           <td class="summer-group-3">
-            {{_self.groupLink( group3,'SUMMER.GROUP3.NAME'|t,'SUMMER.GROUP3.TIME'|t)}}
+            {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t,'GROUP.GROUP3.TIME'|t)}}
           </td>
       </tr>
       <tr>
         <th>Ср</th>
         <td class="summer-group-1">
-          {{_self.groupLink( group1,'SUMMER.GROUP1.NAME'|t,'SUMMER.GROUP1.TIME'|t)}}
+          {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t,'GROUP.GROUP1.TIME'|t)}}
        </td>
         <td class="summer-group-2">
-          {{_self.groupLink( group2,'SUMMER.GROUP2.NAME'|t,'SUMMER.GROUP2.TIME'|t)}}
+          {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t,'GROUP.GROUP2.TIME'|t)}}
         </td>
       </tr>
       <tr>
         <th>Чт</th>
         <td class="empty"></td>
         <td class="summer-group-3">
-          {{_self.groupLink( group3,'SUMMER.GROUP3.NAME'|t,'SUMMER.GROUP3.TIME'|t)}}
+          {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t,'GROUP.GROUP3.TIME'|t)}}
         </td>
     </tr>
     <tr>
@@ -159,7 +159,7 @@ si usa Viber puede enviar su mensaje al grupo
   * ["leto 2019 inscription"](#)
 [/div]
 [div class="subsection training-place"]
-<div markdown=1 class="prices">
+<div markdown=1 id="price" class="price">
 # Цены
 Цена за занятие от <span class="price fa-stack fa-2x"><i class="fas fas fa-tag fa-stack-2x"></i><span class="icon-content fas fa-stack-1x fa-inverse">5</span></span>рублей. Цена за месяц рассчитывается непосредственно из количества занятий, проведенных в данном месяце.
 <div markdown=1 class="extra-lessons">
@@ -170,7 +170,7 @@ si usa Viber puede enviar su mensaje al grupo
 |<span>10 рублей/1 час</span>.| <span>25 рублей/1 час<span>.|
 </div>
 Оплата принимается не позднее 25 числа каждого месяца (если есть острая необходимость, скорректировать дату оплаты можно поговорив с тренером)
-<div markdown=1 class="discount">
+<div markdown=1 id="discount" class="discount">
 ###Мы также предоставляем скидку <span class="fa-stack fa-2x"><i class="fas fas fa-certificate fa-stack-2x"></i><span class="fas fa-stack-1x fa-inverse">10%</span></span>от оплаты за месяц занятий следующим обучающимся:###
  * членам одной семьи (2 и более родственника обучаются в нашей Школе)
  * многодетным семьям
