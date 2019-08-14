@@ -15,7 +15,7 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 # {{'SCHOOL.NAME'|t}}
  paspizania 2019
 [/div]
-<div class="summer-schedule table-responsive">
+<div class="group-schedule table-responsive">
   {% set group1 = page.find("/groups19/children").url %}
   {% set group2 = page.find("/groups19/adults-advanced").url %}
   {% set group3 = page.find("/groups19/adults-beginner").url %}
@@ -35,7 +35,7 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
           <th class="empty"><div class="empty"> </div></th> <th>Пн</th> <th>Вт</th> <th>Ср</th> <th>Чт</th> <th>Пт</th>
         </thead>
         <tbody>
-          <tr class="summer-group-1">
+          <tr class="group-1">
             <th>
               {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t)}}
             </th>
@@ -55,7 +55,7 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
               <div class="empty"></div>
             </td>
           </tr>
-          <tr class="summer-group-2">
+          <tr class="group-2">
               <th>
               {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t)}}
               </th>
@@ -75,7 +75,7 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
                 <div class="empty"></div>
               </td>
             </tr>
-            <tr class="summer-group-3">
+            <tr class="group-3">
                 <th>
                 {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t)}}
                 </th>
@@ -102,33 +102,33 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
       <table class="table table-hover">
         <tr>
           <th>Пн</th>
-          <td class="summer-group-1">
+          <td class="group-1">
             {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t,'GROUP.GROUP1.TIME'|t)}}
           </td>
-          <td class="summer-group-2">
+          <td class="group-2">
             {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t,'GROUP.GROUP2.TIME'|t)}}
           </td>
         </tr>
         <tr>
           <th>Вт</th>
           <td class="empty"> </td>
-          <td class="summer-group-3">
+          <td class="group-3">
             {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t,'GROUP.GROUP3.TIME'|t)}}
           </td>
       </tr>
       <tr>
         <th>Ср</th>
-        <td class="summer-group-1">
+        <td class="group-1">
           {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t,'GROUP.GROUP1.TIME'|t)}}
        </td>
-        <td class="summer-group-2">
+        <td class="group-2">
           {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t,'GROUP.GROUP2.TIME'|t)}}
         </td>
       </tr>
       <tr>
         <th>Чт</th>
         <td class="empty"></td>
-        <td class="summer-group-3">
+        <td class="group-3">
           {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t,'GROUP.GROUP3.TIME'|t)}}
         </td>
     </tr>
@@ -161,49 +161,48 @@ si usa Viber puede enviar su mensaje al grupo
 [div class="subsection training-place"]
 <div markdown=1 id="price" class="price">
 # Цены
-Цена за занятие от <span class="price fa-stack fa-2x"><i class="fas fas fa-tag fa-stack-2x"></i><span class="icon-content fas fa-stack-1x fa-inverse">5</span></span>рублей. Цена за месяц рассчитывается непосредственно из количества занятий, проведенных в данном месяце.
-<div markdown=1 class="extra-lessons">
-
-### Дополнительные занятия:###
-|  индивидуальное занятие     | занятия для 3-5 обучающихся |
-|:---------------------------:|:---------------------------:|
-|<span>10 рублей/1 час</span>.| <span>25 рублей/1 час<span>.|
+Цена за занятие от <span class="price-tag fa-stack fa-2x"><i class="fas fas fa-tag fa-stack-2x"></i><span class="icon-content fas fa-stack-1x fa-inverse">5</span></span>рублей. Цена за месяц рассчитывается непосредственно из количества занятий, проведенных в данном месяце.
+  <div markdown=1 class="extra-lessons">
+  ### Дополнительные занятия:###
+  |  индивидуальное занятие     | занятия для 3-5 обучающихся |
+  |:---------------------------:|:---------------------------:|
+  |<span>10 рублей/1 час</span>.| <span>25 рублей/1 час<span>.|
+  </div>
+  Оплата принимается не позднее 25 числа каждого месяца (если есть острая необходимость, скорректировать дату оплаты можно поговорив с тренером)
+  <div markdown=1 id="discount" class="discount">
+  ###Мы также предоставляем скидку <span class="fa-stack fa-2x"><i class="fas fas fa-certificate fa-stack-2x"></i><span class="fas fa-stack-1x fa-inverse">10%</span></span>от оплаты за месяц занятий следующим обучающимся:###
+   * членам одной семьи (2 и более родственника обучаются в нашей Школе)
+   * многодетным семьям
+   * неполным семьям
+   * пенсионерам и людям с повышенными потребностями
+  </div>
 </div>
-Оплата принимается не позднее 25 числа каждого месяца (если есть острая необходимость, скорректировать дату оплаты можно поговорив с тренером)
-<div markdown=1 id="discount" class="discount">
-###Мы также предоставляем скидку <span class="fa-stack fa-2x"><i class="fas fas fa-certificate fa-stack-2x"></i><span class="fas fa-stack-1x fa-inverse">10%</span></span>от оплаты за месяц занятий следующим обучающимся:###
- * членам одной семьи (2 и более родственника обучаются в нашей Школе)
- * многодетным семьям
- * неполным семьям
- * пенсионерам и людям с органиченными возможностями здоровья
-</div>
- </div>
 ### our trainig area
 Los entrenamientos son realizados en el Sala deportiva de la escuela Innovacia.
 
 **address :** <span><i class="fas fa-map"></i> г.Минск, ул.Пугачевская, 10.</span>
 <div class="gallery slider-lightbox">
-  <a class="thumbnail" href="summer/hall-taijiquan.jpg" target="_blank">
-    <img src="summer/hall-taijiquan.jpg" alt="">
+  <a class="thumbnail" href="groups/hall-taijiquan.jpg" target="_blank">
+    <img src="groups/hall-taijiquan.jpg" alt="">
   </a>
-  <a class="thumbnail" href="summer/hall-wushu.jpg" target="_blank">
-    <img src="summer/hall-wushu.jpg" alt="">
+  <a class="thumbnail" href="groups/hall-wushu.jpg" target="_blank">
+    <img src="groups/hall-wushu.jpg" alt="">
   </a>
 </div>
 Tambien tenemos planificados entrenamientos al aire especialmente para los grupos de adultos
 
 <div class="gallery slider-lightbox">
-  <a class="thumbnail" href="summer/outdoor.jpg" target="_blank">
-    <img src="summer/outdoor.jpg" alt="">
+  <a class="thumbnail" href="groups/outdoor.jpg" target="_blank">
+    <img src="groups/outdoor.jpg" alt="">
   </a>
-  <a class="thumbnail" href="summer/outdoor1.jpg" target="_blank">
-    <img src="summer/outdoor1.jpg" alt="">
+  <a class="thumbnail" href="groups/outdoor1.jpg" target="_blank">
+    <img src="groups/outdoor1.jpg" alt="">
   </a>
 </div>
 y para los ninnos y jovenes ademas visitas a arenas de Batuta y otros centros deperivos para entrenamientos y enteretenimiento
 <div class="gallery single-lightbox">
-  <a class="thumbnail" href="summer/shangdewu-na-batuta.jpg" target="_blank">
-    <img src="summer/shangdewu-na-batuta.jpg" alt="">
+  <a class="thumbnail" href="groups/shangdewu-na-batuta.jpg" target="_blank">
+    <img src="groups/shangdewu-na-batuta.jpg" alt="">
   </a>
 </div>
 [/div]
@@ -211,14 +210,14 @@ y para los ninnos y jovenes ademas visitas a arenas de Batuta y otros centros de
 ### Equipo para el entrenamiento
 La practica de wushu y Taijiquan como practica deportiva requiere de una vestimenta y calzado comodos y ligeros. En nuestra escuela tanto para hombres como para mujeres, el vesturio consiste en un pantalon deportivo y zapatillas con cordones ligeras.
 <div class="gallery slider-lightbox">
-  <a class="thumbnail" href="summer/wushu-training-wearing.jpg" target="_blank">
-    <img src="summer/wushu-training-wearing.jpg" alt="">
+  <a class="thumbnail" href="groups/wushu-training-wearing.jpg" target="_blank">
+    <img src="groups/wushu-training-wearing.jpg" alt="">
   </a>
-  <a class="thumbnail" href="summer/shangdewu-training-wearing.jpg" target="_blank">
-    <img src="summer/shangdewu-training-wearing.jpg" alt="">
+  <a class="thumbnail" href="groups/shangdewu-training-wearing.jpg" target="_blank">
+    <img src="groups/shangdewu-training-wearing.jpg" alt="">
   </a>
-  <a class="thumbnail" href="summer/shangdewu-training.jpg" target="_blank">
-    <img src="summer/shangdewu-training.jpg" alt="">
+  <a class="thumbnail" href="groups/shangdewu-training.jpg" target="_blank">
+    <img src="groups/shangdewu-training.jpg" alt="">
   </a>
 </div>
 [/div]
@@ -227,18 +226,18 @@ La practica de wushu y Taijiquan como practica deportiva requiere de una vestime
 son instrumentos con forma y peso  similar a las usadas originalmente, con materiales duraderos como madera y acero. Pero sin elementos cortantes o punzantes.
 <div class="gallery container">
   <div class="col-sm-4 col-xs-12 weapon-image single-lightbox">
-    <a class="thumbnail" href="summer/wushu-fan.jpg" target="_blank">
-      <img src="summer/wushu-fan.jpg" alt="">
+    <a class="thumbnail" href="groups/wushu-fan.jpg" target="_blank">
+      <img src="groups/wushu-fan.jpg" alt="">
     </a>
   </div>
   <div class="col-sm-4 col-xs-12 weapon-image single-lightbox">
-    <a class="thumbnail" href="summer/wushu-sable.jpg" target="_blank">
-      <img src="summer/wushu-sable.jpg" alt="">
+    <a class="thumbnail" href="groups/wushu-sable.jpg" target="_blank">
+      <img src="groups/wushu-sable.jpg" alt="">
     </a>
   </div>
   <div class="col-sm-4 col-xs-12 weapon-image single-lightbox">
-    <a class="thumbnail" href="summer/wushu-gun.jpg" target="_blank">
-      <img src="summer/wushu-gun.jpg" alt="">
+    <a class="thumbnail" href="groups/wushu-gun.jpg" target="_blank">
+      <img src="groups/wushu-gun.jpg" alt="">
     </a>
   </div>
 </div>

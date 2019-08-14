@@ -219,7 +219,6 @@ $.each(MyJs_shares_conf,function(a,b){
   jsSocials.setDefaults(a , b
     );
 });
-
 // change url of vk share
 $(".js-social").jsSocials({
             text:"",

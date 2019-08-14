@@ -5,6 +5,7 @@
   - [ ] scss file
   - [ ] readme with TODO
 - [ ] Update Grav.
+- [ ] add new icon for the updated information
 ![Photographer](assets/readme_1.png)
 
 
