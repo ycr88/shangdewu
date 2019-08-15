@@ -80,7 +80,7 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
             {% endif %}
           {% endfor %}
         </tr>
-        {% endfor %}        
+        {% endfor %}
   </table>
   </div>
 </div>
@@ -106,6 +106,35 @@ si usa Viber puede enviar su mensaje al grupo
 <div markdown=1 id="price" class="price">
 # Цены
 Цена за занятие от <span class="price-tag fa-stack fa-2x"><i class="fas fas fa-tag fa-stack-2x"></i><span class="icon-content fas fa-stack-1x fa-inverse">5</span></span>рублей. Цена за месяц рассчитывается непосредственно из количества занятий, проведенных в данном месяце.
+<div class="continer">
+  <div class="col-md-4 col-xs-12">
+    <div class="name">
+      <h2>Single lesson</h2>
+    </div>
+    <div class="amount">
+      <p>7 <span>/BYN</span> </p>
+      <p class="text">{{'GROUP.PAYMENT.PER_LESSON'}}</p>
+    </div>
+  </div>
+  <div class="payment payment-per-month payment-per-month-8 col-md-4 col-xs-12">
+    <div class="name">
+      <h2>ABonado</h2>
+    </div>
+    <div class="amount">
+      <p>50<span>/BYN</span> </p>
+      <p class="text">{{'GROUP.PAYMENT.MONTHLY_8'}}</p>
+    </div>
+  </div>
+  <div class="payment payment-per-month payment-per-month-full col-md-4 col-xs-12">
+    <div class="name">
+      <h2>Abonado</h2>
+    </div>
+    <div class="amount">
+      <p>60<span>/BYN</span> </p>
+      <p class="text">{{'GROUP.PAYMENT.MONTHLY_FULL'}}</p>
+    </div>
+  </div>
+</div>
   <div markdown=1 class="extra-lessons">
   ### Дополнительные занятия:###
   |  индивидуальное занятие     | занятия для 3-5 обучающихся |

@@ -44,13 +44,13 @@ Is the list of the post order by dateformat
         - add tag for each group show in the page of the groups the post realted with this group
 ## page Groups
   * // TODO
-    - [] add the structure of page leto 2019
+    - [x] add the structure of page leto 2019
     - [] add the submenu of the navegation to each group
-    - [ ] add the new pricing
-    - [ ] make section for Discounts
+      -  [ ] add in the  submenu price and Discounts
+    - [ ] add the new pricing programs
     - [ ] Delete newgroup-item template and create group-item
     - [x] rename adults-beginers to adults starter
-    - [ ] Document the funcionality of the schedule 
+    - [ ] Document the funcionality of the schedule
 
 ## page leto 2019
   * // FIXME twig expression are not rendering in the shortcode section
