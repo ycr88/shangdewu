@@ -26,117 +26,61 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
     {% endif %}
     {% if time %}
         <div class="time">{{time}}</div>
-  {% endif %}
+    {% endif %}
     </a>
   {% endmacro %}
-  <div class="desktop">
+ {% set empty = "empty"%}
+ {% set divEmpty = '<div class="empty"> </div>'%}
+   <div class="desktop">
       <table class="table table-hover">
         <thead>
-          <th class="empty"><div class="empty"> </div></th> <th>Пн</th> <th>Вт</th> <th>Ср</th> <th>Чт</th> <th>Пт</th>
+          <th class="empty"><div class="empty"> </div></th>
+          {% for key in range(1,6)|keys %}
+                <th>{{"DAYS_OF_THE_WEEK.SHORT.#{key}"|t}}</th>
+          {% endfor %}
         </thead>
         <tbody>
-          <tr class="group-1">
-            <th>
-              {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t)}}
-            </th>
-            <td>
-              <div class="time">{{'GROUP.GROUP1.TIME'|t}}</div>
-            </td>
-            <td>
-              <div class="empty"> </div>
-            </td>
-            <td>
-              <div class="time">{{'GROUP.GROUP1.TIME'|t}}</div>
-            </td>
-            <td>
-              <div class="empty"></div>
-            </td>
-            <td>
-              <div class="empty"></div>
-            </td>
-          </tr>
-          <tr class="group-2">
-              <th>
-              {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t)}}
-              </th>
-              <td>
-                <div class="time">{{'GROUP.GROUP2.TIME'|t}}</div>
-              </td>
-              <td>
-                <div class="empty"></div>
-              </td>
-              <td>
-                <div class="time">{{'GROUP.GROUP2.TIME'|t}}</div>
-              </td>
-              <td>
-                <div class="empty"> </div>
-              </td>
-              <td>
-                <div class="empty"></div>
-              </td>
-            </tr>
-            <tr class="group-3">
-                <th>
-                {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t)}}
-                </th>
-                <td>
-                  <div class="empty"> </div>
-                </td>
-                <td>
-                  <div class="time">{{'GROUP.GROUP3.TIME'|t}}</div>
-                </td>
-                <td>
-                  <div class="empty"> </div>
-                </td>
-                <td>
-                  <div class="time">{{'GROUP.GROUP3.TIME'|t}}</div>
-                </td>
-                <td>
-                  <div class="empty"></div>
-                </td>
-              </tr>
+          {% for group in page.collection %}
+            {% if group.header.taxionomy == "group" %}
+              {% set data = "GROUP.#{group.header.id}"|upper %}
+               <tr class="{{group.header.class}}">
+                  <th>
+                    {{_self.groupLink( group.url, "#{data}.NAME"|t)}}
+                  </th>
+                  {% for key  in range(1,6)|keys %}
+                    {% if group.header.time[key + 1] %}
+                  <td>
+                    <div class="time">{{"#{data}.TIME"|t}}</div>
+                  </td>
+                  {% else %}
+                  <td>
+                    <div class="empty"></div>
+                  </td>
+                  {% endif %}
+                  {% endfor %}
+                </tr>
+            {% endif %}
+          {% endfor %}
         </tbody>
       </table>
   </div>
   <div class="mobile">
       <table class="table table-hover">
+        {% for key in range(1,6)|keys %}
         <tr>
-          <th>Пн</th>
-          <td class="group-1">
-            {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t,'GROUP.GROUP1.TIME'|t)}}
-          </td>
-          <td class="group-2">
-            {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t,'GROUP.GROUP2.TIME'|t)}}
-          </td>
+          <th>{{"DAYS_OF_THE_WEEK.SHORT.#{key}"|t}}</th>
+          {% for group in page.collection %}
+            {% set data = "GROUP.#{group.header.id}"|upper %}
+            {% if group.header.taxionomy == "group" and group.header.time[key + 1] %}
+            <td class="{{group.header.class}}">
+              {{_self.groupLink( group.url, "#{data}.NAME"|t, group.header.time[key + 1] )}}
+            </td>
+            {% else %}
+                <td class="empty"> </td>
+            {% endif %}
+          {% endfor %}
         </tr>
-        <tr>
-          <th>Вт</th>
-          <td class="empty"> </td>
-          <td class="group-3">
-            {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t,'GROUP.GROUP3.TIME'|t)}}
-          </td>
-      </tr>
-      <tr>
-        <th>Ср</th>
-        <td class="group-1">
-          {{_self.groupLink( group1,'GROUP.GROUP1.NAME'|t,'GROUP.GROUP1.TIME'|t)}}
-       </td>
-        <td class="group-2">
-          {{_self.groupLink( group2,'GROUP.GROUP2.NAME'|t,'GROUP.GROUP2.TIME'|t)}}
-        </td>
-      </tr>
-      <tr>
-        <th>Чт</th>
-        <td class="empty"></td>
-        <td class="group-3">
-          {{_self.groupLink( group3,'GROUP.GROUP3.NAME'|t,'GROUP.GROUP3.TIME'|t)}}
-        </td>
-    </tr>
-    <tr>
-      <th>Пт</th>
-      <td class="empty"></td>
-      <td class="empty"></td>
-    </tr>
+        {% endfor %}        
   </table>
   </div>
 </div>

@@ -49,6 +49,8 @@ Is the list of the post order by dateformat
     - [ ] add the new pricing
     - [ ] make section for Discounts
     - [ ] Delete newgroup-item template and create group-item
+    - [x] rename adults-beginers to adults starter
+    - [ ] Document the funcionality of the schedule 
 
 ## page leto 2019
   * // FIXME twig expression are not rendering in the shortcode section

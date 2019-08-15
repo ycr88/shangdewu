@@ -23,6 +23,15 @@ fr:
       HIRE: "Formulaire d'embauche"
       CONTACT: "Formulaire de localisation de contact"
 ru:
+    DAYS_OF_THE_WEEK:
+      SHORT:
+          - Пн
+          - Вт
+          - Ср
+          - Чт
+          - Пт
+          - Сб
+          - Вс
     SCHOOL:
       NAME: ШанДэУ
     BLOG:
@@ -39,13 +48,18 @@ ru:
         SUBHEADING: Наши группы
         SLIDE_HEADING: Наши курсы
         STYLE: System or style
-        GROUP1:
-          NAME: "Ушу для детей и молодым"
-          TIME: "16:30-18:00"
-        GROUP2:
+        CHILDREN-STARTER:
+          NAME: "Ушу для детей и молодым: Начинающие"
+          TIME:
+              1: "17:30-18:50"
+              3: "17:30-18:50"
+        ADULTS-STARTER:
+          NAME: "Тайцзи, цингун: Начинающие"
+          TIME: "17:30-18:50"
+        ADULTS-ADVANCED:
           NAME: "Тайцзи, цингун: Продолжающие"
           TIME: "19:15-20:45"
-        GROUP3:
+        GROUP4:
           NAME: "Тайцзи, цингун: Начинающие"
           TIME: "19:15-20:45"
     SUMMER:
