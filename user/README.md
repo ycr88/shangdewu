@@ -47,10 +47,12 @@ Is the list of the post order by dateformat
     - [x] add the structure of page leto 2019
     - [] add the submenu of the navegation to each group
       -  [ ] add in the  submenu price and Discounts
-    - [ ] add the new pricing programs
+    - [x] add the new pricing programs
     - [ ] Delete newgroup-item template and create group-item
     - [x] rename adults-beginers to adults starter
     - [ ] Document the funcionality of the schedule
+    - [ ] free lesson in september area
+    - [ ] Style price subsection    
 
 ## page leto 2019
   * // FIXME twig expression are not rendering in the shortcode section

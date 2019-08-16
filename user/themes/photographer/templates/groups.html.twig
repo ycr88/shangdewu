@@ -5,16 +5,16 @@
       <section class="row">
            {{ page.content }}
        </section>
-       <section class="items">
+       <section class="items row">
          <h2>{{'GROUP.SLIDE_HEADING'|t}}</h2>
          {% set items = page.collection() %}
          <div class="group-slide">
-           {% for item in items %}
+           {% for item in items if item.header.taxonomy == "group" %}
             <div class="item {{item.header.class}} col-sm-12 col-md-4">
               <div class="content">
                 <img src="{{item.media[item.header.header_image].url}}" alt="">
                 <div class="title">
-                  <a href="{{item.url}}"><h3>{{item.header.title}}</h3></a>
+                  <a href="{{item.url}}"><h3>{{"GROUP.#{item.header.id}.NAME"|upper|t}}</h3></a>
                 </div>
                 <a href="{{item.url}}" class="read-more">{{'BLOG.READ_MORE'|t}}</a>
                 </div>
@@ -22,6 +22,8 @@
            {% endfor %}
          </div>
        </section>
+         {% set price = page.find("/groups/price") %}
+          {{price.content}}
        <section name="extra">
          {{shortcode.section.extra}}
        </section>
