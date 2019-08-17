@@ -1,5 +1,5 @@
 ---
-menu: groups 2019
+menu: Groups 2019
 slug: our-groups
 class: group
 process:
