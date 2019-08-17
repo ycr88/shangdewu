@@ -50,7 +50,7 @@ program:
       <h1>{{array.name}}</h1>
     {% if array.system %}
     <div class="system">
-      <h2>{{'group.STYLE'|t}}:</h2>
+      <h2>{{'GROUP.STYLE'|t}}:</h2>
       <p>{{array.system}}</p>
     </div>
   {% endif %}

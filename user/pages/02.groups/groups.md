@@ -40,9 +40,8 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
           {% endfor %}
         </thead>
         <tbody>
-          {% for group in page.collection %}
-            {% if group.header.taxonomy == "group" %}
-              {% set data = "GROUP.#{group.header.id}"|upper %}
+          {% for group in taxonomy.findTaxonomy({'category':'group'})%}
+             {% set data = "GROUP.#{group.header.id}"|upper %}
                <tr class="{{group.header.class}}">
                   <th>
                     {{_self.groupLink( group.url, "#{data}.NAME"|t)}}
@@ -59,7 +58,6 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
                   {% endif %}
                   {% endfor %}
                 </tr>
-            {% endif %}
           {% endfor %}
         </tbody>
       </table>
@@ -95,7 +93,6 @@ description: "Este verano la escuela Shangdewu ofrece la oportunidad de practica
 [/div]
 [div class="subsection inscription"]
 ### fill in
-
 para inscribirse puede hacerlos llamando o enviar sms al telefono
   * <a href="tel:+375333627666"><span class="fa-li"><i class="fas fa-phone"></i></span>+375333627666 **(MTC)**<span class="phone-icon icon-viber fab fa-viber"></span></a>
 

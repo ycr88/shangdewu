@@ -1,0 +1,20 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+    <div id="content" class="{{ page.header.class }} group group-item ">
+      <div class="container">
+          <section >
+            <header>
+              <div class="banner">
+                <a href="{{page.find("/groups").url}}">
+                <h1>{{'SCHOOL.NAME'|t}}</h1>
+                <p>{{'GROUP.SUBHEADING'|t}}</p>
+                </a>
+              </div>
+              <h1>{{page.header.title}}</h1>
+              <img src="{{page.media[page.header.header_image].url}}" alt="{{page.header.title}}">
+            </header>
+           {{ page.content }}
+       </section>
+   </div>
+ </div>
+{% endblock %}
