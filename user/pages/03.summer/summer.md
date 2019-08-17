@@ -1,17 +1,18 @@
 ---
-menu: letto 2019
+menu: 'letto 2019'
 slug: lето-2019
 class: summer
 process:
     markdown: true
     twig: true
 content:
-    items: "@self.children"
+    items: '@self.children'
     order:
-      by: default
-description: "Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.Cursos de taijiquan y estilos internos orientado a jovenes y adultos y practica de wushu deportivo para los ni;os y adolecentes. Le invitamos a conocer en familia el milenario arte de Wushu."
+        by: default
+description: 'Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.Cursos de taijiquan y estilos internos orientado a jovenes y adultos y practica de wushu deportivo para los ni;os y adolecentes. Le invitamos a conocer en familia el milenario arte de Wushu.'
 visible: false
 ---
+
 # enjoy the summer with wushu and taijichuan
 [div class="banner"]
 # {{'SCHOOL.NAME'|t}}

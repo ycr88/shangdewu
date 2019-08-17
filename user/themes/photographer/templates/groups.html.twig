@@ -9,7 +9,7 @@
          <h2>{{'GROUP.SLIDE_HEADING'|t}}</h2>
          {% set items = page.collection() %}
          <div class="group-slide">
-           {% for item in items if item.header.taxonomy == "group" %}
+           {% for item in taxonomy.findTaxonomy({'category':'group'}) %}
             <div class="item {{item.header.class}} col-sm-12 col-md-4">
               <div class="content">
                 <img src="{{item.media[item.header.header_image].url}}" alt="">
