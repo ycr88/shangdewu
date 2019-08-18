@@ -1,16 +1,17 @@
 ---
-menu: Groups 2019
+menu: 'Groups 2019'
 slug: our-groups
 class: group
 process:
     markdown: true
     twig: true
 content:
-    items: "@self.children"
+    items: '@self.children'
     order:
-      by: default
-description: "Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.Cursos de taijiquan y estilos internos orientado a jovenes y adultos y practica de wushu deportivo para los ni;os y adolecentes. Le invitamos a conocer en familia el milenario arte de Wushu."
+        by: default
+description: 'Este verano la escuela Shangdewu ofrece la oportunidad de practicar Wushu a todo la familia.Cursos de taijiquan y estilos internos orientado a jovenes y adultos y practica de wushu deportivo para los ni;os y adolecentes. Le invitamos a conocer en familia el milenario arte de Wushu.'
 ---
+
 [div class="banner"]
 # {{'SCHOOL.NAME'|t}}
  paspizania 2019
