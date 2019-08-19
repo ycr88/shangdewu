@@ -1,5 +1,5 @@
 ---
-title: 'taijichuan basic curse'
+title: 'Взрослые начинающие'
 taxonomy:
     category:
         - group
@@ -18,20 +18,20 @@ program:
         name: YIjingjin
         system: jianShenqigong
         creator: 'Federacion jianShenqigong'
-        description: 'leyendas atribuyen este ejercicio a Boddhidharma o Damo, 28º Patriarca del Budismo Mahayana, la creación de ésta serie de 12 ejercicios muy fáciles de realizar que actúan sobre las fascias, músculos, tendones y huesos, aportando fortalecimiento a nivel físico, además de equilibrio energético que aporta calma emocional y mental.'
-        video: url
+        description: 'Легенды связывают это упражнение с Бодхидхармой или Дамо, 28-м патриархом буддизма Махаяны. Данный комплекс состоит из 12-ти очень простых в выполнении упражнений, которые воздействуют на фасции, мышцы, сухожилия и кости, укрепляя их на физическом уровне, а также обеспечивая энергетический баланс, что приносит эмоциональное и душевное спокойствие.'
+        video: WOoxI3nD89A
     fan:
         name: Taijigongfushan
         system: 'modern wushu'
         creator: 'Prof lideyin'
-        description: 'serie de ejercicios con abanico una e las aramas mas versatiles de wushu. Esta moderna forma de wushu esta esta conformada con ejecicios basicos de pupulares estilos de wushu ShalingQuan , Taijiquan, Baguazhang, Espada , sable y otros. uniendo manera armonica y elegante diversas corrientes y filosofias de wushu'
-        video: url
+        description: 'Комплекс упражнений с веером. Веер – одно из самых универсальных оружий в ушу. Этот современный комплекс представляет собой сочетание базовых элементов из таких известных стилей ушу как Шаолинцюань, Тайцзицюань, Багуачжан, а также элементы искусства владения коротким и длинным оружием. Таким образом, этот уникальный компекс'
+        video: '-ovcPjxtIMo'
     Taijiquan:
-        name: '24 forma estilo yang'
+        name: '24 форма тайцзицюань'
         system: 'taijiqian estilo Yang'
         creator: ''
-        description: 'Forma de taijiquan estilo Yang con Lanza. Es una forma de nivel elemtal con elegantes y bellos movimientos.'
-        video: fF738LI_KRY
+        description: 'представляет собой упрощённый и изменённый вариант тайцзицюань, разработанный Министерством спорта КНР в 1956 году. Данный комплекс формальных упражнений (таолу) состоит из 24-х движений, поэтому и называется "24 форма тайцзицюань"..'
+        video: e4VIw41R-PU
 ---
 
 {% set program = page.header.program %}
@@ -63,8 +63,10 @@ program:
 {% endmacro %}
 
 [div class="header"]
-## Why to practice taijiquan y qigong
-Taichi qigong no es un estilo o tipo de practica. Este nombre introduce o menciona area de las tradiciones chinas. Taiqiquan es un estilo tradidional de Wushu sus tecnicas son orientadas a la defenza y el ataque. Taiqiquan es mundialmente popular por los beneficios a la salud que proporciona su practica. Qigong agrupa muchas tipos de gimnacia que han acompannado la paractica de wushu para fortalecer y elevar la energia interna del cuerpo. Este curso esta destinado a mostrar elementos basicos, donde no sera necesario ningun conocimiento previo. En nuestras practica trabajaremos nuestra coordinacion, nuestra estabilidad, haremos ejercicios de relajacion entre otros.
+## Что могут дать Вам занятия Тайцзицюань и Цигун?
+    Тайцзицюань – это один из традиционных стилей ушу. В основном он ориентирован на атаку и защиту во время боя. Этот стилю популярен во всем мире благодаря оздоравливающему эффукту/ влиянию на организм практикующегося. Цигун включает в себя множество различных типов упражнений, которые вместе с практикой Тайчи служат для поддержания здоровья и жизненной энергии.
+    Данный курс позволит Вам освоить базовые элементы ТайцзиЦюань и Цигун без какой-либо предварительной подготовки. На наших занятиях мы уделяем особое внимание работе над координацией, стабильностью, проведению релаксационных упражнений.
+
 [/div]
 {{ _self.gallery(training, "slide-fade")}}
 ## Series y Rutinas que estudiaremos

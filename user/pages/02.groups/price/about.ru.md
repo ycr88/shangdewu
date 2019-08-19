@@ -1,12 +1,15 @@
 ---
-taxonomy: price
-visible: false
-routable: false
-template: price
+taxonomy:
+    category:
+        - price
 process:
     markdown: true
     twig: true
+routable: false
+visible: false
+template: price
 ---
+
 <section  markdown=1 id="price" class="price row">
 ## Цены
 Цена за занятие от <span class="price-tag fa-stack fa-2x"><i class="fas fas fa-tag fa-stack-2x"></i><span class="icon-content fas fa-stack-1x fa-inverse">5</span></span>рублей. Цена за месяц рассчитывается непосредственно из количества занятий, проведенных в данном месяце.

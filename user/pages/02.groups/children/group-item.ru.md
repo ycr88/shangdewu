@@ -1,5 +1,5 @@
 ---
-title: 'Wushu for children'
+title: 'Ушу для детей и взрослых'
 taxonomy:
     category:
         - group
@@ -14,22 +14,22 @@ time:
     3: '17:30-18:50'
 program:
     ShiBenGong:
-        name: ShibenGong
-        system: 'Wushu Moderno'
+        name: Цзибэньгун
+        system: 'Современное ушу'
         creator: ''
-        description: ' Ejercicios elementales que crean y mejoran las habilidades necesarias para la practica de wushu su traducion es trabajo basico la piedra angular del futuro practicante de wushu y el dia a dia del practicante con experiencia '
+        description: ' Элементарные упражнения, созданные для привития и отработки навыков, необходимых для дальнейшего изучения ушу. На русский язык Цзибэньгун переводится как «базовая работа». Эти упражнения  - основа знаний начинающих спортсменов и ежедневная практика опытных ушуистов.'
         video: url
     fan:
-        name: 'Wushu fan'
-        system: 'wushu moderno'
+        name: 'Комплексы упражнений с веером'
+        system: 'Современное ушу'
         creator: ''
-        description: 'Elemtos basicos de wushu con la intersante arma de wushu Abanico un arma muy versatil de gran tractivo por su sonido, colorido y sus singulares movimientos.'
+        description: 'Комплексы упражнений с веером  Базовые упражнения ушу с интересным видом оружия – веером. Веер – это универсальное оружие, являющееся невероятно привлекательным благодаря своему цвету и  издаваемому звуку.'
         video: url
     Spochan:
-        name: 'Sport Chanbara'
-        system: 'Artes Marciales modernas'
+        name: 'Спорт Чанбара (Спочан)'
+        system: 'Современные боевые искусства'
         creator: 'Tsudo Tanabe'
-        description: 'Es llamado el deporte del samuray. modalidad de combate con tecnica espadas creado en Japon por un maestro samurai. Con instrumentos y materiales que no causan traumas en los practicantes, Porque junto con wushu?, porque resulta manera de ensennar a los ninnos los principios basicos defenderse sin causar traumas fisicos, lo cual brida a las familias tranquilidad, los ninnos se diverten durante la practica, cuenta con un serio programa deportivo en belarus y a nivel internacional '
+        description: 'Этот вид спорта был создан в Японии на основе самурайского поединка. Бой в спочан - спортивный поединок на безопасном оружии. Так же как и ушу, спочан помогает детям развить навыки самообороны. Несмотря на то, что этот вид спорта является полноконтактным, однако он абсолютно физически безопасен. Тренировки для детей проходят в игровой манере, но в полном соответствии со спортивной программой.  На сегодняшний день спочан – это молодой, но активно развивающийся вид спорта, доступный всем желающим заниматься вне зависимости от пола и возраста '
         video: fF738LI_KRY
 ---
 
@@ -62,7 +62,7 @@ program:
 {{'</div>'}}
 {% endmacro %}
 [div class="header"]
-La practica de wushu puede comenzar entre los 4 y 5 annos de edad, con la practica de wushu disiplinan no solo sus cuerpo tambien su caracter y sus pensamientos en este curso entrenamientos estan dirigidos a unir los ninnos de todos las edades y  niveles y elevar las condiciones fisicas, aprender habilidades de diferentes estilos.
+Дети могут начинать занимать ушу в возрасте 4-5 лет. Во время практики данного вида боевого искусства ребенок не только улучшает свою физическую форму, но и укрепляет характер, учится дисциплине.
   {{_self.gallery(training, "slide-fade")}}
 ## Wushu para ninnos y adolecentes
   Actividedes recreativas, juegos, concursos y otras atracciones acomapnnaran nuerstra paractica.

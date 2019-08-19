@@ -19,25 +19,25 @@ program:
         system: 'Daoying YangShenGong'
         creator: ZhangGuande
         description: 'Как метод гимнастики, Дао Инь способствует укреплению физического и энергетического тела, делает его молодым, сильным, гибким и чувствительным при сохранении внутренней концентрации.'
-        video: fF738LI_KRY
+        video: vwYTFRqeKoM
     qigong:
         name: lianggong2
         system: 'LianGOng ShipaFa'
         creator: ZuanYangMing
-        description: 'Creado por un traumatologo basado inspirado en los conocimientos del mapa de maguandi una seria de ejercicios que se adecua para realizar en lugares de poco espacio en cortos espacios de tiempo'
-        video: url
+        description: 'Комплекс упражнений, созданный травматологом, на основе карты Магуанди. Этот комплекс подходит для выполнения в небольшом пространстве и в короткое время (6-12 минут).'
+        video: c50PoDwydHw
     fan:
         name: xiyanmei
         system: 'modern wushu'
-        creator: lideyin
-        description: 'Segunda serie de ejercicios abanico Tijigongfushang creados por este maestro, consituido con movimientos de muchos tradicionales estilos de wushu'
-        video: url
+        creator: null
+        description: 'Второй комплекс упражнений, созданный Ли Дэинь, - упражнения с веером Тайцзи Кунфу Шан. Данный комплекс включает движения из многих традиционный стилей ушу.'
+        video: _Ceq2H-huHg
     Taijiqiang:
         name: 'Taiji con lanza forma 16'
         system: 'modern wushu'
-        creator: lideyin
-        description: 'Forma de taijiquan estilo Yang con Lanza. Es una forma de nivel elemtal con elegantes y bellos movimientos.'
-        video: fF738LI_KRY
+        creator: null
+        description: 'Комплекс Тайцзицюань стиля Ян с копьем. Данный комплекс упражнений элементарного уровня с элегантными прекрасными движениями.'
+        video: ylbxdofGrEA
 ---
 
 {% set program = page.header.program %}
@@ -68,8 +68,8 @@ program:
   </div>
 {% endmacro %}
 [div class="header"]
-## Bienvenido a nuertro curso
-En este curso los ejercicios y series requieren un conocimietos basico de wushu taijiquan o qigong, esta planificado el estudio de formas con cierta complejidad en coodinacion, cantidad de ejercicios y elementos tecnicos. Todos destinados a una mantener una correcta y saludable forma fisica y mental en los practicantes. Estos ejercicios pueden ser realizados tanto en casa como al aire libre. Estos cursos incluiran ejercicios con manos libres, y con armas de Wushu como son rutinas de abanico y rutinas con Lanza.
+## Добро пожаловать на наш курс!
+    Для выполнения комплексов упражнений этого курса необходимо владеть базовыми знаниями по ушу, тайцзицюань или цигун. Планируется изучение комплексов повышенной сложности, большое количество упражнений и технических элементов. Задача данного курса - поддержание правильной и здоровой физической и психологической формы у практикующих. Эти упражнения можно выполнять как в зале или дома, так и на улице. Этот курс включат в себя элементы без спортивного инвентаря, а также комплексы с оружием ушу (веер, копье и др.).
 [/div]
 {{ _self.gallery(training,"slide-fade")}}
 ## Series y Rutinas que estudiaremos

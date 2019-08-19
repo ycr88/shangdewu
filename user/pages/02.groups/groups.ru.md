@@ -1,10 +1,10 @@
 ---
 menu: 'Groups 2019'
 slug: our-groups
-class: group
 process:
     markdown: true
     twig: true
+class: group
 content:
     items: '@self.children'
     order:
@@ -17,9 +17,6 @@ description: 'Este verano la escuela Shangdewu ofrece la oportunidad de practica
  paspizania 2019
 [/div]
 <div class="group-schedule table-responsive">
-  {% set group1 = page.find("/groups19/children").url %}
-  {% set group2 = page.find("/groups19/adults-advanced").url %}
-  {% set group3 = page.find("/groups19/adults-beginner").url %}
   {% macro groupLink(dir, name, time)%}
     {{"<a href="~dir~">"}}
       {% if name %}
