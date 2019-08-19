@@ -1,31 +1,28 @@
-{% set data = page.find('/groups/').header %}
-{% set group = page.find('/groups19') %}
+{% set group_page = page.find('/groups') %}
+{% set data = group_page.header %}
 <div class="row_2 {{page.header.class}}">
     <div class="container">
-      <h1> {{ page.header.title}} </h1>
       <article class=description>
-        <p>
-        {{ group.summary }}</p>
-        <a href="{{group.url}}">подробно>>></a>
+        {{ group_page.summary }}
+        <p> {{ data.description }}</p>
+        <a href="{{group_page.url}}">подробно>>></a>
       </article>
-      <section class="items">
-        <h2>{{'GROUP.SLIDE_HEADING'|t}}</h2>
-        {% set items = group.collection() %}
-        <div class="summer-slide">
-          {% for item in items %}
-           <div class="item {{item.header.class}} col-sm-12 col-md-4">
-             <div class="content">
-               <img src="{{item.media[item.header.header_image].url}}" alt="">
-               <div class="title">
-                 <a href="{{item.url}}"><h3>{{item.header.title}}</h3></a>
-               </div>
+        <section class="items row">
+          <h2>{{'GROUP.SLIDE_HEADING'|t}}</h2>
+          <div class="group-slide">
+            {% for item in taxonomy.findTaxonomy({'category':'group'}) %}
+             <div class="item {{item.header.class}} col-sm-12 col-md-4">
+               <div class="content">
+                 <img src="{{item.media[item.header.header_image].url}}" alt="">
+                 <div class="title">
+                   <a href="{{item.url}}"><h3>{{"GROUP.#{item.header.id}.NAME"|upper|t}}</h3></a>
+                 </div>
                  <a href="{{item.url}}" class="read-more">{{'BLOG.READ_MORE'|t}}</a>
-              </div>
-           </div>
-          {% endfor %}
-        </div>
+                 </div>
+             </div>
+            {% endfor %}
+          </div>
       </section>
-
         </div>
     </div>
 </div>

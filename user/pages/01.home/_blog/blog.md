@@ -11,4 +11,5 @@ content:
       dir: desc
   filter:
     published: true
+published: false
 ---

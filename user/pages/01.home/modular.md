@@ -12,8 +12,6 @@ content:
         custom:
             - _slider
             - _welcome
-            - _blog
             - _groups
             - _footer
 ---
-

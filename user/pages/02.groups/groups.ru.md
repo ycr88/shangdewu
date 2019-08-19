@@ -47,7 +47,7 @@ description: 'Este verano la escuela Shangdewu ofrece la oportunidad de practica
                   {% for key  in range(1,6)|keys %}
                     {% if group.header.time[key + 1] %}
                   <td>
-                    <div class="time">{{"#{data}.TIME"|t}}</div>
+                    <div class="time">{{group.header.time[key + 1]}}</div>
                   </td>
                   {% else %}
                   <td>
@@ -80,6 +80,13 @@ description: 'Este verano la escuela Shangdewu ofrece la oportunidad de practica
   </table>
   </div>
 </div>
+{% set special = page.find("/free-lesson") %}
+{% if special %}
+<section markdown="1" class="special">
+<a href="free-lesson"> !["Free lesson"](/free-lesson/free-lesson-bg.jpg)
+## {{special.header.heading}}
+### {{special.header.subheading}} </a></section>
+{% endif %}
 ===
 [div class="description"]
 {{page.header.description}}
