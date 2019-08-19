@@ -65,9 +65,9 @@ description: 'Este verano la escuela Shangdewu ofrece la oportunidad de practica
         {% for key in range(1,6)|keys %}
         <tr>
           <th>{{"DAYS_OF_THE_WEEK.SHORT.#{key}"|t}}</th>
-          {% for group in page.collection %}
+            {% for group in taxonomy.findTaxonomy({'category':'group'})%}
             {% set data = "GROUP.#{group.header.id}"|upper %}
-            {% if group.header.taxonomy == "group" and group.header.time[key + 1] %}
+            {% if group.header.time[key + 1] %}
             <td class="{{group.header.class}}">
               {{_self.groupLink( group.url, "#{data}.NAME"|t, group.header.time[key + 1] )}}
             </td>
