@@ -46,25 +46,25 @@ ru:
         LINK_TO_BLOG: See all our posts
     GROUP:
         SUBHEADING: Наши группы
-        SLIDE_HEADING: Наши курсы
+        SLIDE_HEADING: Наши группы
         STYLE: System or style
         PAYMENT:
           PER_LESSON: "per one lesson"
           MONTHLY_8: "8 times per Month"
           MONTHLY_FULL: "10+ lesson per Month"
         CHILDREN-STARTER:
-          NAME: "Ушу для детей и молодым: Начинающие"
+          NAME: "Ушу для детей и молодежи: Начинающие"
           TIME:
               1: "17:30-18:50"
               3: "17:30-18:50"
         ADULTS-STARTER:
-          NAME: "Тайцзи, цингун: Начинающие"
+          NAME: "Тайцзи и цингун: Начинающие"
           TIME: "17:30-18:50"
         ADULTS-ADVANCED:
-          NAME: "Тайцзи, цингун: Продолжающие"
+          NAME: "Тайцзи и цингун: Продолжающие"
           TIME: "19:15-20:45"
         GROUP4:
-          NAME: "Тайцзи, цингун: Начинающие"
+          NAME: "Тайцзи и цингун: Начинающие"
           TIME: "19:15-20:45"
     SUMMER:
         HEADING: ШанДэУ
