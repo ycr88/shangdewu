@@ -49,9 +49,9 @@ ru:
         SLIDE_HEADING: Наши группы
         STYLE: Системы и стили
         PAYMENT:
-          PER_LESSON: "за одно занятие"
-          MONTHLY_8: "8 занятий в месяц "
-          MONTHLY_FULL: "10+ занятий в месяц"
+          PER_LESSON: "за <br> 1 занятие"
+          MONTHLY_8: "8 занятий <br> в месяц "
+          MONTHLY_FULL: "10+ занятий <br> в месяц"
         CHILDREN-STARTER:
           NAME: "Ушу для детей и подростков: Начинающие"
           TIME:
