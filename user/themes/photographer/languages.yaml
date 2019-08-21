@@ -47,13 +47,13 @@ ru:
     GROUP:
         SUBHEADING: Наши группы
         SLIDE_HEADING: Наши группы
-        STYLE: System or style
+        STYLE: Системы и стили
         PAYMENT:
           PER_LESSON: "per one lesson"
           MONTHLY_8: "8 times per Month"
           MONTHLY_FULL: "10+ lesson per Month"
         CHILDREN-STARTER:
-          NAME: "Ушу для детей и молодежи: Начинающие"
+          NAME: "Ушу для детей и подростков: Начинающие"
           TIME:
               1: "17:30-18:50"
               3: "17:30-18:50"
