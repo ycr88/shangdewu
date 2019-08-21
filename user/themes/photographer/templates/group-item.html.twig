@@ -10,7 +10,7 @@
                 <p>{{'GROUP.SUBHEADING'|t}}</p>
                 </a>
               </div>
-              <h1>{{page.header.title}}</h1>
+              <h1>{{("GROUP.#{page.header.id}"|upper|t)}}</h1>
               <img src="{{page.media[page.header.header_image].url}}" alt="{{page.header.title}}">
             </header>
            {{ page.content }}

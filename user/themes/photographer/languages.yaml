@@ -43,15 +43,15 @@ ru:
         MENU: Меню
         TOGGLE_NAVIGATION: Toggle navigation
         READ_MORE: Подробнее
-        LINK_TO_BLOG: See all our posts
+        LINK_TO_BLOG: Все публикации
     GROUP:
         SUBHEADING: Наши группы
         SLIDE_HEADING: Наши группы
         STYLE: Системы и стили
         PAYMENT:
-          PER_LESSON: "per one lesson"
-          MONTHLY_8: "8 times per Month"
-          MONTHLY_FULL: "10+ lesson per Month"
+          PER_LESSON: "за одно занятие"
+          MONTHLY_8: "8 занятий в месяц "
+          MONTHLY_FULL: "10+ занятий в месяц"
         CHILDREN-STARTER:
           NAME: "Ушу для детей и подростков: Начинающие"
           TIME:
