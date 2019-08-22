@@ -1,4 +1,4 @@
 ---
-media_order: 'Children summer.jpg,DSC_0361.jpg,DSC_0564.jpg'
+media_order: 'shangdewu_children_training1.jpg,shangdewu_children_training2.jpg,shangdewu_children_training3.jpg'
 ---
 

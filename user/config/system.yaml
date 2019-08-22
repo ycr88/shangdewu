@@ -10,7 +10,6 @@ intl_enabled: true
 languages:
   supported:
     - ru
-    - en
   include_default_lang: false
   translations: true
   translations_fallback: true
@@ -29,8 +28,8 @@ pages:
     count: 20
   dateformat:
     default: 'd.m.Y H:i'
-    short: 'd.m.Y'
-    long: 'D, d.M.Y G:i:s'
+    short: 'F jS \a\t g:ia'
+    long: 'F jS \a\t g:ia'
   publish_dates: true
   process:
     markdown: true
@@ -109,13 +108,16 @@ assets:
   collections:
     jquery: 'system://assets/jquery/jquery-2.x.min.js'
     js_social:
-        - https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials.min.js
-        - https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials.css
-        - https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials-theme-flat.css
+      - 'https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials.min.js'
+      - 'https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials.css'
+      - 'https://cdn.jsdelivr.net/jquery.jssocials/1.5.0/jssocials-theme-flat.css'
+  display: 0
+  log: true
+errors:
   display: 0
   log: true
 debugger:
-  enabled: true
+  enabled: false
   shutdown:
     close_connection: true
   twig: true

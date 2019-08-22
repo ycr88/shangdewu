@@ -1,5 +1,5 @@
 ---
-title: 'Ушу для детей и взрослых'
+title: 'Ушу для детей и подростков: Начинающие'
 taxonomy:
     category:
         - group
@@ -18,7 +18,7 @@ program:
         system: 'Современное ушу'
         creator: ''
         description: ' Элементарные упражнения, созданные для привития и отработки навыков, необходимых для дальнейшего изучения ушу. На русский язык Цзибэньгун переводится как «базовая работа». Эти упражнения  - основа знаний начинающих спортсменов и ежедневная практика опытных ушуистов.'
-        video: url
+        video: lD8EJ1DjJWg
     fan:
         name: 'Комплексы упражнений с веером'
         system: 'Современное ушу'
@@ -64,11 +64,10 @@ program:
 [div class="header"]
 Дети могут начинать занимать ушу в возрасте 4-5 лет. Во время практики данного вида боевого искусства ребенок не только улучшает свою физическую форму, но и укрепляет характер, учится дисциплине.
   {{_self.gallery(training, "slide-fade")}}
-## Wushu para ninnos y adolecentes
-  Actividedes recreativas, juegos, concursos y otras atracciones acomapnnaran nuerstra paractica.
+  В нашей Школе часто проводятся развлекательные мероприятия, семинары, соревнования и конкурсы.
 {{_self.gallery(activities, "slide-fade")}}
 [/div]
-## En los entrenamientos
+## Программа курса для начинающих
 
 {% if program %}
 <div class="program">
