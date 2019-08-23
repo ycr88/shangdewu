@@ -1,4 +1,5 @@
 ---
-media_order: 'DSC_0728.jpg,DSC_1428.jpg,DSC_1451.jpg'
+media_order: 'ShangDeWu_taijiquan_basic1.jpg,ShangDeWu_taijiquan_basic2.jpg,ShangDeWu_taijiquan_basic3.jpg,ShangDeWu_taijiquan_basic4.jpg'
+routable: false
 ---
 

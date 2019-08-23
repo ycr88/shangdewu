@@ -1,5 +1,6 @@
 ---
 title: 'Ушу для детей и подростков: Начинающие'
+media_order: children.jpg
 taxonomy:
     category:
         - group
