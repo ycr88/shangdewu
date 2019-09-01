@@ -29,6 +29,9 @@ social:
       - name: YouTube
         url: "https://www.youtube.com/channel/UCtZfVkDXQhs6H8YxhoDbgbQ"
         icon: fab fa-youtube
+      - name: Instagram
+        url:  "https://www.instagram.com/shangdewu_school/"
+        icon: fab fa-instagram
 #sharing:
 share:
       - name: facebook
