@@ -1,5 +1,6 @@
 ---
 title: 'Бесплатные занятия'
+published: false
 body_classes: free-lesson
 process:
     markdown: true

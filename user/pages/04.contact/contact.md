@@ -1,13 +1,14 @@
 ---
-menu : Контакты
+menu: Контакты
 title: Контакты
-slug : контакты
-class : page-contact
+slug: контакты
+class: page-contact
 process:
     markdown: true
     twig: true
-template : default
+template: default
 ---
+
 # Контакты и информация
 
 ## Информация о Школе

@@ -10,9 +10,9 @@ header_image: advanced.jpg
 class: 'group group-adults-advanced'
 id: adults-advanced
 time:
-    1: '19:15-20:45'
-    3: '19:15-20:45'
-    6: '10:00-11:30'
+    1: '19:15-20:30'
+    3: '19:15-20:30'
+    6: '11:30-13:00'
 program:
     daoying:
         name: '形体诗韵 Синти шиюнь'

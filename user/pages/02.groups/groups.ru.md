@@ -1,5 +1,5 @@
 ---
-menu: 'Группы 2019'
+menu: 'Группы 2020'
 slug: nashy-gruppy
 process:
     markdown: true
@@ -22,9 +22,9 @@ description: 'Школа боевых искусств ШанДэУ  предл�
 ---
 
 [div class="banner"]
-# Расписание 2019
+# Расписание 2020
 [/div]
-<div class="group-schedule table-responsive">
+<!--div class="group-schedule table-responsive">
   {% macro groupLink(dir, name, time)%}
     {{"<a href="~dir~">"}}
       {% if name %}
@@ -87,11 +87,12 @@ description: 'Школа боевых искусств ШанДэУ  предл�
         {% endfor %}
   </table>
   </div>
-</div>
-{% set special = page.find("/free-lesson")%}
-{% if special %}
+</div-->
+{% set special = page.find("/attention")%}
+{% if special.published %}
 <section class="special">
-  <a href="free-lesson">
+  <a href="attention">
+  <a href="attention">
   <div class="post {{special.header.body_classes}}">
     {% set image = special.url(true)~"/"~special.header.header_image %}
      {{'<header class="intro-header" style="background-image: url('~ image ~')">'}}
