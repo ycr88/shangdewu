@@ -1,5 +1,5 @@
 ---
-title: wushu
+title: Taijiquan
 published: true
 taxonomy:
     category:
@@ -13,7 +13,7 @@ content:
             category:
                 - lesson
             tag:
-                - wushu
+                - taichi
     order:
         by: date
         dir: desc
@@ -22,4 +22,4 @@ content:
 pagination: true
 ---
 
-Wushu lesson materials
+Taijiquan lesson materials
