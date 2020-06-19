@@ -6,7 +6,7 @@ taxonomy:
         - classroom
 visible: false
 subheading: 'post of wushu'
-header_image: home-bg.jpg
+header_image: default.jpg
 content:
     items:
         '@taxonomy':
