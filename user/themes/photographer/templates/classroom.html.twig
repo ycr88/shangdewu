@@ -6,6 +6,9 @@
 <div class="classroom blog container">
   <header>
     {% if page.find("/classroom").url != page.url %}
+    {% if config.plugins.breadcrumbs.enabled %}
+        {% include 'partials/breadcrumbs.html.twig' %}
+    {% endif %}
     <div class="banner">
       <a href="{{page.parent.url}}">
         <h1>{{page.parent.title|upper}}</h1>
@@ -25,7 +28,7 @@
     {{ page.content }}
   </article>
   <div class="post-list col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-  
+
     {% for post in collection %}
     {% set post_image_url = post.header.header_image.url ? post.media.images[post.header.header_image].cache.url() : page.find('/classroom').media['default.jpg'].cache.url()  %}
     <div class="post-preview">

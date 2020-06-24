@@ -17,6 +17,9 @@ TODO
 {% include 'partials/post-metadata.html.twig' %}
 {% endblock %}
 {% block content %}
+{% if config.plugins.breadcrumbs.enabled %}
+    {% include 'partials/breadcrumbs.html.twig' %}
+{% endif %}
 <div class="post {{page.header.body_classes}}">
   <header class="intro-header"{{ style }}>
       <div class="container">
