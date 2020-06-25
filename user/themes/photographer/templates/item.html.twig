@@ -45,6 +45,19 @@ TODO
           <div class="row">
               <div class="post-body col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   {{ page.content }}
+                </div>
+                <div class="post-footer container">
+                  <div class="navigation">
+                    {% set prev = page.adjacentSibling(1) %}
+                    {% if prev.url %}
+                    <a class="nav nav-prev" href="{{prev.url}}"> <i class="fa fa-chevron-left"></i>{{prev.title}}</a>
+                    {% endif %}
+                    {% set next = page.adjacentSibling(-1) %}
+                    {% if next.url %}
+                    <a class="nav nav-next" href="{{ next.url }}">{{next.title}} <i class="fa fa-chevron-right"></i></a>
+                    {% endif %}
+                  </div>
+                </div>
                   {% if config.plugins.jscomments.enabled %}
                       {{ jscomments() }}
                   {% endif %}
