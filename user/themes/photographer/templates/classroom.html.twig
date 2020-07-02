@@ -2,34 +2,36 @@
 {% block content %}
 {% set collection = page.collection() %}
 {% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "m.d.Y" %}
-{# TODONE Load correct image header add fallback#}
 {% set image_url = page.media[page.header.header_image].url ? page.media[page.header.header_image].cache.url() : page.find('/classroom').media['default.jpg'].cache.url()%}
-<div class="classroom blog container">
-  <header>
-    {# TODONE
-    -[] reestyle the breadcrumbs
-    -[] delete the link in the banner
-    -[] style like the post header\
-     #}
-    {% if page.find("/classroom").url != page.url %}
+{% set style = 'style="background-image: url(\'' ~ image_url  ~ '\')"' %}
+<div class="classroom blog ">
+{% if page.find("/classroom").url != page.url %}
+  <div class="breadcrumbs">
     {% if config.plugins.breadcrumbs.enabled %}
         {% include 'partials/breadcrumbs.html.twig' %}
     {% endif %}
-    <div class="banner">
-      <a href="{{page.parent.url}}">
-        <h1>{{page.parent.title|upper}}</h1>
-      </a>
-    </div>
-    <img src="{{image_url}}" alt="{{page.title}}">
-    <h1>{{(page.title|t)}}</h1>
-  {% else %}
-  <div class="banner">
-    <h1>{{(page.title|upper)}}</h1>
   </div>
-  <img src="{{image_url}}" alt="{{page.title}}">
   {% endif %}
+  <header class="intro-header"{{ style }}>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <div class="post-heading">
+                      <h1>{{ page.title|upper }}</h1>
+                      {% if page.header.subheading %}
+                      <h2 class="subheading">{{ page.header.subheading }}</h2>
+                      {% endif %}
+                      {% if page.header.autor %}
+                      <span class="meta">{{ 'BLOG.POST_BY'|t }} {{ page.header.author }}
+                        {% endif %}
+                        {% if page.date %}{{ 'BLOG.POST_ON'|t }} {{ page.date|date(dateformat) }}</span>
+                      {% endif %}
+                  </div>
+              </div>
+          </div>
+      </div>
 </header>
-<div class="row">
+<div class="container">
   <article >
     {{ page.content }}
   </article>

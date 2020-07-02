@@ -1,7 +1,7 @@
 {#
 TODO
   -[] add the ads
-  -[] load the correct img in  the header and the preview
+  -[x] load the correct img in  the header and the preview
   -[] add nav prev-next with tiles-images
   -[]style list
   -[] funcionality for video player
@@ -12,18 +12,29 @@ TODO
       + slides
 #}
 {% extends 'partials/base.html.twig' %}
-{% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "m.d.Y" %}
-{% set post_image_url = page.header.header_image ? page.media.images[page.header.header_image].cache.url() : page.find('/blog').media['default.jpg'].cache.url()  %}
-{% set style = 'style="background-image: url(\'' ~ post_image_url  ~ '\')"' %}
 {#TODOne meta data for social media#}
 {% block metadata %}
 {% include 'partials/post-metadata.html.twig' %}
 {% endblock %}
 {% block content %}
-{% if config.plugins.breadcrumbs.enabled %}
-    {% include 'partials/breadcrumbs.html.twig' %}
-{% endif %}
+{% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "m.d.Y" %}
+{% set imgFallback = '' %}
+{% for category in page.taxonomy.category %}
+  {% if category =="classroom" or category =="lesson" %}
+    {% set imgFallback = page.find('/classroom').media['default.jpg'].cache.url() %}
+  {% endif %}
+  {% if category =="post" or category =="blog" %}
+    {% set imgFallback = page.find('/blog').media['default.jpg'].cache.url() %}
+  {% endif %}
+{% endfor %}
+{% set post_image_url = page.media.images[page.header.header_image].url ? page.media.images[page.header.header_image].cache.url() : imgFallback %}
+{% set style = 'style="background-image: url(\'' ~ post_image_url  ~ '\')"' %}
 <div class="post {{page.header.body_classes}}">
+  <div class="breadcrumbs">
+    {% if config.plugins.breadcrumbs.enabled %}
+        {% include 'partials/breadcrumbs.html.twig' %}
+    {% endif %}
+  </div>
   <header class="intro-header"{{ style }}>
       <div class="container">
           <div class="row">
