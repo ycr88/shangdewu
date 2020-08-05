@@ -1,0 +1,28 @@
+{% if not (page.isLast() and page.isFirst()) %}
+<div class="post-footer container">
+  <div class="navigation">
+    {% set prev = page.adjacentSibling(1) %}
+    {% if prev.url %}
+    <a class="nav nav-prev col-sm-3 col-md-4" href="{{prev.url}}" >
+        <div class="content">
+          <img  class="img-responsive" src="{{prev.media[prev.header.header_image].cache.url ? prev.media[prev.header.header_image].cache.url : imgFallback }}" alt="{{prev.header.subheading ? prev.header.subheadin : "BLOG.POST_CONTROL.PREV"|capitalize|t}}">
+          <div class="title">
+            <p>{{prev.title|upper}}</p>
+          </div>
+        </div>
+    </a>
+  {% endif %}
+    {% set next = page.adjacentSibling(-1) %}
+    {% if next.url %}
+    <a class="nav nav-next col-sm-3 col-md-4" href="{{next.url}}" >
+        <div class="content">
+          <img  class="img-responsive" src="{{next.media[next.header.header_image].cache.url ? next.media[next.header.header_image].cache.url : imgFallback}}" alt="{{next.header.subheading ? next.header.subheadin : "BLOG.POST_CONTROL.NEXT"|capitalize|t}}">
+          <div class="title">
+            <p>{{next.title|upper}}</p>
+          </div>
+        </div>
+    </a>
+  {% endif %}
+  </div>
+</div>
+{% endif %}
