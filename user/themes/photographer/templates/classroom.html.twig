@@ -35,27 +35,27 @@
   <article >
     {{ page.content }}
   </article>
-  <div class="post-list col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+  <div class="post-list ">
     {% for post in collection %}
     {#
     TODONE load correct image and have a fallback IMG #}
     {% set post_image_url = post.media[post.header.header_image].url ? post.media[post.header.header_image].cache.url() : image_url  %}
-  <div class="post-preview">
+  <div class="post-preview col-lg-3 col-md-4 col-sm-6 col-xs-12">
       <a href="{{ post.url }}">
-        <div class="post-image">
+        <figure class="post-image">
           <img src="{{post_image_url}}">
-        </div>
-        <div class="post-content">
-          <h2 class="post-title">{{ post.title }}</h2>
-          {% if post.header.subheading %}
-          <h3 class="post-subtitle">{{ post.header.subheading }}</h3>
-          {% endif %}
-        </div>
-      </a>
+          <figcaption class="post-content">
+            <h2 class="post-title">{{ post.title }}</h2>
+            {% if post.header.subheading %}
+            <h3 class="post-subtitle">{{ post.header.subheading }}</h3>
+            {% endif %}
+          </figcaption>
+        </figure>
+        </a>
       <p class="post-meta">{{ 'BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</p>
-    </div>
-    <hr>
-    {% endfor %}
+  </div>
+  {% endfor %}
+  </div>
   </div>
 </div>
 {% if config.plugins.pagination.enabled and collection.params.pagination %}
