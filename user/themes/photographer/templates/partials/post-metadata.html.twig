@@ -7,7 +7,9 @@
 {% if post.title %}
 {% set length = post.title | length %}
 {% set long_title = post.title | upper ~" | "~ post.subheading ?: description| truncate(300 - length) %}
+{% set metadata = metadata | merge([{"property":"title","content":long_title | striptags}]) %}
 {% set metadata = metadata | merge([{"property":"og:title","content":long_title | striptags}]) %}
+
 {% endif %}
 {#type#}
 {% set TYPE_DEFAULT = "article" %}
@@ -21,6 +23,7 @@
 {# NOTE description expect a header description #}
 {% set description = post.description ?: post.subheading ?: page.summary  %}
 {% if description %}
+{% set metadata = metadata | merge([{"property":"description","content": description | striptags }]) %}
 {% set metadata = metadata | merge([{"property":"og:description","content": description | striptags }]) %}
 {% endif %}
 

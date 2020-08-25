@@ -9,6 +9,9 @@ en:
       POST_LIST: List of post
       POST_BY: Posted by
       POST_ON: on
+      POST_CONTROL:
+        PREV:
+        NEXT:
       OLDER_POSTS: Older Posts
       NEWER_POSTS: Newer Posts
       MENU: Menu
@@ -38,6 +41,9 @@ ru:
         POST_LIST: Лента новостей
         POST_BY: Сообщение от
         POST_ON: Опубликовано
+        POST_CONTROL:
+          PREV: предыдущий
+          NEXT: следующий
         OLDER_POSTS: Архив новостей
         NEWER_POSTS: Последние новости
         MENU: Меню
