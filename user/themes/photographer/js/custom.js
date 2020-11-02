@@ -53,6 +53,28 @@ $('.slider-lightbox').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+/*
+# .gallery-inline to inline infinite autoply slide with ligthbox
+#
+*/
+$('.gallery-inline').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 979,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    }
+  ]
+}).slickLightbox({useHistoryApi: 'true'});
+
 $('.vertical-slide').slick({
   infinite: false,
   arrows:false,

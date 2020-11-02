@@ -23,7 +23,7 @@
                     {% if item.gallery %}
                     <div class="timeline-gallery">
                       {% for img in item.gallery %}
-                        <a class="thumbnail" href="{{page.find('/images/about/fundator/').media[img].url}}" target="_blank">{{ page.find('/images/about/fundator/').media[img] }}</a>
+                        <a class="thumbnail" href="{{page.find('/images/about/fundator/').media[img].cache.url}}" target="_blank">{{ page.find('/images/about/fundator/').media[img] }}</a>
                     {% endfor %}
                     </div>
                     {% endif %}
