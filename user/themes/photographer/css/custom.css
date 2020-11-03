@@ -2346,6 +2346,10 @@ form .buttons .button:focus, form .buttons .button:hover {
   margin-bottom: 1.5em;
 }
 
+.post ul, .blog ul {
+  list-style: inside;
+}
+
 .post .post-preview .post-title, .blog .post-preview .post-title {
   text-align: center;
   font-size: larger;
@@ -2380,7 +2384,7 @@ form .buttons .button:focus, form .buttons .button:hover {
 .post .post-body, .blog .post-body {
   min-width: 85%;
   margin-left: auto;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
   background: #fff;
   color: #444;
   -webkit-font-smoothing: antialiased;
@@ -2415,6 +2419,11 @@ form .buttons .button:focus, form .buttons .button:hover {
   border: solid 3px #333333;
 }
 
+.post .post-body .gallery-inline img, .blog .post-body .gallery-inline img {
+  padding: 0;
+  border: none;
+}
+
 .share-section {
   text-align: center;
   clear: both;
@@ -2440,6 +2449,10 @@ form .buttons .button:focus, form .buttons .button:hover {
   clear: both;
 }
 
+.navigation {
+  font-size: 0.8em;
+}
+
 .navigation .nav {
   max-width: 40vw;
   overflow: hidden;
@@ -2451,6 +2464,11 @@ form .buttons .button:focus, form .buttons .button:hover {
 
 .navigation .nav-next {
   float: right;
+}
+
+.navigation p {
+  margin: inherit;
+  padding: 0.8em 0 0.8em 0.5em;
 }
 
 .blog-home {
