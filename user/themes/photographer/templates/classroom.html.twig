@@ -1,4 +1,6 @@
-{# TODO add share
+{# TODO
+  -[] add share
+  -[] hide post with access login
 #}
 {% extends 'partials/base.html.twig' %}
 {% block content %}
@@ -39,6 +41,7 @@
   </article>
   <div class="post-list ">
     {% for post in collection %}
+    {% if Not (post.headers.access) %}
     {#
     TODONE load correct image and have a fallback IMG #}
     {% set post_image_url = post.media[post.header.header_image].url ? post.media[post.header.header_image].cache.url() : image_url  %}
@@ -56,6 +59,8 @@
         </a>
       <p class="post-meta">{{ 'BLOG.POST_BY'|t }} {{ post.header.author }} {{ 'BLOG.POST_ON'|t }} {{ post.date|date(dateformat) }}</p>
   </div>
+
+  {% endif %}
   {% endfor %}
   </div>
   </div>
