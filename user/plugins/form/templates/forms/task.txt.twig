@@ -1,14 +1,14 @@
 {# TODO
 [] read the file
-[] trim values
+[x] trim values
 [] check the format
-
 #}
-{%- macro render_field(data) %}
-{% set output = {'id':random(), 'data': data }%}
+{%- macro render_field(data, task) %}
+{% set output = { 'task': task.folder ,'url': task.filePathClean,'data': data}%}
 {{ output|json_encode(constant('JSON_PRETTY_PRINT') b-or constant('JSON_UNESCAPED_SLASHES') b-or constant('JSON_UNESCAPED_UNICODE'))}}
 {%- endmacro %}
 {%- import _self as macro %}
 {%- autoescape false %}
-{{- macro.render_field(form.data) }}
+{% set task = form.page %}
+{{- macro.render_field(form.data, task) }}
 {%- endautoescape %}
