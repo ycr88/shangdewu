@@ -1,0 +1,24 @@
+{# TODO
+[] read the file
+[x] trim values
+[] check the format
+#}
+{%- macro render_field(data, task, base_url) %}
+<p>"Name": {{data.name}}</p>
+<p>Task: <a href="{{task.url(true)}}">{{task.folder}}{{task.title}} </a> </p>
+
+{% if data.file %}
+<p>{{data.file|length}} File(s).</p>
+<ul>
+{% for item in data.file %}
+  <li><a href="{{ base_url ~'/classroom/data/media/'~ item.name }}">{{item.name}}</a> </li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{%- endmacro %}
+{%- import _self as macro %}
+{%- autoescape false %}
+{% set task = form.page %}
+{{- macro.render_field(form.data, task, base_url_absolute) }}
+{%- endautoescape %}
