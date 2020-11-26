@@ -3,22 +3,26 @@
 [x] trim values
 [] check the format
 #}
-{%- macro render_field(data, task, base_url) %}
+{%- macro mail_body(data, task) %}
 <p>"Name": {{data.name}}</p>
-<p>Task: <a href="{{task.url(true)}}">{{task.folder}}{{task.title}} </a> </p>
+<p>Task: <a href="{{task.url}}">{{task.name}}{{task.title}} </a> </p>
 
 {% if data.file %}
 <p>{{data.file|length}} File(s).</p>
 <ul>
 {% for item in data.file %}
-  <li><a href="{{ base_url ~'/classroom/data/media/'~ item.name }}">{{item.name}}</a> </li>
+  <li><a href="{{ task.host ~'/classroom/data/media/'~ item.name }}">{{item.name}}</a> </li>
 {% endfor %}
 </ul>
+{% endif %}
+{% if data.url %}
+<a href="{{data.url}}">{{data.name}}</a>
 {% endif %}
 
 {%- endmacro %}
 {%- import _self as macro %}
 {%- autoescape false %}
-{% set task = form.page %}
-{{- macro.render_field(form.data, task, base_url_absolute) }}
+{% set page = page.find(uri.path) %}
+{% set task = {'name': uri.basename, 'title': page.title , 'url': uri.url, 'host': base_url_absolute} %}
+{{- macro.mail_body(form.data, task) }}
 {%- endautoescape %}
