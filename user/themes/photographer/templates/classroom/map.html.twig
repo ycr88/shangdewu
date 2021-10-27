@@ -1,0 +1,24 @@
+<div class="program">
+    <div class="menu">
+    </div>
+    <div class="vertical-slide">
+    
+        {% for item in map %}
+        {% set img = item.media[item.header.header_image].cache.url %}
+        <div class="program-item">
+          <h1>{{item.title}}</h1>  
+          <div class="image">
+                {{ '<a class="thumbnail " href="`img`" target="_blank">'}}
+                {{'<img src="'~img~'"  alt="">'}}
+                  </a>
+                  <div class="description">
+                    <h2>{{item.header.subheading}}</h2>
+                  <p>{{item.content}}</p>
+                  </div>
+                  <a href="{{ post.url }}" class="bg-buttom" target="_blank">see more</a>            
+              </div>
+            </div>
+        {% endfor %} 
+        </div>
+    </div>
+  </div>

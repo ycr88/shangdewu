@@ -1,3 +1,10 @@
+//funtion for fild the hidden input in form
+if (document.forms["test"]=true){
+  fillTaskInput()
+}
+function fillTaskInput(){
+     console.log('hello');
+}
 // POST commands to YouTube or Vimeo API
 function postMessageToPlayer(player, command){
   if (player == null || command == null) return;
