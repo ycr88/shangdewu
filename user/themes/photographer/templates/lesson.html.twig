@@ -60,17 +60,17 @@ TODO
       <div class="container">
           <div class="row">
               <div class="post-body col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  {{ page.content }}
-                 
+                  {{ page.content }} 
+                {% if page.header.video %}
+                {% include 'classroom/player.html.twig' %}
+                {% endif %}                
                 {% if 'routine' in page.taxonomy.tag %}
-                  {% set map = page.collection('map') %}
-                  {% if map %}
+                  {% if page.header.map %}
                   {% include 'classroom/map.html.twig' %}
                   {% endif %}
                 {% endif %}
                 {% include 'classroom/homework.html.twig' %}
-                </div>
-              
+                </div>              
                 {% if navigation == true %}
                 {% include 'partials/post-footer.html.twig' %}
                 

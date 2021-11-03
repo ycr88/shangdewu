@@ -10,21 +10,28 @@
 {% endfor %}
 </div>
 {% endmacro %}
-
+{% set homework = page.header.homework %}
+{% if homework %}
 <h2>Домашнее задание</h2>
 <p>
     Выполнив следующие задания, вы сможете показать свои знания, для них важно практиковаться дома. Вы получите тренировочные звезды за каждое из следующих заданий.
 </p>
+{% if star in homework.prize  %}
 {{ media['user://pages/classroom/star.jpg'].html()|raw }}
-<p>
-1. Присылайте фото, как вы выполняете дома позицию Цзо Пань Бу Примеры фото можете увидеть ниже
+{% endif %}
+{% if gallery in homework %}
+<p>  
+  1. Присылайте фото, как вы выполняете дома позицию Цзо Пань Бу Примеры фото можете увидеть ниже
 <strong>(отправить фото можете по электронной почте, в вайбере или показать распечатанное фото а занятии)</strong>
 </p>
 {{_self.gallery(task, "gallery-inline")}} {# Load carrusel #}
 
-{% if form.message %}
-{{ form.message }}
-<a href="{{page.url}}/#{{form.id}}">Отправить еще раз</a>
-{% else %}
-{% include "forms/form.html.twig" with { form: forms('test') } %}
+  {% if form.message %}
+  {{ form.message }}
+  <a href="{{page.url}}/#{{form.id}}">Отправить еще раз</a>
+  {% else %}
+  {% include "forms/form.html.twig" with { form: forms('test') } %}
+  {% endif %}
+ {% endif %}
+ {# TODO homework video #} 
 {% endif %}
