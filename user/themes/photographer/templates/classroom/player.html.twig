@@ -1,0 +1,10 @@
+{#
+template for load de video ID from the Lesson
+TODO 
+[] manage diferents types of input
+[] check responsive
+[] integation with JS API
+#}
+<h2>Как сделать {{page.title|e}}</h2> 
+{% set src = "https://www.youtube.com/embed/"~ page.header.video %}
+<iframe width="100%" height="400px" {{'src="'~ src ~ '"' }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

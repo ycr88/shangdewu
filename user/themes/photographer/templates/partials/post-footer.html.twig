@@ -9,7 +9,7 @@
 <div class="post-footer container">
   <div class="navigation">
     {% set prev = page.adjacentSibling(1) %}
-    {% if prev.url %}
+    {% if prev.ispage %}
     <a class="nav nav-prev col-sm-3 col-md-4" href="{{prev.url}}" alt="{{prev.header.subheading ? prev.header.subheading : 'BLOG.POST_CONTROL.PREV'|t|capitalize}}" >
         <div class="content">
         <figure>
@@ -22,7 +22,8 @@
     </a>
   {% endif %}
     {% set next = page.adjacentSibling(-1) %}
-    {% if next.url %}
+    
+    {% if next.ispage %}
     <a class="nav nav-next col-sm-3 col-md-4" href="{{next.url}}" alt="{{next.header.subheading ? next.header.subheading : 'BLOG.POST_CONTROL.NEXT'|t|capitalize}}" >
         <div class="content">
         <figure>
