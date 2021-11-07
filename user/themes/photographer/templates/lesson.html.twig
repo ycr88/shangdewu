@@ -61,14 +61,14 @@ TODO
           <div class="row">
               <div class="post-body col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   {{ page.content }} 
+                {% include 'classroom/map.html.twig' %}
                 {% if page.header.video %}
                 {% include 'classroom/player.html.twig' %}
-                {% endif %}                
-                {% if 'routine' in page.taxonomy.tag %}
-                  {% if page.header.map %}
-                  {% include 'classroom/map.html.twig' %}
-                  {% endif %}
                 {% endif %}
+                {% block gallery %}
+                {% endblock %}
+                {% block routine %}
+                {% endblock %}         
                 {% include 'classroom/homework.html.twig' %}
                 </div>              
                 {% if navigation == true %}
