@@ -83,6 +83,8 @@ $('.vertical-slide').slick({
   arrows:false,
   adaptiveHeight: true,
   dots: true,
+}).slickLightbox({
+  useHistoryApi: 'true'
 });
 $('.vertical-slide').on("beforeChange", function(event, slick) {
     slick = $(slick.$slider);
