@@ -1,0 +1,29 @@
+{% macro program(array) %}
+  {% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
+  <div class="program-item">
+    <div class="description">
+      <h1>{{array.name}}</h1>
+    {% if array.system %}
+    <div class="system">
+      <h2>{{'GROUP.STYLE'|t}}:</h2>
+      <p>{{array.system}}</p>
+    </div>
+  {% endif %}
+      <p>{{array.description}}</p>
+    </div>
+    <div class="video">
+    {{video}}
+    </div>
+  </div>
+{% endmacro %}
+{% if program %}
+<div class="program">
+  <div class="menu">
+  </div>
+  <div class="vertical-slide">
+    {% for item in program %}
+      {{_self.program(item)}}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

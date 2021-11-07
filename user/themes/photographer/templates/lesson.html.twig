@@ -1,0 +1,88 @@
+{#
+TODO
+  -[] add the ads
+  -[] funcionality for video player
+          - link to section of the video(JS youtuve API)
+  -[] add user for edition of the post
+  -[] use css animation to stun the site
+  
+#}
+{% extends 'partials/base.html.twig' %}
+{#TODOne meta data for social media#}
+{% block metadata %}
+{% include 'partials/post-metadata.html.twig' %}
+{% endblock %}
+{% block content %}
+{% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "m.d.Y" %}
+{% set imgFallback = '' %}
+{% set category = page.taxonomy.category %}
+{% if 'classroom' in category  or 'lesson' in category %} {# prepare data to classroom pages #}
+    {% set trainer = page.header.trainer ? site.trainers[page.header.trainer] : site.trainers[0]%}
+    {% set imgFallback = page.find('/classroom').media['default.jpg'].cache.url() %}
+    {% if 'serie' in page.parent.taxonomy.tag %}
+      {% set  navigation = true %}    
+    {% endif %}    
+  {% endif %}
+  {% if 'post' in category  or 'blog' in category %}
+    {% set imgFallback = page.find('/blog').media['default.jpg'].cache.url() %}
+    {% set  navigation = true %} {# enable navigation panel #}
+  {% endif %}     
+{% set post_image_url = page.media.images[page.header.header_image].url ? page.media.images[page.header.header_image].cache.url() : imgFallback %}
+{% set style = 'style="background-image: url(\'' ~ post_image_url  ~ '\')"' %}
+<div class="post {{page.header.body_classes}}">
+{% if not page.header.breadcrumbs.disable %}
+  <div class="breadcrumbs">
+    {% if config.plugins.breadcrumbs.enabled %}
+        {% include 'partials/breadcrumbs.html.twig' %}
+    {% endif %}
+  </div>  
+{% endif %}
+  <header class="intro-header"{{ style }}>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <div class="post-heading">
+                      <h1>{{ page.title }}</h1>
+                      {% if page.header.subheading %}
+                      <h2 class="subheading">{{ page.header.subheading }}</h2>
+                      {% endif %}
+                      {% if page.header.autor %}
+                      <span class="meta">{{ 'BLOG.POST_BY'|t }} {{ page.header.author }}
+                        {% endif %}
+                        {% if page.date %}{{ 'BLOG.POST_ON'|t }} {{ page.date|date(dateformat) }}</span>
+                      {% endif %}
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <article>
+      <div class="container">
+          <div class="row">
+              <div class="post-body col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  {{ page.content }} 
+                {% if page.header.video %}
+                {% include 'classroom/player.html.twig' %}
+                {% endif %}                
+                {% if 'routine' in page.taxonomy.tag %}
+                  {% if page.header.map %}
+                  {% include 'classroom/map.html.twig' %}
+                  {% endif %}
+                {% endif %}
+                {% include 'classroom/homework.html.twig' %}
+                </div>              
+                {% if navigation == true %}
+                {% include 'partials/post-footer.html.twig' %}                
+                {% endif %}
+                {% if config.plugins.jscomments.enabled %}
+                    {{ jscomments() }}
+                {% endif %}
+                {# TODONE share panel#}
+                {% include 'partials/share.html.twig'%}
+              </div>
+          </div>
+      </div>
+  </article>
+</div>
+{{ assets.js('bottom') }}
+{% endblock %}

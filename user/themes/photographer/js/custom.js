@@ -1,3 +1,6 @@
+//TODO funtion for fild the hidden input in form
+
+
 // POST commands to YouTube or Vimeo API
 function postMessageToPlayer(player, command){
   if (player == null || command == null) return;
@@ -80,6 +83,8 @@ $('.vertical-slide').slick({
   arrows:false,
   adaptiveHeight: true,
   dots: true,
+}).slickLightbox({
+  useHistoryApi: 'true'
 });
 $('.vertical-slide').on("beforeChange", function(event, slick) {
     slick = $(slick.$slider);
