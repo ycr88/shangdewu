@@ -84,7 +84,9 @@ $('.vertical-slide').slick({
   adaptiveHeight: true,
   dots: true,
 }).slickLightbox({
-  useHistoryApi: 'true'
+  useHistoryApi: 'true',
+  src: 'src',
+  itemSelector: 'figure img'
 });
 $('.vertical-slide').on("beforeChange", function(event, slick) {
     slick = $(slick.$slider);
