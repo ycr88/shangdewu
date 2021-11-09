@@ -3,17 +3,15 @@
   - add in the MD the formatter gallery= true
   - should be named with numbers for order it
   - 
-
+  FIXME ligbox block the link to the page in the vertical slide
   #}
 {% if page.header.gallery %}
 <div class="post-list clearfix">
   <h2>Последовательность изображений</h2>
   {% for item in page.find( uri.path()~"/map").media.images() %}
   <div class="post-preview col-sm-6 col-xs-12">
-    <figure class="post-image  single-lightbox">
-    {{ '<a class="thumbnail " href="'~item.cache.url~'" target="_blank">'}}
-    {{'<img src="'~item.cache.url~'"  alt="">'}}
-    </a>
+    <figure class="post-image ">
+    {{'<img src="'~item.cache.url~'"  alt="" >'}}
       <figcaption class="post-content">
         <h2 class="post-title">{{item.basename}}</h2>
       </figcaption>
@@ -37,9 +35,8 @@
             <div class="program-item">
               <h1>{{item.title}}</h1>  
               <div class="image">
-                    {{ '<a class="thumbnail" href="'~img~'" target="_blank">'}}
-                    {{'<img src="'~img~'"  alt="">'}}
-                      </a>
+                    {{'<img src="'~img~'"  alt="" data-caption="' ~ item.title~'">'}}
+                    
                       <div class="description">
                         <h2>{{item.header.subheading}}</h2>
                       <p>{{item.content}}</p>
