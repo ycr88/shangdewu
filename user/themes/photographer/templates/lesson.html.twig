@@ -61,16 +61,14 @@ TODO
           <div class="row">
               <div class="post-body col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                   {{ page.content }} 
-                {% include 'classroom/map.html.twig' %}
-                {% if page.header.video %}
+                {% if page.header.video %}                
                 {% include 'classroom/player.html.twig' %}
                 {% endif %}
                 {% block gallery %}
                 {% endblock %}
-                {% block routine %}
-                {% endblock %}         
+                {% include 'classroom/map.html.twig' %}         
                 {% include 'classroom/homework.html.twig' %}
-                </div>              
+              </div>              
                 {% if navigation == true %}
                 {% include 'partials/post-footer.html.twig' %}                
                 {% endif %}
@@ -78,8 +76,7 @@ TODO
                     {{ jscomments() }}
                 {% endif %}
                 {# TODONE share panel#}
-                {% include 'partials/share.html.twig'%}
-              </div>
+                {% include 'partials/share.html.twig'%}              
           </div>
       </div>
   </article>

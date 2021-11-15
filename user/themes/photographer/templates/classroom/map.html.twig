@@ -1,55 +1,37 @@
 {% block gallery %}
-{#
+{# 
   - add in the MD the formatter gallery= true
   - should be named with numbers for order it
   - 
-  FIXME ligbox block the link to the page in the vertical slide
-  #}
-{% if page.header.gallery %}
-<div class="post-list clearfix">
-  <h2>Последовательность изображений</h2>
-  {% for item in page.find( uri.path()~"/map").media.images() %}
-  <div class="post-preview col-sm-6 col-xs-12">
-    <figure class="post-image ">
-    {{'<img src="'~item.cache.url~'"  alt="" >'}}
-      <figcaption class="post-content">
-        <h2 class="post-title">{{item.basename}}</h2>
-      </figcaption>
-    </figure>      
-  </div>  
-{% endfor %}
-</div>
+  FIXED ligtbox block the link to the page in the vertical slide  #}
+{# TODO catch formatter map #}
+{% if page.header.map %}
+{% set map = page.header.map %}
+{% set mapImg = map.image ? map.image:page.media.images['map.jpg']  %}
+{% if mapImg %}
+<h2>Обучай карту</h2>
+<figure class="post-image  single-lightbox">
+  {{'<a class="thumbnail " href="'~mapImg.cache.url~'"  target="_blank">'}}
+  {{'<img src="'~mapImg.cache.url~'"  alt="" >' }}
+</a>
 {% endif %}
-{% endblock %}
-{% block routine %}
-{% if 'routine' in page.taxonomy.tag %}
-    {% if page.header.map %}
-    {% set map = page.children.sort(folder,asc) %}
-    <div class="program">
-        <div class="menu">
-        </div>
-        <div class="vertical-slide">
-          {% for item in map %}
-            {% if "map" in item.taxonomy.tag %}
-            {% set img = item.media[item.header.header_image].cache.url %}
-            <div class="program-item">
-              <h1>{{item.title}}</h1>  
-              <div class="image">
-                    {{'<img src="'~img~'"  alt="" data-caption="' ~ item.title~'">'}}
-                    
-                      <div class="description">
-                        <h2>{{item.header.subheading}}</h2>
-                      <p>{{item.content}}</p>
-                      </div>
-                      <a href="{{ item.url }}" class="bg-buttom" target="_blank">see more</a>            
-                  </div>
-                </div>
-                {% endif %}
-            {% endfor %} 
-            </div>
-        </div>
-      </div>
-        
+{# TODO create gallery #}
+  {% if map.gallery %}
+  {# TODO by local images #}
+  {% set gallery = map.gallery %}
+  <div class="post-list clearfix">
+    <h2>Последовательность изображений</h2>
+    {% for folder, name in gallery.src %}
+      <h3> {{name}} </h3>
+      {% include "classroom/gallery.html.twig" %}
+    {% endfor %}
     {% endif %}
-  {% endif %}
-{% endblock %}
+  </div>
+  {# TODO by child sequences #}
+  {% if 'routine' in page.taxonomy.tag %}
+  {% include "classroom/routine.html.twig" %}
+  {% endif %}      
+{% endif %}  
+{% endblock %} 
+
+

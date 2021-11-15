@@ -1,0 +1,16 @@
+{% if not type %}
+{% for item in page.find( uri.path()~"/"~folder ).media.images() %}
+    <div class="post-preview col-sm-6 col-xs-12">
+      <figure class="post-image  single-lightbox">
+        {{ '<a class="thumbnail " href="'~item.cache.url~'" target="_blank">'}}
+  {{'<img src="'~item.cache.url~'"  alt="">'}}
+  </a>
+       <figcaption class="post-content">   
+          <h2 class="post-title">{{item.basename}}</h2>
+        </figcaption>
+      </figure>      
+    </div>  
+    {% endfor %}
+{% endif %}
+{# TODO type #}
+

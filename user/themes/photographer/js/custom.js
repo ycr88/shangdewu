@@ -97,7 +97,8 @@ $('.single-lightbox').slickLightbox({
   useHistoryApi: 'true'
 });
 $('.slider-lightbox').slickLightbox({
-  useHistoryApi: 'true'
+  useHistoryApi: 'true',
+  caption: 'caption'
 });
 $('.post-slider').slick({
   infinite: true,
