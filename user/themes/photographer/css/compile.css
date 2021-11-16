@@ -37,6 +37,14 @@
 
 .slick-lightbox-close:before { font-family: "slick"; font-size: 20px; line-height: 1; color: white; opacity: 0.85; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: '×'; }
 
+.lesson .program .program-item .image { padding: 0 25%; }
+
+.lesson .post-list .post-preview { height: 45vh; }
+
+.lesson .program .program-item .image { padding: 0 25%; }
+
+.lesson .post-list .post-preview { height: 45vh; }
+
 .blog .post-list .post-preview, .classroom .post-list .post-preview { max-height: 50vh; overflow: hidden; margin-bottom: 3em; }
 
 .discount { padding-top: 1em; }

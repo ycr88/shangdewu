@@ -14,7 +14,7 @@
               </div>
               {% if video %}
               <div class="video">
-                {{"<iframe src=https://www.youtube.com/embed/" ~ video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>'}}
+                {{"<iframe src=https://www.youtube.com/embed/" ~ video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1">'}}
                 </iframe>
               </div>
               {% endif %}
@@ -22,7 +22,7 @@
                 <h2>{{item.header.subheading}}</h2>
                 <p>{{item.description}}</p>
               </div>                    
-               <a href="{{ item.url }}" class="bg-buttom" target="_blank">see more</a>            
+               <a href="{{ item.url }}" class="bg-buttom" target="_blank">{{'BLOG.READ_MORE'|t}}</a>            
                 
                 </div>
                 {% endif %}
