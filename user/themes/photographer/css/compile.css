@@ -37,11 +37,43 @@
 
 .slick-lightbox-close:before { font-family: "slick"; font-size: 20px; line-height: 1; color: white; opacity: 0.85; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: '×'; }
 
-.lesson .program .program-item .image { padding: 0 25%; }
+.lesson .map-gallery .map-image-list { padding: 0.5em; margin-bottom: 2em; }
+
+.lesson .map-gallery .map-image-list h3 { text-align: center; }
+
+.lesson .map-gallery .map-image-list .map-tile figure { margin-bottom: 1.5em; }
+
+.lesson .map-gallery .map-image-list .map-tile figure figcaption { text-align: center; background: white; border: 3pt #555555 solid; padding: 0.3em; margin-top: -1em; }
+
+.lesson article h1, .lesson article h3 { color: #008575; }
+
+.lesson article h2 { color: #fb773f; font-size: xx-large; }
+
+.lesson article h4 { color: #555555; }
+
+.lesson .program .program-item .image { padding: 0 10%; margin-bottom: 0.5em; }
+
+.lesson .program .program-item .description h2 { font-size: 0.8em; }
 
 .lesson .post-list .post-preview { height: 45vh; }
 
-.lesson .program .program-item .image { padding: 0 25%; }
+.lesson .map-gallery .map-image-list { padding: 0.5em; margin-bottom: 2em; }
+
+.lesson .map-gallery .map-image-list h3 { text-align: center; }
+
+.lesson .map-gallery .map-image-list .map-tile figure { margin-bottom: 1.5em; }
+
+.lesson .map-gallery .map-image-list .map-tile figure figcaption { text-align: center; background: white; border: 3pt #555555 solid; padding: 0.3em; margin-top: -1em; }
+
+.lesson article h1, .lesson article h3 { color: #008575; }
+
+.lesson article h2 { color: #fb773f; font-size: xx-large; }
+
+.lesson article h4 { color: #555555; }
+
+.lesson .program .program-item .image { padding: 0 10%; margin-bottom: 0.5em; }
+
+.lesson .program .program-item .description h2 { font-size: 0.8em; }
 
 .lesson .post-list .post-preview { height: 45vh; }
 

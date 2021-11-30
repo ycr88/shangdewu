@@ -57,29 +57,37 @@ TODO
       </div>
   </header>
   <article>
-      <div class="container">
-          <div class="row">
-              <div class="post-body col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  {{ page.content }} 
-                {% if page.header.video %}                
-                {% include 'classroom/player.html.twig' %}
-                {% endif %}
-                {% block gallery %}
-                {% endblock %}
-                {% include 'classroom/map.html.twig' %}         
+    <div class="container">
+        <div class="row">
+            <div class="post-body col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ page.content }} 
+              {% if page.header.video %}                
+              {% include 'classroom/player.html.twig' %}
+              {% endif %}
+              {% if page.header.map %}
+                {% include 'classroom/map.html.twig' %}
+                  {# TODO by child sequences #}
+                  {% if 'routine' in page.taxonomy.tag %}
+                  {% include "classroom/routine.html.twig" %}
+                  {% endif %}
+              {% endif %}                
+              {% if page.header.homework %}
+              <div class="homework">
                 {% include 'classroom/homework.html.twig' %}
-              </div>              
-                {% if navigation == true %}
-                {% include 'partials/post-footer.html.twig' %}                
-                {% endif %}
-                {% if config.plugins.jscomments.enabled %}
-                    {{ jscomments() }}
-                {% endif %}
-                {# TODONE share panel#}
-                {% include 'partials/share.html.twig'%}              
-          </div>
-      </div>
-  </article>
+              </div> 
+              {% endif %}
+            </div>
+              {% if navigation == true %}
+              {% include 'partials/post-footer.html.twig' %}                
+              {% endif %}
+              {% if config.plugins.jscomments.enabled %}
+                  {{ jscomments() }}
+              {% endif %}
+              {# TODONE share panel#}
+              {% include 'partials/share.html.twig'%}    
+        </div>
+    </div>
+</article>
 </div>
 {{ assets.js('bottom') }}
 {% endblock %}

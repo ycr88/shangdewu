@@ -1,37 +1,34 @@
-{% block gallery %}
-{# 
-  - add in the MD the formatter gallery= true
+{#- add in the MD the formatter gallery= true
   - should be named with numbers for order it
-  - 
+
   FIXED ligtbox block the link to the page in the vertical slide  #}
 {# TODO catch formatter map #}
-{% if page.header.map %}
-{% set map = page.header.map %}
-{% set mapImg = map.image ? map.image:page.media.images['map.jpg']  %}
-{% if mapImg %}
-<h2>Обучай карту</h2>
-<figure class="post-image  single-lightbox">
-  {{'<a class="thumbnail " href="'~mapImg.cache.url~'"  target="_blank">'}}
-  {{'<img src="'~mapImg.cache.url~'"  alt="" >' }}
-</a></figure>
-{% endif %}
 {# TODO create gallery #}
-  {% if map.gallery %}
+{% set map = page.header.map %}
+{% set img = page.header.map.image ? page.header.map.image:page.media["map.jpg"] %}
+{% if map.gallery %}
   {# TODO by local images #}
   {% set gallery = map.gallery %}
-  <div class="post-list clearfix">
+  <div class="map-gallery">
     <h2>Последовательность изображений</h2>
-    {% for folder, name in gallery.src %}
-      <h3> {{name}} </h3>
-      {% include "classroom/gallery.html.twig" %}
-    {% endfor %}
-    {% endif %}
+    {% if img %}
+        <figure class="map-image single-lightbox">
+        {{'<a class="thumbnail " href="'~img.cache.url~'" target="_blank" data-caption="' ~ page.title~'">'}}
+        {{'<img src="'~img.cache.url~'"  alt="">'}}
+        </a>
+        </figure>
+    {% endif %}  
+    <div class="row">
+      {% for folder, name in gallery.src %}
+      <div class="map-image-list clearfix">
+        <h3> {{name}} </h3>
+        {% include "classroom/gallery.html.twig" %}
+      </div>     
+      {% endfor %}
+      {% endif %}
+    </div>   
   </div>
-  {# TODO by child sequences #}
-  {% if 'routine' in page.taxonomy.tag %}
-  {% include "classroom/routine.html.twig" %}
-  {% endif %}      
-{% endif %}  
-{% endblock %} 
+
+
 
 
