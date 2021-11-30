@@ -1,32 +1,43 @@
-{% set exercises = page.children.sort(folder,asc) %}
-    <div class="program">
-        <div class="menu">
+{% set excersices = page.children.sort(folder,asc) %}
+{% set flag = null %}
+{% for item in excersices if 'excersice' in item.taxonomy.tag %}
+
+{#
+  check what exits ejercises
+  TODO refactor #}
+  {% set flag = true %}
+{% endfor %}
+{% if flag %}
+<div class="routine">
+  <div class="program">
+    <div class="menu">
+    </div>
+    <div class="vertical-slide">
+      {% for item in excersices if 'excersice' in item.taxonomy.tag %}
+      {% set img = item.header.map.image ? item.header.map.image:item.media["map.jpg"] %}
+      {% set video = item.header.video %}
+      <div class="program-item">
+        <h1>{{item.title}}</h1>  
+        {% if img %}
+        <div class="image">
+          {{'<img src="'~img.cache.url~'"  alt="" data-caption="' ~ item.title~'">'}}
         </div>
-        <div class="vertical-slide">
-          {% for item in exercises %}
-            {% if "excersice" in item.taxonomy.tag %}
-            {% set img = item.header.map.image ? item.header.map.image:item.media["map.jpg"] %}
-            {% set video = item.header.video %}
-            <div class="program-item">
-              <h1>{{item.title}}</h1>  
-              <div class="image">
-                    {{'<img src="'~img.cache.url~'"  alt="" data-caption="' ~ item.title~'">'}}
-              </div>
-              {% if video %}
-              <div class="video">
-                {{"<iframe src=https://www.youtube.com/embed/" ~ video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1">'}}
-                </iframe>
-              </div>
-              {% endif %}
-              <div class="description">
-                <h2>{{item.header.subheading}}</h2>
-                <p>{{item.description}}</p>
-              </div>                    
-               <a href="{{ item.url }}" class="bg-buttom" target="_blank">{{'BLOG.READ_MORE'|t}}</a>            
-                
-                </div>
-                {% endif %}
-            {% endfor %} 
-            </div>
+        {% endif %}           
+        {% if video %}
+        <div class="video">
+          {% set src = "https://www.youtube.com/embed/"~ video %}
+          <iframe width="100%" height="400px" {{'src="'~ src ~ '" ?enablejsapi=1&loop=1&controls=2"' }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </iframe>
         </div>
+        {% endif %}
+        <div class="description">
+          <h2>{{item.header.subheading}}</h2>
+          <p>{{item.description}}</p>
+        </div>                    
+        <a href="{{ item.url }}" class="bg-buttom" target="_blank">{{'BLOG.READ_MORE'|t}}</a>            
       </div>
+      {% endfor %} 
+      </div>
+    </div>  
+</div>
+{% endif %}
