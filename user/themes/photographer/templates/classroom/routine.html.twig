@@ -1,10 +1,11 @@
 {% set excersices = page.children.sort(folder,asc) %}
 {% set flag = null %}
 {% for item in excersices if 'excersice' in item.taxonomy.tag %}
-
 {#
   check what exits ejercises
-  TODO refactor #}
+  TODO refactor 
+  TODO layout in grid for serie
+  #}
   {% set flag = true %}
 {% endfor %}
 {% if flag %}

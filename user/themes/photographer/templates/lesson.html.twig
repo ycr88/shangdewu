@@ -66,8 +66,8 @@ TODO
               {% endif %}
               {% if page.header.map %}
                 {% include 'classroom/map.html.twig' %}
-                  {# TODO by child sequences #}
-                  {% if 'routine' in page.taxonomy.tag %}
+                  {# TODO by child sequences #}                  
+                  {% if 'routine' or 'serie' in page.taxonomy.tag %}                                 
                   {% include "classroom/routine.html.twig" %}
                   {% endif %}
               {% endif %}                
