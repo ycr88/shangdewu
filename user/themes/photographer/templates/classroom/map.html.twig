@@ -5,7 +5,7 @@
 {# TODO catch formatter map #}
 {# TODO create gallery #}
 {% set map = page.header.map %}
-{% set img = page.header.map.image ? page.header.map.image:page.media["map.jpg"] %}
+{% set img = page.media[page.header.map.image] ? page.media[page.header.map.image]:page.media["map.jpg"] %}
 {% if map.gallery %}
   {# TODO by local images #}
   {% set gallery = map.gallery %}
