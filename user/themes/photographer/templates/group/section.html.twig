@@ -1,0 +1,23 @@
+{{"<a href="~item.url~">"}}
+      <div class="post {{ item.header.body_classes }}">
+        {% set image = item.media.images[item.header.header_image].cache.url() %}
+        {% set style = 'background-image: url(\'' ~ image  ~ '\')' %}
+        <header class="intro-header" style="{{style}}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>{{ item.title }}</h1>
+                            {% if item.header.subheading %}
+                            <h2 class="subheading">{{ item.header.subheading }}</h2>
+                            {% endif %}
+                            {% if item.header.autor %}
+                            <span class="meta">{{ 'BLOG.POST_BY'|t }} {{ item.header.author }}
+                              {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+      </div>
+    </a>

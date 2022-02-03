@@ -1,0 +1,16 @@
+{% set special = page.find("/new-course")%}
+{% set courses = taxonomy.findTaxonomy({'category':'course'}) %}
+{% if courses %}
+<section class="course gallery slide-fade">
+{% for course in courses %}
+{% if course.published %}
+    {% include "group/section.html.twig" with {'item': course}  %}
+{% endif %} 
+{% endfor %}
+</section>
+{% endif %}
+{% if special.published %}
+<section class="special">
+    {% include "group/section.html.twig" with {'item': special}  %} 
+</section>
+{% endif %}
