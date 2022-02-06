@@ -1,19 +1,29 @@
 {% macro program(array) %}
-  {% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
+{% if array.header.video %}
+{% set video = "<iframe src=https://www.youtube.com/embed/" ~ array.header.video ~"?enablejsapi=1&loop=1&controls=2"~ ' frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
+{% endif %}
+  {% set img = array.header.map.image ? array.header.map.image:item.media["map.jpg"] %}
   <div class="program-item">
     <div class="description">
-      <h1>{{array.name}}</h1>
-    {% if array.system %}
+      <h1>{{array.title}}</h1>      
+    {% if array.header.system %}
     <div class="system">
       <h2>{{'GROUP.STYLE'|t}}:</h2>
-      <p>{{array.system}}</p>
+      <p>{{array.header.system}}</p>
     </div>
   {% endif %}
       <p>{{array.description}}</p>
     </div>
-    <div class="video">
-    {{video}}
-    </div>
+    {% if img %}
+        <div class="image">
+          {{'<img src="'~img.cache.url~'"  alt="" data-caption="' ~ item.title~'">'}}
+        </div>
+        {% endif %} 
+        {% if video %}
+        <div class="video">
+          {{video}}
+          </div>
+        {% endif %}         
   </div>
 {% endmacro %}
 {% if program %}
