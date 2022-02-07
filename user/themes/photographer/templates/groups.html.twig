@@ -1,13 +1,17 @@
 {% extends 'partials/base.html.twig' %}
+{% set items = page.collection() %}
 {% block content %}
-    <div id="content" class="{{ page.header.class }} ">
-      <div class="container">
+<div id="content" class="{{ page.header.class }} ">
+  <div class="container">
+    {% if items is not empty %}
+      {% include 'group/schedule.html.twig' %}
+    {% endif %}   
+    {% include 'group/feature.html.twig' %}       
       <section class="row">
            {{ page.content }}
        </section>
        <section id="group-list" class="items row">
-         <h2>{{'GROUP.SLIDE_HEADING'|t}}</h2>
-         {% set items = page.collection() %}
+         <h2>{{'GROUP.SLIDE_HEADING'|t}}</h2>         
          <div class="group-slide">
            {% for item in taxonomy.findTaxonomy({'category':'group'}) %}
             <div class="item {{item.header.class}} col-sm-12 col-md-4">

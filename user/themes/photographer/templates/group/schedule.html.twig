@@ -1,0 +1,70 @@
+{% macro groupLink(dir, name, time)%}
+        {{"<a href="~dir~">"}}
+          {% if name %}
+            <div class="name">{{name}}</div>
+        {% endif %}
+        {% if time %}
+            <div class="time">{{time}}</div>
+        {% endif %}
+        </a>
+{% endmacro %}
+<div class="schedule">
+    <div class="banner">
+        <h1>Расписание 2021</h1> 
+    </div>
+    <div class="group-schedule table-responsive">
+     {% set empty = "empty"%}
+     {% set divEmpty = '<div class="empty"> </div>'%}
+       <div class="desktop">
+          <table class="table table-hover">
+            <thead>
+              <th class="empty"><div class="empty"> </div></th>
+              {% for key in range(1,6)|keys %}
+                    <th>{{"DAYS_OF_THE_WEEK.SHORT.#{key}"|t}}</th>
+              {% endfor %}
+            </thead>
+            <tbody>
+              {% for group in taxonomy.findTaxonomy({'category':'group'})%}
+                 {% set data = "GROUP.#{group.header.id}"|upper %}
+                   <tr class="{{group.header.class}}">
+                      <th>
+                        {{_self.groupLink( group.url, "#{data}.NAME"|t)}}
+                      </th>
+                      {% for key  in range(1,6)|keys %}
+                        {% if group.header.time[key + 1] %}
+                      <td>
+                        <div class="time">{{group.header.time[key + 1]}}</div>
+                      </td>
+                      {% else %}
+                      <td>
+                        <div class="empty"></div>
+                      </td>
+                      {% endif %}
+                      {% endfor %}
+                    </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+      </div>
+      <div class="mobile">
+          <table class="table table-hover">
+            {% for key in range(1,6)|keys %}
+            <tr>
+              <th>{{"DAYS_OF_THE_WEEK.SHORT.#{key}"|t}}</th>
+                {% for group in taxonomy.findTaxonomy({'category':'group'})%}
+                {% set data = "GROUP.#{group.header.id}"|upper %}
+                {% if group.header.time[key + 1] %}
+                <td class="{{group.header.class}}">
+                  {{_self.groupLink( group.url, "#{data}.NAME"|t, group.header.time[key + 1] )}}
+                </td>
+                {% else %}
+                    <td class="empty"> </td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+            {% endfor %}
+      </table>
+      </div>
+    </div>
+    </div>
+    

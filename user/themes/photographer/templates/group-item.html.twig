@@ -13,7 +13,19 @@
               <img src="{{page.media[page.header.header_image].url}}" alt="{{page.header.title}}">
             </header>
            {{ page.content }}
+           {#
+            Program section
+            taxonomy.findTaxonomy({'tag':[page.header.program|e,'program']})
+            #}
+           
+            {% set program = [] %}
+            {% for item in page.header.program %}
+              {% set program = program | merge(taxonomy.findTaxonomy({'tag':[item,'program']})) %}
+            {% endfor %}
+           <h2>Программа курса </h2>
+           {% include "partials/slide.html.twig" %}
        </section>
    </div>
  </div>
+
 {% endblock %}
