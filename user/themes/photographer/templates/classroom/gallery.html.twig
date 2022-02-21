@@ -4,7 +4,7 @@
 {% for item in page.find( uri.path()~"/"~folder ).media.images() %}
 {# TODO slide ligthbox#}
     <div class="map-tile col-lg-4 col-sm-6 col-xs-12">
-      <figure class="gallery-item ">
+      <figure class="gallery-item single-lightbox ">
        {{'<a class="thumbnail " href="'~item.cache.url~'" target="_blank">'}}
        {{'<img src="'~item.cache.url~'"  alt="">'}}
        </a>
