@@ -9,7 +9,7 @@
        {{'<img src="'~item.cache.url~'"  alt="">'}}
        </a>
        <figcaption>
-        <h4 class="gallery-item-title">{{caption[item.basename]}}</h4> 
+        <h4 class="gallery-item-title">{{caption ? caption[item.basename] : item.basename }}</h4> 
        </figcaption>
       </figure>         
     </div>  
