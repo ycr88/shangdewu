@@ -1,13 +1,15 @@
+{# Need to name image with the index of the list in the formatter map.gallery.caption#}
+{% set caption = gallery.caption %}
 {% if not type %}
 {% for item in page.find( uri.path()~"/"~folder ).media.images() %}
 {# TODO slide ligthbox#}
     <div class="map-tile col-lg-4 col-sm-6 col-xs-12">
-      <figure class="gallery-item single-lightbox">
+      <figure class="gallery-item ">
        {{'<a class="thumbnail " href="'~item.cache.url~'" target="_blank">'}}
        {{'<img src="'~item.cache.url~'"  alt="">'}}
        </a>
        <figcaption>
-        <h4 class="gallery-item-title">{{item.basename}}</h4> 
+        <h4 class="gallery-item-title">{{caption[item.basename]}}</h4> 
        </figcaption>
       </figure>         
     </div>  
