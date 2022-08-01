@@ -1,7 +1,7 @@
-{% set special = page.find("/new-course")%}
+{% set special = page.find("/summer")%}
 {% set courses = taxonomy.findTaxonomy({'category':'course'}) %}
 {% if courses %}
-<section class="course gallery slide-fade">
+<section class="course gallery html-slide">
 {% for course in courses %}
 {% if course.published %}
     {% include "group/section.html.twig" with {'item': course}  %}
