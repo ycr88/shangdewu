@@ -51,11 +51,6 @@ $('.timeline-gallery').slickLightbox({
     useHistoryApi: 'true'
   });
 
-$('.slider-lightbox').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-});
 /*
 # .gallery-inline to inline infinite autoply slide with ligthbox
 #
@@ -89,6 +84,17 @@ $('.vertical-slide').slick({
   caption: 'caption',
   itemSelector: 'img'
 });
+$('.html-slide').slick({
+  infinite: true,
+  arrows:false,
+  adaptiveHeight: true,
+  dots: true,
+}).slickLightbox({
+  useHistoryApi: 'true',
+  src: 'src',
+  caption: 'caption',
+  itemSelector: 'img'
+});
 $('.vertical-slide').on("beforeChange", function(event, slick) {
     slick = $(slick.$slider);
     playPauseVideo(slick,"pause");
@@ -96,7 +102,11 @@ $('.vertical-slide').on("beforeChange", function(event, slick) {
 $('.single-lightbox').slickLightbox({
   useHistoryApi: 'true'
 });
-$('.slider-lightbox').slickLightbox({
+$('.slider-lightbox').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+}).slickLightbox({
   useHistoryApi: 'true',
   caption: 'caption'
 });
