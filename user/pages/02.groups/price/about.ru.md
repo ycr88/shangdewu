@@ -10,21 +10,17 @@ visible: false
 template: price
 payment:
     - name: PER_LESSON
-      ammount: 8
+      ammount: 15
       title: "Разовое занятие (до декября 2021)"
       description: "за 1 занятие"
     - name: MONTHLY_8 
-      ammount: 60
-      title: "Абоненмент “Стандарт”"
-      description: "8 занятий в месяц (2 раза в неделю)"       
+      ammount: от 80
+      title: "Абонемент Новые Набор"
+      description: "до 10 занянитие в месяц c костюме, обувь"       
     - name: MONTHLY_FULL
-      ammount: 65
-      title: "Абонемент “Безлимит”"
-      description: "Безлимитные занятия в течение месяца"
-    - name: FAMILY_FULL
-      ammount: 160
-      title: "Абонемент для семьи из 3-х человек"
-      description: "Безлимитные занятия в течение месяца"
+      ammount: от 70
+      title: "Абонемент Продольшаюших"
+      description: "Безлимитные занятия с инвентарь *"    
 ---
 {% set payments = page.header.payment %}
 <section  markdown=1 id="price" class="price row">
@@ -44,6 +40,11 @@ payment:
     </div>
   </div>
   {% endfor %}
+  <p><span>*</span>Для учеников с больше года в школе</p>
+  <h3>Iнвентар и одежда</h3>
+  Все Абонементы включает в себя тренировочную одежду, обувь, а также одежду для выставок и соревнований спортивный инвентарь.
+Костюмы и инвентарь для ушу предоставляются для личных тренировок. 
+
 </div>
 <div markdown=1 class="extra-lessons">
 ### Дополнительные занятия:###

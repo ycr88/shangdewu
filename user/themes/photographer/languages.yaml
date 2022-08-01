@@ -37,6 +37,13 @@ ru:
           - Вс
     SCHOOL:
       NAME: ШанДэУ
+      ADDRESS:
+        1:
+          - name: 'г.Минск, ул.Пугачевская, 10.'
+          - location: 'https://g.page/Shangdewu?share'
+        2: 
+          - name: '2'
+          - location: 'https://goo.gl/maps/guFuPN1zXbBf9rSd9'
     BLOG:
         POST_LIST: Лента новостей
         POST_BY: Сообщение от

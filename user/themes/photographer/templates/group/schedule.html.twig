@@ -24,7 +24,7 @@
               {% endfor %}
             </thead>
             <tbody>
-              {% for group in taxonomy.findTaxonomy({'category':'group'})%}
+              {% for group in collection %}
                  {% set data = "GROUP.#{group.header.id}"|upper %}
                    <tr class="{{group.header.class}}">
                       <th>
@@ -51,7 +51,7 @@
             {% for key in range(1,6)|keys %}
             <tr>
               <th>{{"DAYS_OF_THE_WEEK.SHORT.#{key}"|t}}</th>
-                {% for group in taxonomy.findTaxonomy({'category':'group'})%}
+                {% for group in collection %}
                 {% set data = "GROUP.#{group.header.id}"|upper %}
                 {% if group.header.time[key + 1] %}
                 <td class="{{group.header.class}}">

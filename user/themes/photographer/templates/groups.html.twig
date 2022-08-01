@@ -1,19 +1,20 @@
 {% extends 'partials/base.html.twig' %}
-{% set items = page.collection() %}
+{% set collection = page.collection %}
 {% block content %}
 <div id="content" class="{{ page.header.class }} ">
   <div class="container">
-    {% if items is not empty %}
+    {% if collection is not empty %}
       {% include 'group/schedule.html.twig' %}
     {% endif %}   
     {% include 'group/feature.html.twig' %}       
       <section class="row">
+          {{ page.header.description }}
            {{ page.content }}
        </section>
        <section id="group-list" class="items row">
-         <h2>{{'GROUP.SLIDE_HEADING'|t}}</h2>         
+         <h2>{{'GROUP.SLIDE_HEADING'|t}}</h2>      
          <div class="group-slide">
-           {% for item in taxonomy.findTaxonomy({'category':'group'}) %}
+           {% for item in collection %}
             <div class="item {{item.header.class}} col-sm-12 col-md-4">
               <div class="content">
                 <img src="{{item.media[item.header.header_image].url}}" alt="">
@@ -29,7 +30,8 @@
          {% set price = page.find("/groups/price") %}
           {{price.content}}
        <section name="extra">
-         {{shortcode.section.extra}}
+        {% set extra = page.find("/groups/extra") %}
+        {{extra.content}}
        </section>
    </div>
  </div>
