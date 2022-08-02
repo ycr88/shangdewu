@@ -10,13 +10,6 @@ visible: false
 ---
 <section class="extra">
 <h2>Общая информация</h2>
-<div class="subsection inscription">
-<h3>Запись в группу</h3> 
-{% include "forms/form.html.twig" %}
-<p>Для того, чтобы записаться на курс позвоните или отправьте смс по номеру:
-<a href="tel:+375333627666"><span class="fa-li"><i class="fas fa-phone"></i></span>+375333627666 **(MTC)**<span class="phone-icon icon-viber fab fa-viber"></span></a>
-</p> 
-</div>
 <div class="subsection training-place">
 <h3>Место тренировок</h3>
 Занятия проходят в спортивном зале Международной школы "Инновация".
