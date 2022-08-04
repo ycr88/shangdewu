@@ -6,24 +6,28 @@ process:
     twig: true
 class: group
 submenu: true
-mainmenu: 'Набор группы'
+mainmenu: Расписание
 items:
     -
         id: group-list
         title: 'Наши группы'
     -
+        id: inscription
+        title: Запись
+    -
         id: price
         title: 'Цены и скидки'
 content:
-  items:
-    - '@self.children'
-    - '@taxonomy':
-         category: [group]
-  filter:
-    published: true
-    type: 'group-item'
-
-description: 'Школа боевых искусств ШанДэУ  предлагает занятия для всей семьи! Курсы Тайцзицюань и внутренних стилей подойдут для молодежи и взрослых, занятия по спортивному ушу ориентированы на детей и подростков. Приглашаем всех погрузиться в прекрасный мир исскусства Ушу!'
+    items:
+        - '@self.children'
+        -
+            '@taxonomy':
+                category:
+                    - group
+    filter:
+        published: true
+        type: group-item
+description: 'Школа боевых искусств ШанДэУ  предлагает занятия для всей семьи! Курсы Тайцзицюань и внутренних стилей подойдут для молодежи и взрослых, занятия по спортивному ушу ориентированы на детей и подростков. Приглашаем всех погрузиться в прекрасный мир искусства Ушу!'
 form:
     name: group-registation
     classes: form-group
@@ -41,7 +45,7 @@ form:
         -
             name: email
             label: 'Электронная почта'
-            placeholder: вашего@е-мейл.адресс
+            placeholder: 'Введите Ваш e-mail'
             type: email
             classes: form-control
             validate:
@@ -52,12 +56,12 @@ form:
             autofocus: true
             label: 'Напишите нам'
             classes: form-control
-            placeholder: 'Вводите текст здесь'
+            placeholder: 'Ваш комментарий'
         -
             name: g-recaptcha-response
             label: Captcha
             type: captcha
-            recaptcha_not_validated: 'Captcha недействителен!'        
+            recaptcha_not_validated: 'Captcha недействителен!'
     buttons:
         -
             type: submit
@@ -76,3 +80,4 @@ form:
             reset: true
 ---
 
+![](22%20curso.jpg?resize=600,400)

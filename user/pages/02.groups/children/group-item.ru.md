@@ -1,6 +1,5 @@
 ---
-title: 'Ушу для детей и подростков: Начинающие'
-published: true
+title: 'Ушу для детей: Начинающие'
 media_order: children.jpg
 taxonomy:
     category:
@@ -12,11 +11,15 @@ header_image: children.jpg
 class: 'group group-children-starter'
 id: children-starter
 time:
-    2: '17:00-18:15'
-    4: '17:00-18:15'
+    1: '17:30-18:30'
+    3: '17:30-18:30'
+    2: '18:30-19:30'
+    4: '18:30-19:30'
+    6: '13:30-14:30'
 program:
     - wushu-basic
 ---
+
 {% set training = page.find("/groups/children/training").media.images() %}
 {% set activities = page.find("/groups/children/activities").media.images() %}
 {% macro gallery(data, type ="") %}

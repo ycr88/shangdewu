@@ -8,6 +8,7 @@ process:
 routable: false
 visible: false
 ---
+
 <section class="extra">
 <h2>Общая информация</h2>
 <div class="subsection training-place">
@@ -47,7 +48,7 @@ visible: false
 </div>
 </div>
 <div class="subsection weapon">
-### Оружие Ушу
+<h3>Оружие Ушу</h3>
 Спортивное оружие ушу в большинстве случаев выполненно из дерева и металла. Однако, современное оружие не является колющим и режущим, что обеспечивает безопасность на занятии.
 <div class="gallery container">
   <div class="col-sm-4 col-xs-12 weapon-image single-lightbox">

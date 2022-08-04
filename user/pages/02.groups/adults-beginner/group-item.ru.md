@@ -10,12 +10,15 @@ header_image: basic.jpg
 class: 'group group-adults-starter'
 id: adults-starter
 time:
-    1: '19:15-20:30'
-    3: '19:15-20:30'
-    6: '10:30-12:30'
+    1: '11:00-12:00'
+    3: '11:00-12:00'
+    2: '20:15-21:15'
+    4: '20:15-21:15'
+    6: '11:00-12:00'
 program:
     - adult-basic
 ---
+
 {% set  training = page.find("/groups/adults-beginner/training").media.images() %}
 {% macro gallery(data, type ="") %}
 {{ '<div class="gallery '~ type ~' ">'}}

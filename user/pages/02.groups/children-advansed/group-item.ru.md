@@ -12,13 +12,12 @@ header_image: Children.jpg
 class: 'group group-children-starter'
 id: children-advanced
 time:
-    2: '18:30-19:30'
-    4: '18:30-20:30'
-    6: '12:30-13:30'
+    1: '18:30-20:00'
+    3: '18:30-20:00'
+    6: '9:30-11:00'
 program:
     - wushu-advanced
 ---
-
 
 {% set training = page.find("/groups/children/training").media.images() %}
 {% set activities = page.find("/groups/children/activities").media.images() %}
