@@ -12,12 +12,29 @@
               <h1>{{("GROUP.#{page.header.id}"|upper|t)}}</h1>
               <img src="{{page.media[page.header.header_image].url}}" alt="{{page.header.title}}">
             </header>
+            {% if page.header.time %}
+            <section class="schedule">
+              <div class="banner">
+                <h1>Расписание {{ "now" | date("Y") }}</h1> 
+              </div>
+              <ul>
+                {% for key in range(1,6)|keys  %}
+                {% if page.header.time[key + 1] %}
+                  <li>
+                    <div class="dayoftheweek"> {{"DAYS_OF_THE_WEEK.SHORT.#{key}"|t}}</div>
+                    <div class="time">{{page.header.time[key + 1]}}</div>
+                  </li>
+                  {% endif %}             
+                {% endfor %} 
+              </ul>
+            {% endif %}           
+            </section>
+
+            {#TODO 
+              [] Add schedule and address
+              []news section#}
+
            {{ page.content }}
-           {#
-            Program section
-            taxonomy.findTaxonomy({'tag':[page.header.program|e,'program']})
-            #}
-           
             {% set program = [] %}
             {% for item in page.header.program %}
               {% set program = program | merge(taxonomy.findTaxonomy({'tag':[item,'program']})) %}
